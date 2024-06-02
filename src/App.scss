@@ -1,14 +1,140 @@
+@font-face {
+  font-family: 'League-Spartan';
+  src: url('../src/assets/fonts/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League-Spartan';
+  src: url('../src/assets/fonts/LeagueSpartan-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Koulen';
+  src: url('../src/assets/fonts/Koulen-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Koulen';
+  src: url('../src/assets/fonts/Koulen.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--primary-color);
+
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #0C2D57;
+  --secondary-color: #FC6736;
+  --primary-font: League-Spartan;
+  --secondary-font: Koulen;
+
+}
+
+
+.homeContainer {
+
+  background-image: url(../src/assets/images/background-triangle.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 3vw;
+
+
+  h1 {
+    font-family: var(--primary-font);
+    font-size: 4rem;
+    font-weight: 400;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .welcomeContainer {
+
+    display: inline-flex;
+    align-items: center;
+
+    .welcomeText {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      h2 {
+        font-family: var(--secondary-font);
+        font-size: 6rem;
+        line-height: 1rem;
+        text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      }
+
+      p {
+        font-family: var(--primary-font);
+        font-size: 4rem;
+        width: 90%;
+        text-align: start;
+        text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 2vw;
+
+        span {
+          font-family: var(--primary-font);
+          font-weight: bold;
+          text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+
+    #photoProfil {
+      display: block;
+      width: 20%;
+      height: 20%;
+      border-radius: 50%;
+      margin-left: 5%;
+    }
+  }
+
+  #invitationText {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 1vw;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  #welcomeDownButton {
+    margin: 2vw;
+    animation: bounce 2.5s infinite;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+
 }
