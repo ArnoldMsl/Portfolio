@@ -12,7 +12,7 @@ const Home = () => {
                 <img id='photoProfil' src='../src/assets/images/photo.jpg' alt='photo de profil'></img>
             </div>
             <p id="invitationText">On créé ensemble ?</p>
-            <img id="welcomeDownButton" src='../src/assets/images/down-button.png' alt='bouton continuer'></img>
+            <a href='#navContainer' id="welcomeDownButton" src='../src/assets/images/down-button.png' alt='bouton continuer'></a>
         </div >
     );
 };
