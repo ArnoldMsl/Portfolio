@@ -53,6 +53,7 @@
 
 }
 
+//écran d'accueil
 
 .homeContainer {
 
@@ -61,13 +62,13 @@
   background-position: center;
   background-repeat: no-repeat;
   padding-left: 3vw;
-  margin: 3rem;
-  margin-bottom: 10vw;
+  margin: 2vw;
+  margin-bottom: 1vw;
   padding-bottom: 1vw;
 
   h1 {
     font-family: var(--primary-font);
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: 400;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
@@ -84,14 +85,14 @@
 
       h2 {
         font-family: var(--secondary-font);
-        font-size: 6rem;
+        font-size: 6vw;
         line-height: 1rem;
         text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
       }
 
       p {
         font-family: var(--primary-font);
-        font-size: 4rem;
+        font-size: 4vw;
         width: 90%;
         text-align: start;
         text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -110,12 +111,12 @@
       width: 20%;
       height: 20%;
       border-radius: 50%;
-      margin-left: 5%;
+      margin-left: 1vw;
     }
   }
 
   #invitationText {
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: 400;
     margin: 1vw;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -123,15 +124,15 @@
 
   #welcomeDownButton {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: 5vw;
     background-image: url(../src/assets/images/down-button.png);
     background-position: center;
     background-size: 100% 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
     animation: bounce 2.5s infinite;
     border-radius: 50%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -157,37 +158,51 @@
 #navContainer {
   align-items: center;
   justify-content: center;
-  margin-bottom: auto;
-  margin-top: auto;
-  border: 10px solid var(--secondary-color);
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding-top: 3vw;
+  padding-bottom: 1vw;
 
   #boxContainer {
-    height: 230px;
+    height: 14vw;
+    width: 14vw;
     background-image: url(../src/assets/images/box-closed.svg);
     background-size: 100% 100%;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+
+    &:hover {
+      background-image: url(../src/assets/images/box-open.svg);
+      width: 25vw;
+      background-position: center;
+      overflow: visible;
+    }
   }
+
 
   #navCenterRow {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 98vw;
 
     #cvContainer {
-      height: 350px;
-      width: 421px;
+      height: 20vw;
+      width: 22vw;
+      margin-left: auto;
       background-image: url(../src/assets/images/cv-closed.svg);
       background-size: contain;
       background-repeat: no-repeat;
-      background-position-x: 85%;
+      background-position: right;
+      cursor: pointer;
+
+      &:hover {
+        background-image: url(../src/assets/images/cv-open.svg);
+        overflow: visible;
+      }
     }
 
     #navText {
-      font-size: 4rem;
+      font-size: 4vw;
       font-weight: 400;
       margin: 1vw;
       text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -197,21 +212,36 @@
     }
 
     #factoryContainer {
-      height: 350px;
-      width: 421px;
+      height: 20vw;
+      width: 22vw;
+      margin-right: auto;
       background-image: url(../src/assets/images/factory-closed.svg);
       background-size: 100% 100%;
+      background-position: left;
+      overflow: visible;
+      cursor: pointer;
+
+      &:hover {
+        background-image: url(../src/assets/images/factory-open.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: visible;
+      }
     }
 
   }
 
   #warehouseContainer {
-    height: 230px;
+    height: 12vw;
     background-image: url(../src/assets/images/warehouse-closed.svg);
     background-size: 100% 100%;
     margin-left: auto;
     margin-right: auto;
-  }
+    cursor: pointer;
 
+    &:hover {
+      background-image: url(../src/assets/images/warehouse-open.svg);
+    }
+  }
 
 }
