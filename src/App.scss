@@ -209,7 +209,7 @@
       margin-left: 7vw;
       text-align: center;
       transition: transform 0.5s;
-      animation: jiggle 4s infinite;
+      animation: jiggle 6s infinite;
 
       @keyframes jiggle {
 
@@ -253,6 +253,62 @@
     &:hover {
       background-image: url(../src/assets/images/warehouse-open.svg);
     }
+  }
+}
+
+// CV
+
+.cvContainer {
+
+  display: inline-flex;
+  justify-content: space-evenly;
+  text-align: center;
+
+  #locker {
+    display: block;
+    height: 97vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .descriptionContainer {
+
+    .textCVContainer {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      border: solid 5px var(--secondary-color);
+      border-radius: 15px;
+      padding: 1vw;
+      margin: 1vw;
+
+      button {
+        display: flex;
+        width: 96%;
+        justify-content: space-between;
+        align-items: center;
+        font-family: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        color: white;
+        font-size: 2vw;
+        font-weight: bold;
+        border: none;
+        background: none;
+        text-align: center;
+        cursor: pointer;
+
+        #extendButton {
+          height: 1.5vw;
+          transition: transform 0.3s ease;
+        }
+
+        #extendButton.rotated {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
   }
 
 }
