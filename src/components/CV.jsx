@@ -33,7 +33,7 @@ const CV = () => {
             </div>
 
             <div className="descriptionContainer">
-                
+
                 <div className="textCVContainer" id="hoard">
                     <button onClick={() => toggleVisibility(0)}>
                         Avr-Juil 24 : Développeur Front [REACT] - The Hoard
@@ -52,7 +52,7 @@ const CV = () => {
                     </button>
                     {visibleSections[1] && (
                         <p>
-                            Formulation des besoins, établissement des stratégies d’achat, mise en place et suivi des consultations, négociations commerciales et contractuelles,
+                            <span>Formulation technique des besoins</span>, établissement des stratégies d’achat, mise en place et suivi des consultations, négociations commerciales et contractuelles,
                             gestion des catégories d’achats dédiées. Projets notables : <br /><br />
                             -Gestion de la <span>catégorie d'achat Digitale</span> : Prestations intelectuelles, applications Saas <br /><br />
                             -Achat de <span>Gaz</span> : Refonte de la structure contractuelle et concurrentielle en période de crise d’approvisionnement<br /><br />
@@ -67,7 +67,7 @@ const CV = () => {
                     </button>
                     {visibleSections[2] && (
                         <p>
-                            Job étudiant à temps partiel : Gestion de l'équipe, commandes fournisseurs, comptabilité basique, accueil, caisse, livraisons ponctuelles
+                            Job étudiant à temps partiel : <span>Gestion de l'équipe</span>, commandes fournisseurs, comptabilité basique, accueil, caisse, livraisons ponctuelles
                         </p>
                     )}
                 </div>
@@ -119,7 +119,7 @@ const CV = () => {
                     </button>
                     {visibleSections[6] && (
                         <p>
-                            Master II réalisé en Alternance au sein de GRDF couvrant les connaissances nécessaires au métier d'acheteur : Négociation, gestion de projet, analyse, communication
+                            Master II réalisé en <span>Alternance</span> au sein de GRDF couvrant les connaissances nécessaires au métier d'acheteur : Négociation, <span>gestion de projet</span>, analyse, communication
                         </p>
                     )}
                 </div>
