@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
         <div id="navContainer">
             <div id="boxContainer"></div>
             <div id="navCenterRow">
-                <div id="cvContainer"></div>
+                <Link to="/CV" id="cvContainer"></Link>
                 <p id="navText">On commence où ?</p>
                 <div id="factoryContainer"></div>
             </div>

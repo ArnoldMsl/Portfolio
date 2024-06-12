@@ -48,8 +48,9 @@
 
   --primary-color: #0C2D57;
   --secondary-color: #FC6736;
-  --primary-font: League-Spartan;
-  --secondary-font: Koulen;
+  --secondary-color-focus: #ad3209b8;
+  --primary-font: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --secondary-font: Koulen, League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
 }
 
@@ -263,6 +264,53 @@
   display: inline-flex;
   justify-content: space-evenly;
   text-align: center;
+  flex-wrap: wrap;
+
+  #cvButtonContainer {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+
+
+    .cvButtons {
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      background-color: var(--secondary-color);
+      width: 15vw;
+      height: 4vh;
+      border-radius: 15px;
+      padding: 0.7vw;
+      text-decoration: none;
+      font: var(--primary-font);
+      font-size: 1.5vw;
+      color: white;
+
+      box-shadow: inset -3px -3px 7px var(--secondary-color-focus),
+        inset 3px 3px 5px var(--secondary-color-focus),
+        3px 3px 10px var(--secondary-color-focus);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+      .buttonLogo {
+        width: 18%;
+      }
+
+      #linkedinIcon {
+        width: 20%;
+      }
+    }
+
+    .cvButtons:hover {
+      transform: translateY(-2px);
+      box-shadow: inset -3px -3px 7px var(--secondary-color-focus),
+        inset 3px 3px 5px var(--secondary-color-focus),
+        5px 5px 15px var(--secondary-color-focus);
+    }
+  }
 
   #locker {
     display: block;
@@ -300,7 +348,7 @@
         width: 98%;
         justify-content: space-between;
         align-items: center;
-        font-family: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font: var(--primary-font);
         color: white;
         font-size: 1.5vw;
         font-weight: bold;

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.scss'
 import Home from '../src/components/Home'
 import Nav from '../src/components/Nav'
@@ -9,11 +9,15 @@ function App() {
 
   return (
     <>
-      <div>
-        <Home />
-        <Nav />
-        <CV />
-      </div>
+      <Router>
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Nav" element={<Nav />} />
+            <Route path="/CV" element={<CV />} />
+          </Routes>
+        </div>
+      </Router>
     </>
   )
 }

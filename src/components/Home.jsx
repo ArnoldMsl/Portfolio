@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -12,7 +13,7 @@ const Home = () => {
                 <img id='photoProfil' src='../src/assets/images/photo.jpg' alt='photo de profil'></img>
             </div>
             <p id="invitationText">On construit ensemble ?</p>
-            <a href='#navContainer' id="welcomeDownButton" src='../src/assets/images/down-button.png' alt='bouton continuer'></a>
+            <Link to="/Nav" id="welcomeDownButton" src='../src/assets/images/down-button.png' alt='bouton continuer'></Link>
         </div >
     );
 };

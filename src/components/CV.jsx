@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 
+
 const CV = () => {
 
     const [visibleSections, setVisibleSections] = useState([false, false, false, false, false, false, false, false]);
@@ -14,6 +15,24 @@ const CV = () => {
 
     return (
         <div className="cvContainer">
+
+            <div id="cvButtonContainer">
+
+                <a href="https://www.linkedin.com/in/arnold-masselin-93b13912b" target="_blank" className="cvButtons">
+                    Linkedin
+                    <img src="../src/assets/images/linkedin.svg" alt="Linkedin" className="buttonLogo" id="linkedinIcon" />
+                </a>
+                <a href="https://www.linkedin.com/in/arnold-masselin-93b13912b" target="_blank" className="cvButtons">
+                    Télécharger CV
+                    <img src="../src/assets/images/download.svg" alt="télécharger CV" className="buttonLogo" />
+                </a>
+                <a href="https://github.com/ArnoldMsl" target="_blank" className="cvButtons">
+                    GitHub
+                    <img src="../src/assets/images/github.svg" alt="GitHub" className="buttonLogo" />
+                </a>
+
+            </div>
+
             <div className="descriptionContainer">
                 <div className="textCVContainer" id="hoard">
                     <button onClick={() => toggleVisibility(0)}>
