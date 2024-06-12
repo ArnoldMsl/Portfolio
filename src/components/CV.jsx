@@ -22,7 +22,7 @@ const CV = () => {
                     Linkedin
                     <img src="../src/assets/images/linkedin.svg" alt="Linkedin" className="buttonLogo" id="linkedinIcon" />
                 </a>
-                <a href="https://www.linkedin.com/in/arnold-masselin-93b13912b" target="_blank" className="cvButtons">
+                <a href="../src/assets/downloads/CV A.Masselin.pdf" download className="cvButtons">
                     Télécharger CV
                     <img src="../src/assets/images/download.svg" alt="télécharger CV" className="buttonLogo" />
                 </a>
