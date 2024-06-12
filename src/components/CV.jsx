@@ -30,10 +30,10 @@ const CV = () => {
                     GitHub
                     <img src="../src/assets/images/github.svg" alt="GitHub" className="buttonLogo" />
                 </a>
-
             </div>
 
             <div className="descriptionContainer">
+                
                 <div className="textCVContainer" id="hoard">
                     <button onClick={() => toggleVisibility(0)}>
                         Avr-Juil 24 : Développeur Front [REACT] - The Hoard
