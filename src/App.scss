@@ -164,6 +164,7 @@
   padding-bottom: 1vw;
 
   #boxContainer {
+    display: flex;
     height: 12vw;
     width: 30vw;
     background-image: url(../src/assets/images/box-closed.svg);

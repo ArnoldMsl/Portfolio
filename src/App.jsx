@@ -3,6 +3,7 @@ import './App.scss'
 import Home from '../src/components/Home'
 import Nav from '../src/components/Nav'
 import CV from '../src/components/CV'
+import Skills from '../src/components/Skills'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Nav" element={<Nav />} />
+            <Route path="/Skills" element={<Skills />} />
             <Route path="/CV" element={<CV />} />
           </Routes>
         </div>
