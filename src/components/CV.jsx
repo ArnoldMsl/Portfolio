@@ -79,9 +79,9 @@ const CV = () => {
                     {visibleSections[3] && (
                         <p>
                             Bootcamp intensif présentiel de 5 mois apprenant le métier de développeur web avec une dominante <span>PHP + SQL</span> et décernant le <span>titre RNCP développeur Web :</span><br /><br />
-                            -HTML, CSS, PHP, SQL, Javascript, API<br /><br />
-                            -Programmation orientée objet<br /><br />
-                            -Travail en équipe et en méthodologie Agile via GitHub<br /><br />
+                            -HTML, CSS, PHP, SQL, Javascript, API<br />
+                            -Programmation orientée objet<br />
+                            -Travail en équipe et en méthodologie Agile via GitHub
                         </p>
                     )}
                 </div>
