@@ -24,7 +24,7 @@ const Home = () => {
 
                 <div className="welcomeText flex flex-col 
                 justify-center items-center
-                xl:items-start">
+                md:items-start">
                     <h2 className="
                     text-5xl
                     sm:text-6xl
