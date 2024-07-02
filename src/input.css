@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'League-Spartan';
+    src: url('../src/assets/fonts/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'League-Spartan';
+    src: url('../src/assets/fonts/LeagueSpartan-ExtraBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+  }
+  
+  @font-face {
+    font-family: 'Koulen';
+    src: url('../src/assets/fonts/Koulen-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Koulen';
+    src: url('../src/assets/fonts/Koulen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  :root {
+    font-family: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    max-width: 1536px;
+  
+    color: rgba(255, 255, 255, 1);
+    background-color: var(--primary-color);
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    --primary-color: #0C2D57;
+    --secondary-color: #FC6736;
+    --secondary-color-minor: #ff7e53;
+    --secondary-color-focus: #ad3209b8;
+    --primary-font: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --secondary-font: Koulen, League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  .homeContainer {
+
+    background-image: url(../src/assets/images/background-triangle.png);
+    background-size: 93% 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  .homeContainer h1 {
+    font-family: var(--primary-font);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .homeContainer #welcomeDownButton {
+    background-image: url(../src/assets/images/down-button.png);
+    background-position: center;
+    background-size: 100% 100%;
+    cursor: pointer;
+    animation: bounce 2.5s infinite;
+  }
+
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .welcomeContainer h2 {
+    font-family: var(--secondary-font);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .welcomeContainer #invitationText {
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
