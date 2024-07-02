@@ -562,6 +562,10 @@ video {
   visibility: visible;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -578,12 +582,12 @@ video {
   margin-left: 1.5rem;
 }
 
-.mr-16 {
-  margin-right: 4rem;
-}
-
 .mr-6 {
   margin-right: 1.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-4 {
@@ -630,6 +634,10 @@ video {
   width: 2.5rem;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -638,12 +646,12 @@ video {
   flex-direction: column;
 }
 
-.items-center {
-  align-items: center;
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
-.justify-end {
-  justify-content: flex-end;
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -666,6 +674,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -791,7 +804,8 @@ video {
   cursor: pointer;
 }
 
-#boxContainer:hover {
+#boxContainer:hover,
+  #boxContainer:active {
   background-image: url(../src/assets/images/box-open.svg);
 }
 
@@ -804,8 +818,50 @@ video {
   cursor: pointer;
 }
 
-#cvContainer:hover {
+#cvContainer:hover,
+  #cvContainer:active {
   background-image: url(../src/assets/images/cv-open.svg);
+}
+
+#factoryContainer {
+  background-image: url(../src/assets/images/factory-closed.svg);
+  background-size: 100% 100%;
+  background-position: left;
+  overflow: visible;
+  cursor: pointer;
+}
+
+#factoryContainer:hover,
+  #factoryContainer:active {
+  background-image: url(../src/assets/images/factory-open.svg);
+}
+
+#warehouseContainer {
+  background-image: url(../src/assets/images/warehouse-closed.svg);
+  background-size: 100% 100%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+#warehouseContainer:hover,
+  #warehouseContainer:active {
+  background-image: url(../src/assets/images/warehouse-open.svg);
+}
+
+#navText {
+  animation: jiggle 6s infinite;
+}
+
+@keyframes jiggle {
+  0%,
+    100% {
+    transform: rotate(-2deg);
+  }
+
+  50% {
+    transform: rotate(2deg);
+  }
 }
 
 @media (max-width:640px) {
@@ -817,9 +873,43 @@ video {
   }
 
   #boxContainer {
-    background-size: auto 70%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
+  }
+
+  #boxContainerParent:active #boxContainer {
+    background-image: url(../src/assets/images/box-open.svg);
+  }
+
+  #cvContainer {
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+  }
+
+  #cvContainerParent:active #cvContainer {
+    background-image: url(../src/assets/images/cv-open.svg);
+  }
+
+  #factoryContainer {
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #factoryContainerParent:active #factoryContainer {
+    background-image: url(../src/assets/images/factory-open.svg);
+  }
+
+  #warehouseContainer {
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #warehouseContainerParent:active #warehouseContainer {
+    background-image: url(../src/assets/images/warehouse-open.svg);
   }
 }
 

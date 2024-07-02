@@ -111,7 +111,8 @@
     cursor: pointer;
   }
 
-  #boxContainer:hover {
+  #boxContainer:hover,
+  #boxContainer:active {
     background-image: url(../src/assets/images/box-open.svg);
   }
 
@@ -124,8 +125,50 @@
     cursor: pointer;
   }
 
-  #cvContainer:hover {
+  #cvContainer:hover,
+  #cvContainer:active {
     background-image: url(../src/assets/images/cv-open.svg);
+  }
+
+  #factoryContainer {
+    background-image: url(../src/assets/images/factory-closed.svg);
+    background-size: 100% 100%;
+    background-position: left;
+    overflow: visible;
+    cursor: pointer;
+  }
+  #factoryContainer:hover,
+  #factoryContainer:active {
+    background-image: url(../src/assets/images/factory-open.svg);
+  }
+
+  #warehouseContainer {
+    background-image: url(../src/assets/images/warehouse-closed.svg);
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  #warehouseContainer:hover,
+  #warehouseContainer:active {
+    background-image: url(../src/assets/images/warehouse-open.svg);
+  }
+
+  #navText {
+  animation: jiggle 6s infinite;
+  }
+
+  @keyframes jiggle {
+
+    0%,
+    100% {
+      transform: rotate(-2deg);
+    }
+
+    50% {
+      transform: rotate(2deg);
+    }
   }
 
 
@@ -140,8 +183,43 @@
   }
 
   #boxContainer {
-    background-size: auto 70%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
   }
+
+  #boxContainerParent:active #boxContainer {
+    background-image: url(../src/assets/images/box-open.svg);
+  }
+
+  #cvContainer {
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+  }
+
+  #cvContainerParent:active #cvContainer {
+    background-image: url(../src/assets/images/cv-open.svg);
+  }
+
+  #factoryContainer {
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #factoryContainerParent:active #factoryContainer {
+    background-image: url(../src/assets/images/factory-open.svg);
+  }
+
+  #warehouseContainer {
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #warehouseContainerParent:active #warehouseContainer {
+    background-image: url(../src/assets/images/warehouse-open.svg);
+  }
+  
 }
