@@ -8,33 +8,57 @@ const Home = () => {
         w-screen h-screen flex flex-col justify-center items-center
         ">
             <h1 className="
-            lg:text-5xl mb-10
+            text-3xl mb-2
+            sm:text-3xl sm:m-2
+            md:text-4xl
+            lg:text-5xl lg:mb-10
             xl:text-7xl
             ">Salut, je m'appelle</h1>
+            <img className="block rounded-full
+            h-36 mb-2
+            sm:h-32 sm:m-2
+            md:hidden"
+            id='photoProfil' src='../src/assets/images/photo.jpg' alt='photo de profil'></img>
+
             <div className="welcomeContainer inline-flex items-center">
-                <div className="welcomeText flex flex-col items-start">
+
+                <div className="welcomeText flex flex-col 
+                justify-center items-center">
                     <h2 className="
+                    text-5xl
+                    sm:text-6xl
+                    md:items-start md:text-7xl md:ml-20
                     lg:text-8xl lg:ml-28 lg:mt-10
                     xl:ml-44 xl:mt-0
                     ">ARNOLD MASSELIN</h2>
                     <p className="
-                    text-start
-                    lg:text-5xl lg:ml-28 lg:mt-10 lg:mb-10
+                    text-center
+                    text-2xl mt-4 mb-4 mr-6 ml-6
+                    sm:text-3xl sm:mt-4 sm:mb-2 sm:mr-8 sm:ml-8
+                    md:text-start md:text-4xl md:ml-20 md:mt-10 md:mb-10
+                    lg:text-5xl lg:ml-28
                     xl:text-6xl xl:ml-44
                     ">Et en tant que <span>Développeur Web,</span> je créé des trucs sur Internet</p>
                 </div>
-                <img className="block rounded-full
+                <img className="rounded-full
+                hidden
+                md:block md:h-44 md:mr-10
                 lg:h-56 lg:mr-10
                 xl:h-80 xl:m-10"
                     id='photoProfil' src='../src/assets/images/photo.jpg' alt='photo de profil'></img>
             </div>
             <p className="
-            lg:text-4xl lg:mb-6
+            text-2xl mb-4
+            sm:mb-1
+            md:text-3xl md:mb-6
+            lg:text-4xl
             xl:text-5xl"
-            id="invitationText">On construit ensemble ?</p>
+                id="invitationText">On construit ensemble ?</p>
             <Link to="/Nav" className="
-            block
-            lg:w-20 lg:h-20 rounded-full"
+            block rounded-full
+            w-10 h-10
+            md:w-16 md:h-16 
+            lg:w-20 lg:h-20"
                 id="welcomeDownButton" src='../src/assets/images/down-button.png' alt='bouton continuer'></Link>
         </div >
     );
