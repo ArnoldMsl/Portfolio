@@ -845,6 +845,10 @@ video {
     align-items: flex-start;
   }
 
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:text-start {
     text-align: start;
   }
@@ -923,8 +927,26 @@ video {
     margin-top: 0px;
   }
 
+  @media (min-width: 1280px) {
+    .xl\:xl\:ml-44 {
+      margin-left: 11rem;
+    }
+  }
+
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .xl\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
   .xl\:h-80 {
     height: 20rem;
+  }
+
+  .xl\:items-start {
+    align-items: flex-start;
   }
 
   .xl\:text-5xl {
