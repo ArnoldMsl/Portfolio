@@ -31,6 +31,7 @@ const Home = () => {
                     md:items-start md:justify-start md:text-7xl md:ml-20
                     lg:text-8xl lg:ml-28 lg:mt-10
                     xl:mt-0 xl:mb-0
+                    2xl:text-9xl
                     ">ARNOLD MASSELIN</h2>
                     <p className="
                     text-center

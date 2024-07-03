@@ -105,9 +105,11 @@
   /* Nav */
 
   #boxContainer {
+    content: "";
     background-image: url(../src/assets/images/box-closed.svg);
     background-size: 100% 100%;
     background-position: center;
+    overflow: visible;
     cursor: pointer;
   }
 
@@ -118,7 +120,7 @@
 
   #cvContainer {
     background-image: url(../src/assets/images/cv-closed.svg);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: right;
     overflow: visible;
@@ -170,7 +172,6 @@
       transform: rotate(2deg);
     }
   }
-
 
 
   @media (max-width:640px) {
