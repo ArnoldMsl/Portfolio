@@ -965,6 +965,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:m-auto {
+    margin: auto;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1015,6 +1019,18 @@ video {
 
   .md\:mr-auto {
     margin-right: auto;
+  }
+
+  .md\:ml-7 {
+    margin-left: 1.75rem;
+  }
+
+  .md\:mr-9 {
+    margin-right: 2.25rem;
+  }
+
+  .md\:ml-5 {
+    margin-left: 1.25rem;
   }
 
   .md\:block {
@@ -1099,6 +1115,10 @@ video {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:pt-\[-10\%\] {
+    padding-top: -10%;
   }
 
   .md\:text-center {
