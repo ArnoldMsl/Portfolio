@@ -33,7 +33,9 @@
   :root {
     font-family: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-    max-width: 1536px;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
   
     color: rgba(255, 255, 255, 1);
     background-color: var(--primary-color);
@@ -105,10 +107,10 @@
   /* Nav */
 
   #boxContainer {
-    content: "";
     background-image: url(../src/assets/images/box-closed.svg);
     background-size: 100% 100%;
     background-position: center;
+    background-repeat: no-repeat;
     overflow: visible;
     cursor: pointer;
   }
@@ -177,23 +179,25 @@
   @media (max-width:640px) {
 
   .navButtonSmall {
-    border-top: 2px solid var(--secondary-color-minor);
-    border-bottom: 2px solid var(--secondary-color-minor);
+    border: 2px solid var(--secondary-color-minor);
+    border-radius: 10px;
     background-color: var(--secondary-color-faded);
     box-shadow: inset 0 0 15px var(--secondary-color-faded);
   }
 
   #boxContainer {
+    background-image: url(../src/assets/images/box-closed-small.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #boxContainerParent:active #boxContainer {
-    background-image: url(../src/assets/images/box-open.svg);
+    background-image: url(../src/assets/images/box-open-small.svg);
   }
 
   #cvContainer {
+    background-image: url(../src/assets/images/cv-closed-small.svg);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: 0%;
@@ -204,23 +208,53 @@
   }
 
   #factoryContainer {
+    background-image: url(../src/assets/images/factory-closed-small.svg);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #factoryContainerParent:active #factoryContainer {
-    background-image: url(../src/assets/images/factory-open.svg);
+    background-image: url(../src/assets/images/factory-open-small.svg);
   }
 
   #warehouseContainer {
+    background-image: url(../src/assets/images/warehouse-closed-small.svg);
     background-size: 80% 80%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 20px center;
   }
 
   #warehouseContainerParent:active #warehouseContainer {
-    background-image: url(../src/assets/images/warehouse-open.svg);
+    background-image: url(../src/assets/images/warehouse-open-small.svg);
   }
-  
 }
+
+
+/* CV */
+
+.cvButtons {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  text-decoration: none;
+  font: var(--primary-font);
+  color: white;
+
+  box-shadow: inset -3px -3px 7px var(--secondary-color-focus),
+    inset 3px 3px 5px var(--secondary-color-focus),
+    3px 3px 10px var(--secondary-color-focus);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cvButtons:hover,
+.cvButtons:active {
+  transform: translateY(-2px);
+  box-shadow: inset -3px -3px 7px var(--secondary-color-focus),
+    inset 3px 3px 5px var(--secondary-color-focus),
+    5px 5px 15px var(--secondary-color-focus);
+}
+

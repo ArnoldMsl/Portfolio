@@ -60,7 +60,9 @@ const Home = () => {
             block rounded-full
             w-10 h-10
             md:w-16 md:h-16 
-            lg:w-20 lg:h-20"
+            lg:w-20 lg:h-20
+            xl:w-24 xl:h-24
+            2xl:w-28 2xl:h-28"
                 id="welcomeDownButton" src='../src/assets/images/down-button.png' alt='bouton continuer'></Link>
         </div >
     );

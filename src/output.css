@@ -582,8 +582,16 @@ video {
   margin-left: 1.5rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .mr-6 {
   margin-right: 1.5rem;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .mt-12 {
@@ -618,6 +626,10 @@ video {
   height: 2.5rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-24 {
   height: 6rem;
 }
@@ -636,6 +648,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-3\/5 {
@@ -660,6 +676,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .rounded-full {
@@ -737,7 +757,9 @@ video {
 
 :root {
   font-family: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  max-width: 1536px;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
   color: rgba(255, 255, 255, 1);
   background-color: var(--primary-color);
   font-synthesis: none;
@@ -802,10 +824,10 @@ video {
 /* Nav */
 
 #boxContainer {
-  content: "";
   background-image: url(../src/assets/images/box-closed.svg);
   background-size: 100% 100%;
   background-position: center;
+  background-repeat: no-repeat;
   overflow: visible;
   cursor: pointer;
 }
@@ -872,23 +894,25 @@ video {
 
 @media (max-width:640px) {
   .navButtonSmall {
-    border-top: 2px solid var(--secondary-color-minor);
-    border-bottom: 2px solid var(--secondary-color-minor);
+    border: 2px solid var(--secondary-color-minor);
+    border-radius: 10px;
     background-color: var(--secondary-color-faded);
     box-shadow: inset 0 0 15px var(--secondary-color-faded);
   }
 
   #boxContainer {
+    background-image: url(../src/assets/images/box-closed-small.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #boxContainerParent:active #boxContainer {
-    background-image: url(../src/assets/images/box-open.svg);
+    background-image: url(../src/assets/images/box-open-small.svg);
   }
 
   #cvContainer {
+    background-image: url(../src/assets/images/cv-closed-small.svg);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: 0%;
@@ -899,24 +923,52 @@ video {
   }
 
   #factoryContainer {
+    background-image: url(../src/assets/images/factory-closed-small.svg);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #factoryContainerParent:active #factoryContainer {
-    background-image: url(../src/assets/images/factory-open.svg);
+    background-image: url(../src/assets/images/factory-open-small.svg);
   }
 
   #warehouseContainer {
+    background-image: url(../src/assets/images/warehouse-closed-small.svg);
     background-size: 80% 80%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 20px center;
   }
 
   #warehouseContainerParent:active #warehouseContainer {
-    background-image: url(../src/assets/images/warehouse-open.svg);
+    background-image: url(../src/assets/images/warehouse-open-small.svg);
   }
+}
+
+/* CV */
+
+.cvButtons {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  text-decoration: none;
+  font: var(--primary-font);
+  color: white;
+  box-shadow: inset -3px -3px 7px var(--secondary-color-focus),
+    inset 3px 3px 5px var(--secondary-color-focus),
+    3px 3px 10px var(--secondary-color-focus);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cvButtons:hover,
+.cvButtons:active {
+  transform: translateY(-2px);
+  box-shadow: inset -3px -3px 7px var(--secondary-color-focus),
+    inset 3px 3px 5px var(--secondary-color-focus),
+    5px 5px 15px var(--secondary-color-focus);
 }
 
 @media (min-width: 640px) {
@@ -948,11 +1000,6 @@ video {
     height: 8rem;
   }
 
-  .sm\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -965,10 +1012,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:m-auto {
-    margin: auto;
-  }
-
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -981,20 +1024,32 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .md\:mb-auto {
+    margin-bottom: auto;
+  }
+
   .md\:ml-20 {
     margin-left: 5rem;
   }
 
-  .md\:ml-8 {
-    margin-left: 2rem;
+  .md\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .md\:ml-auto {
+    margin-left: auto;
   }
 
   .md\:mr-10 {
     margin-right: 2.5rem;
   }
 
-  .md\:mr-14 {
-    margin-right: 3.5rem;
+  .md\:mr-9 {
+    margin-right: 2.25rem;
+  }
+
+  .md\:mr-auto {
+    margin-right: auto;
   }
 
   .md\:mt-0 {
@@ -1009,30 +1064,6 @@ video {
     margin-top: auto;
   }
 
-  .md\:mb-auto {
-    margin-bottom: auto;
-  }
-
-  .md\:ml-auto {
-    margin-left: auto;
-  }
-
-  .md\:mr-auto {
-    margin-right: auto;
-  }
-
-  .md\:ml-7 {
-    margin-left: 1.75rem;
-  }
-
-  .md\:mr-9 {
-    margin-right: 2.25rem;
-  }
-
-  .md\:ml-5 {
-    margin-left: 1.25rem;
-  }
-
   .md\:block {
     display: block;
   }
@@ -1043,6 +1074,10 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-1\/3 {
+    height: 33.333333%;
   }
 
   .md\:h-16 {
@@ -1065,8 +1100,8 @@ video {
     height: 100vh;
   }
 
-  .md\:h-1\/3 {
-    height: 33.333333%;
+  .md\:w-1\/3 {
+    width: 33.333333%;
   }
 
   .md\:w-16 {
@@ -1089,16 +1124,8 @@ video {
     width: 100vw;
   }
 
-  .md\:w-1\/3 {
-    width: 33.333333%;
-  }
-
   .md\:flex-col {
     flex-direction: column;
-  }
-
-  .md\:content-center {
-    align-content: center;
   }
 
   .md\:items-start {
@@ -1115,10 +1142,6 @@ video {
 
   .md\:justify-center {
     justify-content: center;
-  }
-
-  .md\:pt-\[-10\%\] {
-    padding-top: -10%;
   }
 
   .md\:text-center {
@@ -1175,8 +1198,16 @@ video {
     height: 14rem;
   }
 
+  .lg\:h-72 {
+    height: 18rem;
+  }
+
   .lg\:w-20 {
     width: 5rem;
+  }
+
+  .lg\:w-72 {
+    width: 18rem;
   }
 
   .lg\:text-4xl {
@@ -1208,8 +1239,20 @@ video {
     margin-top: 0px;
   }
 
+  .xl\:h-24 {
+    height: 6rem;
+  }
+
   .xl\:h-80 {
     height: 20rem;
+  }
+
+  .xl\:w-24 {
+    width: 6rem;
+  }
+
+  .xl\:w-80 {
+    width: 20rem;
   }
 
   .xl\:text-5xl {
@@ -1229,8 +1272,30 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:h-28 {
+    height: 7rem;
+  }
+
+  .\32xl\:h-96 {
+    height: 24rem;
+  }
+
+  .\32xl\:w-28 {
+    width: 7rem;
+  }
+
+  .\32xl\:w-96 {
+    width: 24rem;
+  }
+
+  .\32xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .\32xl\:text-9xl {
     font-size: 8rem;
     line-height: 1;
   }
 }
+
