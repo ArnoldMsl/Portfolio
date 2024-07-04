@@ -193,6 +193,7 @@
   }
 
   #boxContainerParent:active #boxContainer {
+    background-size: 70% 70%;
     background-image: url(../src/assets/images/box-open-small.svg);
   }
 

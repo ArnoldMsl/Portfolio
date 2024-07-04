@@ -22,7 +22,7 @@ const Nav = () => {
                 2xl:w-96 2xl:h-96"
                     id="boxContainerParent">
                     <div className="w-3/5 h-24 md:w-full md:h-full" id="boxContainer"></div>
-                    <label className="flex text-3xl w-screen drop-shadow-sm items-center
+                    <label className="flex text-3xl w-screen justify-center *:drop-shadow-sm items-center
                     md:hidden">
                         Compétences</label>
                 </div>
@@ -94,7 +94,7 @@ const Nav = () => {
                 2xl:w-96 2xl:h-96"
                     id="warehouseContainerParent">
                     <div className="w-3/5 h-24 md:w-full md:h-full" id="warehouseContainer"></div>
-                    <label className="flex text-4xl w-screen justify-center drop-shadow-sm items-center
+                    <label className="flex text-4xl w-screen drop-shadow-sm items-center
                     md:hidden">
                         Projets</label>
                 </div>
