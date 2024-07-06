@@ -234,16 +234,39 @@
 
 /* CV */
 
+.cvContainer {
+  display: grid;
+  grid-template-areas:
+  'cvButtonsContainer'
+  'CVexperience'
+  'hoard'
+  'numerilis'
+  'grdf'
+  'genci'
+  'sushis'
+  'CVformations'
+  'wild'
+  'kedge'
+  'nanterre';
+  gap: 10px;
+}
+
+#cvButtonsContainer { grid-area: cvButtonsContainer; }
+#CVexperience { grid-area: CVexperience; }
+#hoard { grid-area: hoard; }
+#numerilis { grid-area: numerilis; }
+#grdf { grid-area: grdf; }
+#genci { grid-area: genci; }
+#sushis { grid-area: sushis; }
+#CVformations { grid-area: CVformations; }
+#wild { grid-area: wild; border-color: aqua; }
+#kedge { grid-area: kedge; border-color: aqua; }
+#nanterre { grid-area: nanterre; border-color: aqua; }
+
 .cvButtons {
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
   background-color: var(--secondary-color);
-  border-radius: 15px;
   text-decoration: none;
   font: var(--primary-font);
-  color: white;
 
   box-shadow: inset -3px -3px 7px var(--secondary-color-focus),
     inset 3px 3px 5px var(--secondary-color-focus),
@@ -259,3 +282,43 @@
     5px 5px 15px var(--secondary-color-focus);
 }
 
+.textCVContainer {
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 5px var(--secondary-color);
+  border-radius: 15px;
+}
+
+button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: var(--primary-font);
+  font-weight: bold;
+  border: none;
+  background: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 2%;
+}
+
+#extendButton {
+  display: block;
+  max-height: 7vw;
+  transition: transform 0.3s ease;
+  margin: 2%;
+}
+
+#extendButton.rotated {
+  transform: rotate(180deg);
+}
+
+#CvTextFocus {
+  font-weight: bold;
+}
