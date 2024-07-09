@@ -618,6 +618,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-\[-1\%\] {
+  margin-top: -1%;
+}
+
 .block {
   display: block;
 }
@@ -687,6 +691,10 @@ video {
   width: 25%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-3\/5 {
   width: 60%;
 }
@@ -708,14 +716,6 @@ video {
   width: 100vw;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -730,6 +730,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -764,9 +768,17 @@ video {
   border-style: solid;
 }
 
+.border-secondaryMinor {
+  border-color: var(--secondary-color-minor);
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .text-center {
@@ -1201,6 +1213,33 @@ button {
 
 #CvTextFocus {
   font-weight: bold;
+}
+
+/* Skills */
+
+@media (min-width:640px) {
+  .skillsGridContainer {
+    display: grid;
+    grid-template-rows: auto;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-areas: 
+    'engineContainer tripodContainer toolboxContainer';
+    justify-content: center;
+  }
+}
+
+#engineContainer {
+  grid-area: engineContainer;
+}
+
+#tripodContainer {
+  grid-area: tripodContainer;
+}
+
+#toolboxContainer {
+  grid-area: toolboxContainer;
 }
 
 .\*\:drop-shadow-sm > * {
