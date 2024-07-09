@@ -63,6 +63,10 @@
 
   }
 
+  #photoProfil {
+    border: 5px solid var(--primary-color);
+  }
+
   .homeContainer h1 {
     font-family: var(--primary-font);
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -251,6 +255,20 @@
   gap: 10px;
 }
 
+@media (min-width:640px) {
+  .cvContainer {
+    display: grid;
+    grid-template-areas:
+    'cvButtonsContainer cvButtonsContainer cvButtonsContainer'
+    'hoard locker numerilis'
+    'grdf locker genci'
+    'sushis locker wild'
+    'kedge locker nanterre';
+    gap: 10px;
+  }
+}
+
+#locker {grid-area: locker; }
 #cvButtonsContainer { grid-area: cvButtonsContainer; }
 #CVexperience { grid-area: CVexperience; }
 #hoard { grid-area: hoard; }
@@ -284,7 +302,8 @@
 
 .textCVContainer {
   display: flex;
-  width: 90%;
+  width: 95%;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;

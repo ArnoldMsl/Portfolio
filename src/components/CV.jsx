@@ -14,7 +14,8 @@ const CV = () => {
     };
 
     return (
-        <div className="grid grid-cols-1 justify-evenly text-center
+        <div className="grid grid-cols-1 justify-evenly text-center h-screen
+        md:grid-cols-3 md:justify-center
         cvContainer">
 
             <div className="w-screen inline-flex justify-evenly text-center mt-2"
@@ -23,6 +24,7 @@ const CV = () => {
                 <a href="https://www.linkedin.com/in/arnold-masselin-93b13912b" target="_blank" className="
                 flex justify-center items-center text-center 
                 w-4/12 h-8 ml-1 rounded-md text-xs
+                md:w-3/12 md:text-xl
                 cvButtons">
                     Linkedin
                     <img src="../src/assets/images/linkedin.svg" alt="Linkedin" className="w-6 ml-1 buttonLogo" id="linkedinIcon" />
@@ -30,6 +32,7 @@ const CV = () => {
                 <a href="../src/assets/downloads/CV A.Masselin.pdf" download className="
                 flex justify-center items-center text-center 
                 w-3/12 h-8 ml-1 rounded-md text-xs
+                md:text-xl
                 cvButtons">
                     CV
                     <img src="../src/assets/images/download.svg" alt="télécharger CV" className="w-6 ml-1 buttonLogo" />
@@ -37,6 +40,7 @@ const CV = () => {
                 <a href="https://github.com/ArnoldMsl" target="_blank" className="
                 flex justify-center items-center text-center 
                 w-3/12 h-8 ml-1 rounded-md text-xs
+                md:text-xl
                 cvButtons">
                     GitHub
                     <img src="../src/assets/images/github.svg" alt="GitHub" className="w-6 ml-1 buttonLogo" />
@@ -103,7 +107,7 @@ const CV = () => {
                 )}
             </div>
 
-            <img className="hidden"
+            <img className="hidden md:block md:h-3/6 md:mr-auto md:ml-auto"
                 id="locker" src='../src/assets/images/locker.png' alt="image d'un casier de vestiaire"></img>
 
 
