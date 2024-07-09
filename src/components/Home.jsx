@@ -58,7 +58,7 @@ const Home = () => {
                 id="invitationText">On construit ensemble ?</p>
             <Link to="/Nav" className="
             block rounded-full
-            w-10 h-10
+            w-12 h-12
             md:w-16 md:h-16 
             lg:w-20 lg:h-20
             xl:w-24 xl:h-24

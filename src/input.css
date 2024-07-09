@@ -238,34 +238,38 @@
 
 /* CV */
 
-.cvContainer {
-  display: grid;
-  grid-template-areas:
-  'cvButtonsContainer'
+@media (min-width:640px) {
+  .cvContainer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 30% 20% 30%; 
+    grid-template-areas: 
+    'cvButtonsContainer cvButtonsContainer cvButtonsContainer'
+    'cvLeftContainer locker cvRightContainer';
+    row-gap: 10px;
+  }
+}
+
+.cvLeftContainer {
+  grid-template-rows: auto;
+  grid-template-areas: 
   'CVexperience'
   'hoard'
   'numerilis'
   'grdf'
   'genci'
-  'sushis'
+  'sushis';
+  row-gap: 10px;
+}
+
+.cvRightContainer {
+  grid-template-rows: auto;
+  grid-template-areas: 
   'CVformations'
   'wild'
   'kedge'
   'nanterre';
-  gap: 10px;
-}
-
-@media (min-width:640px) {
-  .cvContainer {
-    display: grid;
-    grid-template-areas:
-    'cvButtonsContainer cvButtonsContainer cvButtonsContainer'
-    'hoard locker numerilis'
-    'grdf locker genci'
-    'sushis locker wild'
-    'kedge locker nanterre';
-    gap: 10px;
-  }
+  row-gap: 10px;
 }
 
 #locker {grid-area: locker; }
@@ -280,6 +284,8 @@
 #wild { grid-area: wild; border-color: aqua; }
 #kedge { grid-area: kedge; border-color: aqua; }
 #nanterre { grid-area: nanterre; border-color: aqua; }
+.cvLeftContainer { grid-area: cvLeftContainer;}
+.cvRightContainer { grid-area: cvRightContainer;}
 
 .cvButtons {
   background-color: var(--secondary-color);
