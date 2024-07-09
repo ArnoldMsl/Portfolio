@@ -14,8 +14,7 @@ const CV = () => {
     };
 
     return (
-        <div className="flex-col justify-center text-center h-screen w-screen
-        md:grid md:grid-cols-3
+        <div className="justify-center text-center h-screen w-screen
         cvContainer">
 
             <div className="w-screen inline-flex justify-evenly text-center mt-2"
@@ -123,7 +122,7 @@ const CV = () => {
 
             {/* Image du casier */}
 
-            <img className="hidden md:block md:mr-auto md:ml-auto w-1/2"
+            <img className="hidden md:block md:mr-auto md:ml-auto w-3/4"
                 id="locker" src='../src/assets/images/locker.png' alt="image d'un casier de vestiaire"></img>
 
             {/* Grid de droite : formations */}

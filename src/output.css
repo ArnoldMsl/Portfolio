@@ -699,8 +699,21 @@ video {
   width: 1.5rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-screen {
   width: 100vw;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .grid-cols-1 {
@@ -1040,7 +1053,7 @@ video {
   .cvContainer {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 30% 20% 30%;
+    grid-template-columns: auto 20% auto;
     grid-template-areas: 
     'cvButtonsContainer cvButtonsContainer cvButtonsContainer'
     'cvLeftContainer locker cvRightContainer';
@@ -1296,10 +1309,6 @@ button {
     display: flex;
   }
 
-  .md\:grid {
-    display: grid;
-  }
-
   .md\:hidden {
     display: none;
   }
@@ -1354,10 +1363,6 @@ button {
 
   .md\:w-screen {
     width: 100vw;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-col {

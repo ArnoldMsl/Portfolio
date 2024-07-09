@@ -242,7 +242,7 @@
   .cvContainer {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 30% 20% 30%; 
+    grid-template-columns: auto 20% auto; 
     grid-template-areas: 
     'cvButtonsContainer cvButtonsContainer cvButtonsContainer'
     'cvLeftContainer locker cvRightContainer';
