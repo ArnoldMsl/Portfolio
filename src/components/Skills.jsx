@@ -1,38 +1,104 @@
 import React from 'react';
-import { useState } from 'react';
 
 
 
 const Skills = () => {
 
-  const [visibleSections, setVisibleSections] = useState([false, false, false, false, false, false, false, false]);
-
-  const toggleVisibility = (index) => {
-    setVisibleSections((prevVisibleSections) =>
-      prevVisibleSections.map((visible, i) => (i === index ? !visible : visible))
-    );
-  };
-
   return (
-    <div className="flex flex-col w-screen h-screen justify-center items-center text-center">
+    <div className="flex flex-col w-screen h-screen justify-end items-center text-center">
       <h1 className="
-            border-white text-4xl rounded-lg border-4 border-solid w-fit ml-auto mr-auto mt-3 p-3">Compétences
+            border-white text-4xl rounded-lg border-4 border-solid w-fit mt-auto p-3 mb-7">Compétences
       </h1>
 
       <div className="mr-auto ml-auto w-screen skillsGridContainer">
 
-        <div id="engineContainer">
-          <div className="flex-col justify-end border-secondaryMinor rounded-lg border-4 border-solid">blablabla</div>
-          <img className="mr-auto ml-auto" src='../src/assets/images/Skills_icons/engine.svg' alt="image d'un moteur"></img>
+        {/* Back-End */}
+
+        <div className="flex flex-col justify-end" id="engineContainer">
+          <div className="flex-col justify-end border-secondaryMinor rounded-lg border-4 border-solid p-4">
+            <p className="w-5/6 text-3xl lg:text-4xl ml-auto mr-auto">Back-End</p>
+            <p className="w-full lg:text-lg ml-auto mr-auto">Le Back-End correspond au "moteur" de votre site ou application :
+              Il permet de stocker et traiter les données de vos utilisateurs</p>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">SQL</p>
+              <img className="w-14 bg-slate-300 rounded-lg" src='../src/assets/images/Skills_icons/logos/mysql.png' alt='logo mysql'></img>
+            </div>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">PHP</p>
+              <img className="w-14" src='../src/assets/images/Skills_icons/logos/PHP.png' alt='logo php'></img>
+            </div>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">Java</p>
+              <img className="w-14 bg-slate-300 rounded-lg" src='../src/assets/images/Skills_icons/logos/java.svg' alt='logo java'></img>
+            </div>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">Symfony</p>
+              <img className="w-14 bg-slate-300 rounded-full" src='../src/assets/images/Skills_icons/logos/symfony.svg' alt='logo symfony'></img>
+            </div>
+          </div>
+          <img className="mr-auto ml-auto" id="engineIcon" src='../src/assets/images/Skills_icons/engine.svg' alt="image d'un moteur"></img>
         </div>
 
-        <div id="tripodContainer">
-          <div className="flex-col justify-end border-secondaryMinor rounded-lg border-4 border-solid">blablabla 2</div>
+        {/* Front-End */}
+
+        <div className="flex flex-col justify-end" id="tripodContainer">
+          <div className="flex-col justify-end border-secondaryMinor rounded-lg border-4 border-solid p-4">
+
+            <p className="w-5/6 text-3xl lg:text-4xl ml-auto mr-auto">Front-End</p>
+            <p className="w-full lg:text-lg ml-auto mr-auto">Le Front-End correspond à la vue de votre application ou site :
+              ce que l'utilisateur va voir affiché sur son écran</p>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">HTML</p>
+              <img className="w-14" src='../src/assets/images/Skills_icons/logos/HTML.png' alt='logo html'></img>
+            </div>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">CSS</p>
+              <img className="w-14" src='../src/assets/images/Skills_icons/logos/CSS.png' alt='logo CSS'></img>
+            </div>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">JavaScript</p>
+              <img className="w-14" src='../src/assets/images/Skills_icons/logos/js.png' alt='logo Javascript'></img>
+            </div>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">React</p>
+              <img className="w-14" src='../src/assets/images/Skills_icons/logos/React.png' alt='logo React'></img>
+            </div>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">Tailwind CSS</p>
+              <img className="w-14" src='../src/assets/images/Skills_icons/logos/Tailwind.svg' alt='logo Tailwind'></img>
+            </div>
+          </div>
+
           <img className="mr-auto ml-auto mt-[-1%]" src='../src/assets/images/Skills_icons/tripod.svg' alt="image d'un trépied d'architecte"></img>
         </div>
 
-        <div id="toolboxContainer">
-          <div className="flex-col justify-end border-secondaryMinor rounded-lg border-4 border-solid">blablabla 3</div>
+        {/* Outils */}
+
+        <div className="flex flex-col justify-end" id="toolboxContainer">
+          <div className="flex-col justify-end border-secondaryMinor rounded-lg border-4 border-solid p-4">
+
+            <p className="w-5/6 text-3xl lg:text-4xl ml-auto mr-auto">Outils et méthodologie</p>
+            <p className="w-full lg:text-lg ml-auto mr-auto">Une petite sélection d'outils que j'ai l'habitude d'utiliser,
+              n'hésitez pas à m'en faire découvrir de nouveaux !
+            </p>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">Méthode Agile</p>
+              <img className="w-14 rounded-full" src='../src/assets/images/Skills_icons/logos/agile.jpg' alt='logo méthodologie agile'></img>
+            </div>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">GitHub</p>
+              <img className="w-14" src='../src/assets/images/general_icons/github.svg' alt='logo github'></img>
+            </div>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">Figma</p>
+              <img className="w-14" src='../src/assets/images/Skills_icons/logos/figma.png' alt='logo Figma'></img>
+            </div>
+            <div className="inline-flex w-full justify-between items-center pl-14 pr-14 mb-2">
+              <p className="w-4/8 text-3xl lg:text-4xl">Open AI</p>
+              <img className="w-14 rounded-full" src='../src/assets/images/Skills_icons/logos/OpenAI.jpg' alt='logo Open AI'></img>
+            </div>
+          </div>
+
           <img className="mr-auto ml-auto" src='../src/assets/images/Skills_icons/toolbox.svg' alt="image d'une boite à outils"></img>
         </div>
       </div>

@@ -366,3 +366,19 @@ button {
 #engineContainer { grid-area: engineContainer; }
 #tripodContainer { grid-area: tripodContainer; }
 #toolboxContainer { grid-area: toolboxContainer; }
+
+#engineIcon:hover {
+  animation: shake 0.2s infinite;
+  }
+
+  @keyframes shake {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-1px);
+    }
+  }
