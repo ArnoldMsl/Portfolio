@@ -26,7 +26,7 @@ const CV = () => {
                 md:w-3/12 md:text-xl
                 cvButtons">
                     Linkedin
-                    <img src="../src/assets/images/linkedin.svg" alt="Linkedin" className="w-6 ml-1 buttonLogo" id="linkedinIcon" />
+                    <img src="../src/assets/images/general_icons/linkedin.svg" alt="Linkedin" className="w-6 ml-1 buttonLogo" id="linkedinIcon" />
                 </a>
                 <a href="../src/assets/downloads/CV A.Masselin.pdf" download className="
                 flex justify-center items-center text-center 
@@ -34,7 +34,7 @@ const CV = () => {
                 md:text-xl
                 cvButtons">
                     CV
-                    <img src="../src/assets/images/download.svg" alt="télécharger CV" className="w-6 ml-1 buttonLogo" />
+                    <img src="../src/assets/images/general_icons/download.svg" alt="télécharger CV" className="w-6 ml-1 buttonLogo" />
                 </a>
                 <a href="https://github.com/ArnoldMsl" target="_blank" className="
                 flex justify-center items-center text-center 
@@ -42,7 +42,7 @@ const CV = () => {
                 md:text-xl
                 cvButtons">
                     GitHub
-                    <img src="../src/assets/images/github.svg" alt="GitHub" className="w-6 ml-1 buttonLogo" />
+                    <img src="../src/assets/images/general_icons/github.svg" alt="GitHub" className="w-6 ml-1 buttonLogo" />
                 </a>
             </div>
 
@@ -56,7 +56,7 @@ const CV = () => {
                 <div className="lg:text-xl textCVContainer" id="hoard">
                     <button onClick={() => toggleVisibility(0)}>
                         Avr-Juil 24 : Développeur Front [REACT] - The Hoard
-                        <img id="extendButton" src='../src/assets/images/extend-button.png' alt="étendre le texte" className={visibleSections[0] ? 'rotated' : ''}></img>
+                        <img id="extendButton" src='../src/assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[0] ? 'rotated' : ''}></img>
                     </button>
                     {visibleSections[0] && (
                         <p>
@@ -68,7 +68,7 @@ const CV = () => {
                 <div className="lg:text-xl textCVContainer" id="numerilis">
                     <button onClick={() => toggleVisibility(4)}>
                         Fev - Avr 24 : Développeur Back [JAVA + SQL] - Numerilis
-                        <img id="extendButton" src='../src/assets/images/extend-button.png' alt="étendre le texte" className={visibleSections[4] ? 'rotated' : ''}></img>
+                        <img id="extendButton" src='../src/assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[4] ? 'rotated' : ''}></img>
                     </button>
                     {visibleSections[4] && (
                         <p>
@@ -80,7 +80,7 @@ const CV = () => {
                 <div className="lg:text-xl textCVContainer" id="grdf">
                     <button onClick={() => toggleVisibility(1)}>
                         2018 - 23 : Acheteur - GRDF
-                        <img id="extendButton" src='../src/assets/images/extend-button.png' alt="étendre le texte" className={visibleSections[1] ? 'rotated' : ''}></img>
+                        <img id="extendButton" src='../src/assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[1] ? 'rotated' : ''}></img>
                     </button>
                     {visibleSections[1] && (
                         <p>
@@ -96,7 +96,7 @@ const CV = () => {
                 <div className="lg:text-xl textCVContainer" id="genci">
                     <button onClick={() => toggleVisibility(5)}>
                         Avr - Juin 14 : Stagiaire Projets Européens - GENCI
-                        <img id="extendButton" src='../src/assets/images/extend-button.png' alt="étendre le texte" className={visibleSections[5] ? 'rotated' : ''}></img>
+                        <img id="extendButton" src='../src/assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[5] ? 'rotated' : ''}></img>
                     </button>
                     {visibleSections[5] && (
                         <p>
@@ -110,7 +110,7 @@ const CV = () => {
                 <div className="lg:text-xl textCVContainer" id="sushis">
                     <button onClick={() => toggleVisibility(2)}>
                         2013 - 15 : Reponsable Restaurant - Pop sushis
-                        <img id="extendButton" src='../src/assets/images/extend-button.png' alt="étendre le texte" className={visibleSections[2] ? 'rotated' : ''}></img>
+                        <img id="extendButton" src='../src/assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[2] ? 'rotated' : ''}></img>
                     </button>
                     {visibleSections[2] && (
                         <p>
@@ -123,7 +123,7 @@ const CV = () => {
             {/* Image du casier */}
 
             <img className="hidden md:block md:mr-auto md:ml-auto w-3/4"
-                id="locker" src='../src/assets/images/locker.png' alt="image d'un casier de vestiaire"></img>
+                id="locker" src='../src/assets/images/background/locker.png' alt="image d'un casier de vestiaire"></img>
 
             {/* Grid de droite : formations */}
 
@@ -137,7 +137,7 @@ const CV = () => {
                 <div className="lg:text-xl textCVContainer" id="wild">
                     <button onClick={() => toggleVisibility(3)}>
                         Sept - Fev 24 Formation développeur Web PHP - Wild Code School
-                        <img id="extendButton" src='../src/assets/images/extend-button.png' alt="étendre le texte" className={visibleSections[3] ? 'rotated' : ''}></img>
+                        <img id="extendButton" src='../src/assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[3] ? 'rotated' : ''}></img>
                     </button>
                     {visibleSections[3] && (
                         <p>
@@ -152,7 +152,7 @@ const CV = () => {
                 <div className="lg:text-xl textCVContainer" id="kedge">
                     <button onClick={() => toggleVisibility(6)}>
                         2018-19 Master 2 Management des achats - Kedge
-                        <img id="extendButton" src='../src/assets/images/extend-button.png' alt="étendre le texte" className={visibleSections[6] ? 'rotated' : ''}></img>
+                        <img id="extendButton" src='../src/assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[6] ? 'rotated' : ''}></img>
                     </button>
                     {visibleSections[6] && (
                         <p>
@@ -163,7 +163,7 @@ const CV = () => {
                 <div className="lg:text-xl textCVContainer" id="nanterre">
                     <button onClick={() => toggleVisibility(7)}>
                         2011-17 Master II Droit de l'Économie - Nanterre
-                        <img id="extendButton" src='../src/assets/images/extend-button.png' alt="étendre le texte" className={visibleSections[7] ? 'rotated' : ''}></img>
+                        <img id="extendButton" src='../src/assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[7] ? 'rotated' : ''}></img>
                     </button>
                     {visibleSections[7] && (
                         <p>

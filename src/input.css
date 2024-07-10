@@ -56,7 +56,7 @@
 
   .homeContainer {
 
-    background-image: url(../src/assets/images/background-triangle.png);
+    background-image: url(../src/assets/images/background/background-triangle.png);
     background-size: 93% 90%;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@
   }
 
   .homeContainer #welcomeDownButton {
-    background-image: url(../src/assets/images/down-button.png);
+    background-image: url(../src/assets/images/general_icons/down-button.png);
     background-position: center;
     background-size: 100% 100%;
     cursor: pointer;
@@ -111,7 +111,7 @@
   /* Nav */
 
   #boxContainer {
-    background-image: url(../src/assets/images/box-closed.svg);
+    background-image: url(../src/assets/images/Nav_icons/box-closed.svg);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,11 +121,11 @@
 
   #boxContainer:hover,
   #boxContainer:active {
-    background-image: url(../src/assets/images/box-open.svg);
+    background-image: url(../src/assets/images/Nav_icons/box-open.svg);
   }
 
   #cvContainer {
-    background-image: url(../src/assets/images/cv-closed.svg);
+    background-image: url(../src/assets/images/Nav_icons/cv-closed.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -135,11 +135,11 @@
 
   #cvContainer:hover,
   #cvContainer:active {
-    background-image: url(../src/assets/images/cv-open.svg);
+    background-image: url(../src/assets/images/Nav_icons/cv-open.svg);
   }
 
   #factoryContainer {
-    background-image: url(../src/assets/images/factory-closed.svg);
+    background-image: url(../src/assets/images/Nav_icons/factory-closed.svg);
     background-size: 100% 100%;
     background-position: left;
     overflow: visible;
@@ -147,11 +147,11 @@
   }
   #factoryContainer:hover,
   #factoryContainer:active {
-    background-image: url(../src/assets/images/factory-open.svg);
+    background-image: url(../src/assets/images/Nav_icons/factory-open.svg);
   }
 
   #warehouseContainer {
-    background-image: url(../src/assets/images/warehouse-closed.svg);
+    background-image: url(../src/assets/images/Nav_icons/warehouse-closed.svg);
     background-size: 100% 100%;
     margin-left: auto;
     margin-right: auto;
@@ -160,7 +160,7 @@
 
   #warehouseContainer:hover,
   #warehouseContainer:active {
-    background-image: url(../src/assets/images/warehouse-open.svg);
+    background-image: url(../src/assets/images/Nav_icons/warehouse-open.svg);
   }
 
   #navText {
@@ -190,7 +190,7 @@
   }
 
   #boxContainer {
-    background-image: url(../src/assets/images/box-closed-small.svg);
+    background-image: url(../src/assets/images/Nav_icons/box-closed-small.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -198,40 +198,40 @@
 
   #boxContainerParent:active #boxContainer {
     background-size: 70% 70%;
-    background-image: url(../src/assets/images/box-open-small.svg);
+    background-image: url(../src/assets/images/Nav_icons/box-open-small.svg);
   }
 
   #cvContainer {
-    background-image: url(../src/assets/images/cv-closed-small.svg);
+    background-image: url(../src/assets/images/Nav_icons/cv-closed-small.svg);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: 0%;
   }
 
   #cvContainerParent:active #cvContainer {
-    background-image: url(../src/assets/images/cv-open.svg);
+    background-image: url(../src/assets/images/Nav_icons/cv-open.svg);
   }
 
   #factoryContainer {
-    background-image: url(../src/assets/images/factory-closed-small.svg);
+    background-image: url(../src/assets/images/Nav_icons/factory-closed-small.svg);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #factoryContainerParent:active #factoryContainer {
-    background-image: url(../src/assets/images/factory-open-small.svg);
+    background-image: url(../src/assets/images/Nav_icons/factory-open-small.svg);
   }
 
   #warehouseContainer {
-    background-image: url(../src/assets/images/warehouse-closed-small.svg);
+    background-image: url(../src/assets/images/Nav_icons/warehouse-closed-small.svg);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: 20px center;
   }
 
   #warehouseContainerParent:active #warehouseContainer {
-    background-image: url(../src/assets/images/warehouse-open-small.svg);
+    background-image: url(../src/assets/images/Nav_icons/warehouse-open-small.svg);
   }
 }
 

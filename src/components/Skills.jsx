@@ -23,17 +23,17 @@ const Skills = () => {
 
         <div id="engineContainer">
           <div className="flex-col justify-end border-secondaryMinor rounded-lg border-4 border-solid">blablabla</div>
-          <img className="mr-auto ml-auto" src='../src/assets/images/engine.svg' alt="image d'un moteur"></img>
+          <img className="mr-auto ml-auto" src='../src/assets/images/Skills_icons/engine.svg' alt="image d'un moteur"></img>
         </div>
 
         <div id="tripodContainer">
           <div className="flex-col justify-end border-secondaryMinor rounded-lg border-4 border-solid">blablabla 2</div>
-          <img className="mr-auto ml-auto mt-[-1%]" src='../src/assets/images/tripod.svg' alt="image d'un trépied d'architecte"></img>
+          <img className="mr-auto ml-auto mt-[-1%]" src='../src/assets/images/Skills_icons/tripod.svg' alt="image d'un trépied d'architecte"></img>
         </div>
 
         <div id="toolboxContainer">
           <div className="flex-col justify-end border-secondaryMinor rounded-lg border-4 border-solid">blablabla 3</div>
-          <img className="mr-auto ml-auto" src='../src/assets/images/toolbox.svg' alt="image d'une boite à outils"></img>
+          <img className="mr-auto ml-auto" src='../src/assets/images/Skills_icons/toolbox.svg' alt="image d'une boite à outils"></img>
         </div>
       </div>
 
