@@ -50,7 +50,7 @@ const CV = () => {
             cvLeftContainer">
 
                 <p className="
-            border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-3"
+            border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-3 md:mt-0"
                     id="CVexperience">Expériences</p>
 
                 <div className="lg:text-xl textCVContainer" id="hoard">
@@ -131,7 +131,7 @@ const CV = () => {
             cvRightContainer">
 
                 <p className="
-            border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-3"
+            border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-3 md:mt-0"
                     id="CVformations">Formations</p>
 
                 <div className="lg:text-xl textCVContainer" id="wild">

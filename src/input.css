@@ -259,7 +259,7 @@
   .cvContainer {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: auto 20% auto; 
+    grid-template-columns: 39% 20% 39%; 
     grid-template-areas: 
     'cvButtonsContainer cvButtonsContainer cvButtonsContainer'
     'cvLeftContainer locker cvRightContainer';
@@ -326,7 +326,7 @@
 
 .textCVContainer {
   display: flex;
-  width: 95%;
+  width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
