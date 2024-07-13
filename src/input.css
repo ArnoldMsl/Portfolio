@@ -110,6 +110,23 @@
 
   /* Nav */
 
+  #navContainer {
+    display: grid;
+    grid-template-columns: 28% 42% 28%;
+    grid-template-areas: 
+    'warehouseGridContainer navText skillsGridContainer'
+    'CVGridContainer navText ContactGridContainer'
+    ; 
+    row-gap: 10px;
+    overflow-y: auto;
+  }
+
+  #skillsGridContainer {grid-area: skillsGridContainer; }
+  #CVGridContainer {grid-area: CVGridContainer; }
+  #navText {grid-area: navText; }
+  #ContactGridContainer {grid-area: ContactGridContainer; }
+  #warehouseGridContainer {grid-area: warehouseGridContainer; }
+
   #boxContainer {
     background-image: url(../src/assets/images/Nav_icons/box-closed.svg);
     background-size: 100% 100%;
@@ -163,7 +180,7 @@
     background-image: url(../src/assets/images/Nav_icons/warehouse-open.svg);
   }
 
-  #navText {
+  #navCatchPhrase {
   animation: jiggle 6s infinite;
   }
 
