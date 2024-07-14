@@ -17,7 +17,7 @@ const CV = () => {
         <div className="justify-center text-center h-screen w-screen
         cvContainer">
 
-            <div className="w-screen inline-flex justify-evenly text-center mt-2"
+            <div className="w-11/12 inline-flex justify-evenly text-center mt-2 mr-auto ml-auto"
                 id="cvButtonsContainer">
 
                 <a href="https://www.linkedin.com/in/arnold-masselin-93b13912b" target="_blank" className="

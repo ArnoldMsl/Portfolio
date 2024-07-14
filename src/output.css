@@ -744,10 +744,6 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -990,6 +986,22 @@ video {
     ;
   row-gap: 10px;
   overflow-y: auto;
+}
+
+@media (max-width:768px) {
+  #navContainer {
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-areas: 
+      'navText'
+      'warehouseGridContainer'
+      'skillsGridContainer'
+      'CVGridContainer'
+      'ContactGridContainer'
+      ;
+    row-gap: 10px;
+    overflow-y: auto;
+  }
 }
 
 #skillsGridContainer {

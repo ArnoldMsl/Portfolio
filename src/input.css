@@ -121,6 +121,22 @@
     overflow-y: auto;
   }
 
+  @media (max-width:768px) {
+    #navContainer {
+      display: grid;
+      grid-template-columns: 95%;
+      grid-template-areas: 
+      'navText'
+      'warehouseGridContainer'
+      'skillsGridContainer'
+      'CVGridContainer'
+      'ContactGridContainer'
+      ; 
+      row-gap: 10px;
+      overflow-y: auto;
+    }
+  }
+
   #skillsGridContainer {grid-area: skillsGridContainer; }
   #CVGridContainer {grid-area: CVGridContainer; }
   #navText {grid-area: navText; }

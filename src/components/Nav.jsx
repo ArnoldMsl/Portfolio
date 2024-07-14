@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
-        <div className="grid grid-cols-3 h-screen w-screen justify-center items-center self-center
+        <div className="h-screen w-screen justify-center items-center self-center
         "
             id="navContainer">
 
