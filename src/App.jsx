@@ -4,6 +4,7 @@ import Home from '../src/components/Home'
 import Nav from '../src/components/Nav'
 import CV from '../src/components/CV'
 import Skills from '../src/components/Skills'
+import Timeline from '../src/components/Timeline'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/Nav" element={<Nav />} />
             <Route path="/Skills" element={<Skills />} />
             <Route path="/CV" element={<CV />} />
+            <Route path="/Timeline" element={<Timeline />} />
           </Routes>
         </div>
       </Router>
