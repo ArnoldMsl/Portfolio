@@ -431,3 +431,10 @@ button {
       transform: translateY(-1px);
     }
   }
+
+  /* Timeline */
+
+  span.vertical-timeline-element-date {
+    color: white !important;
+  }
+

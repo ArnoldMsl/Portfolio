@@ -788,6 +788,10 @@ video {
   border-radius: 0.375rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-4 {
   border-width: 4px;
 }
@@ -1360,6 +1364,12 @@ button {
   }
 }
 
+/* Timeline */
+
+span.vertical-timeline-element-date {
+  color: white !important;
+}
+
 @media (min-width: 640px) {
   .sm\:m-2 {
     margin: 0.5rem;
@@ -1736,3 +1746,4 @@ button {
     line-height: 1;
   }
 }
+
