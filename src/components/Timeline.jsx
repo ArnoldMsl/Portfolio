@@ -9,15 +9,20 @@ const Timeline = () => {
         <>
             <div className="w-screen flex flex-col">
 
-                <div className="flex flex-col justify-center items-center text-center border-white rounded-lg border-4 border-solid ml-auto mr-auto mt-3 p-3 w-1/2
-            text-xl timelineIntroductionContainer">
+                <div className="flex flex-col justify-center items-center text-center  ml-auto mr-auto
+                p-3 mt-3 w-4/6
+                xl:w-1/2 md:border-white md:rounded-lg md:border-4 md:border-solid
+                text-xl timelineIntroductionContainer">
                     <p>Bienvenue sur ma Timeline qui retrace l'histoire de mon rapport à la technique et l'informatique ! <br />
                         Elle vous permettra de mieux comprendre mon attrait pour ces sujets. Si vous souhaitez avoir accès à plus de détails,
                         je vous invite à visiter les pages </p>
-                    <Link to="/CV" className="text-secondaryMinor underline">CV</Link>
-                    <Link to="/Skills" className="text-secondaryMinor underline">Compétences</Link>
-                    <Link to="/Projects" className="text-secondaryMinor underline">Projets</Link>
+                    <Link to="/CV" className="underline">CV</Link>
+                    <Link to="/Skills" className="underline">Compétences</Link>
+                    <Link to="/Projects" className="underline">Projets</Link>
                 </div>
+
+                <div className="w-screen mt-3 beamtimelineContainer"></div>
+                <div className="w-screen pulleytimelineContainer"></div>
 
 
                 <VerticalTimeline>

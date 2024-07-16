@@ -435,7 +435,25 @@ button {
 
   /* Timeline */
 
-  span.vertical-timeline-element-date {
-    color: white !important;
-  }
+  .beamtimelineContainer {
+    background-image: url('../src/assets/images/Timeline/beam.svg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    height: 6vh;
+}
 
+.pulleytimelineContainer {
+  background-image: url('../src/assets/images/Timeline/pulley.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 15vh;
+}
+
+@media (max-width:1180px) {
+  .pulleytimelineContainer {
+    display:none;
+  }
+}
