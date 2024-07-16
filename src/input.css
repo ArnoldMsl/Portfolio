@@ -50,6 +50,7 @@
     --secondary-color-minor: #ff7e53;
     --secondary-color-focus: #ad3209b8;
     --secondary-color-faded: #fc673681;
+    --third-color: aqua;
     --primary-font: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     --secondary-font: Koulen, League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   }

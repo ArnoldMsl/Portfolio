@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         secondaryMinor: 'var(--secondary-color-minor)',
+        thirdColor: 'var(--third-color)',
       },
     },
   },

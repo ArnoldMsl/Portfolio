@@ -864,6 +864,14 @@ video {
   color: var(--secondary-color-minor);
 }
 
+.text-thirdColor {
+  color: var(--third-color);
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
 .drop-shadow-sm {
   --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -925,6 +933,7 @@ video {
   --secondary-color-minor: #ff7e53;
   --secondary-color-focus: #ad3209b8;
   --secondary-color-faded: #fc673681;
+  --third-color: aqua;
   --primary-font: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --secondary-font: Koulen, League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
