@@ -662,6 +662,10 @@ video {
   height: 3rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-20 {
   height: 5rem;
 }
@@ -685,18 +689,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-3\/5 {
-  height: 60%;
-}
-
-.h-4\/5 {
-  height: 80%;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .min-h-screen {
@@ -762,10 +754,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-4\/5 {
-  width: 80%;
 }
 
 .grid-cols-1 {
@@ -1114,7 +1102,7 @@ video {
   width: 5px;
   height: 17%;
   background: white;
-  top: 24%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
   transform-origin: bottom;
