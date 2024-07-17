@@ -687,6 +687,18 @@ video {
   height: 100vh;
 }
 
+.h-3\/5 {
+  height: 60%;
+}
+
+.h-4\/5 {
+  height: 80%;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -750,6 +762,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .grid-cols-1 {
@@ -1071,7 +1087,7 @@ video {
 }
 
 #clockContainer {
-  background-image: url(../src/assets/images/Nav_icons/clock-small.svg);
+  background-image: url(../src/assets/images/Nav_icons/clock.svg);
   background-size: 80% 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1230,6 +1246,10 @@ video {
 
   #warehouseContainerParent:active #warehouseContainer {
     background-image: url(../src/assets/images/Nav_icons/warehouse-open-small.svg);
+  }
+
+  #clockContainer {
+    background-image: url(../src/assets/images/Nav_icons/clock-small.svg);
   }
 }
 

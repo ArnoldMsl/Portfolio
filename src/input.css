@@ -164,7 +164,7 @@
   }
 
   #clockContainer {
-    background-image: url(../src/assets/images/Nav_icons/clock-small.svg);
+    background-image: url(../src/assets/images/Nav_icons/clock.svg);
     background-size: 80% 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -326,6 +326,10 @@
 
   #warehouseContainerParent:active #warehouseContainer {
     background-image: url(../src/assets/images/Nav_icons/warehouse-open-small.svg);
+  }
+
+  #clockContainer {
+    background-image: url(../src/assets/images/Nav_icons/clock-small.svg);
   }
 }
 
