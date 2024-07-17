@@ -5,6 +5,7 @@ import Nav from '../src/components/Nav'
 import CV from '../src/components/CV'
 import Skills from '../src/components/Skills'
 import Timeline from '../src/components/Timeline'
+import Projects from '../src/components/Projects'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/Skills" element={<Skills />} />
             <Route path="/CV" element={<CV />} />
             <Route path="/Timeline" element={<Timeline />} />
+            <Route path="/Projects" element={<Projects />} />
           </Routes>
         </div>
       </Router>

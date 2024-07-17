@@ -99,7 +99,7 @@ const Nav = () => {
                 </div>
             </Link>
 
-            <Link to="/Nav"
+            <Link to="/Projects"
                 className="
                     flex items-center justify-center
                     w-full h-20 mt-1 mb-1 mr-auto ml-auto
