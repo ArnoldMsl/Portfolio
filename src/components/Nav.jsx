@@ -10,7 +10,7 @@ const Nav = () => {
             <Link to="/Skills"
                 className="
                 flex items-center justify-center
-                w-11/12 h-20 mt-5 mb-5 mr-auto ml-auto
+                w-full h-20 mt-1 mb-1 mr-auto ml-auto
                 md:h-1/3 md:mr-auto md:ml-auto md:mt-0 md:mb-0
                 navButtonSmall"
                 id="skillsGridContainer">
@@ -30,7 +30,7 @@ const Nav = () => {
             <Link to="/CV"
                 className="
                     flex items-center justify-center
-                    w-11/12 h-20 mt-5 mb-5 mr-auto ml-auto
+                    w-full h-20 mt-1 mb-1 mr-auto ml-auto
                     md:h-1/3 md:mr-auto md:ml-auto md:mt-0 md:mb-0
                     navButtonSmall"
                 id="CVGridContainer">
@@ -61,7 +61,7 @@ const Nav = () => {
                 <Link to="/Timeline"
                     className="
                     flex items-center justify-center
-                    w-11/12 h-20 mt-5 mb-5 mr-auto ml-auto
+                    w-full h-20 mt-1 mb-1 mr-auto ml-auto
                     md:h-1/3 md:mr-auto md:ml-auto md:mt-0 md:mb-0
                     navButtonSmall"
                     id="clockGridContainer">
@@ -71,8 +71,8 @@ const Nav = () => {
                 xl:w-80 xl:h-80
                 2xl:w-96 2xl:h-96"
                         id="clockContainerParent">
-                        <div className="w-3/5 h-24 md:w-full md:h-full" id="clockContainer"></div>
-                        <label className="flex text-4xl w-screen justify-center drop-shadow-sm items-center
+                        <div className="w-3/5 h-20 md:w-full md:h-full" id="clockContainer"></div>
+                        <label className="flex text-3xl w-screen justify-center drop-shadow-sm items-center
                     md:hidden">
                             Mon histoire</label>
                     </div>
@@ -82,7 +82,7 @@ const Nav = () => {
             <Link to="/Nav"
                 className="
                     flex items-center justify-center
-                    w-11/12 h-20 mt-5 mb-5 mr-auto ml-auto
+                    w-full h-20 mt-1 mb-1 mr-auto ml-auto
                     md:h-1/3 md:mr-auto md:ml-auto md:mt-0 md:mb-0
                     navButtonSmall"
                 id="ContactGridContainer">
@@ -102,7 +102,7 @@ const Nav = () => {
             <Link to="/Nav"
                 className="
                     flex items-center justify-center
-                    w-11/12 h-20 mt-5 mb-5 mr-auto ml-auto
+                    w-full h-20 mt-1 mb-1 mr-auto ml-auto
                     md:h-1/3 md:mr-auto md:ml-auto md:mt-0 md:mb-0
                     navButtonSmall"
                 id="warehouseGridContainer">
@@ -112,7 +112,7 @@ const Nav = () => {
                 xl:w-80 xl:h-80
                 2xl:w-96 2xl:h-96"
                     id="warehouseContainerParent">
-                    <div className="w-3/5 h-24 md:w-full md:h-full" id="warehouseContainer"></div>
+                    <div className="w-3/6 h-20 md:w-full md:h-full" id="warehouseContainer"></div>
                     <label className="flex text-4xl w-screen justify-center drop-shadow-sm items-center
                     md:hidden">
                         Projets</label>

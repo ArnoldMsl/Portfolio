@@ -562,6 +562,10 @@ video {
   visibility: visible;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -600,6 +604,10 @@ video {
 
 .mr-auto {
   margin-right: auto;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-12 {
@@ -709,6 +717,10 @@ video {
 
 .w-3\/5 {
   width: 60%;
+}
+
+.w-3\/6 {
+  width: 50%;
 }
 
 .w-4\/12 {
@@ -1006,7 +1018,7 @@ video {
     display: grid;
     grid-template-columns: 95%;
     grid-template-areas: 
-      'navText'
+      'clockNavContainer'
       'warehouseGridContainer'
       'skillsGridContainer'
       'CVGridContainer'
@@ -1014,6 +1026,14 @@ video {
       ;
     row-gap: 10px;
     overflow-y: auto;
+  }
+
+  #clockContainer::after {
+    display: none;
+  }
+
+  #clockContainer::before {
+    display: none;
   }
 }
 
@@ -1051,7 +1071,7 @@ video {
 }
 
 #clockContainer {
-  background-image: url(../src/assets/images/Nav_icons/clock.svg);
+  background-image: url(../src/assets/images/Nav_icons/clock-small.svg);
   background-size: 80% 80%;
   background-position: center;
   background-repeat: no-repeat;

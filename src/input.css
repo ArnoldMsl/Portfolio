@@ -127,7 +127,7 @@
       display: grid;
       grid-template-columns: 95%;
       grid-template-areas: 
-      'navText'
+      'clockNavContainer'
       'warehouseGridContainer'
       'skillsGridContainer'
       'CVGridContainer'
@@ -136,6 +136,15 @@
       row-gap: 10px;
       overflow-y: auto;
     }
+
+    #clockContainer::after {
+      display: none;
+  }
+  
+    #clockContainer::before {
+      display: none;
+  }
+
   }
 
   #skillsGridContainer {grid-area: skillsGridContainer; }
@@ -155,7 +164,7 @@
   }
 
   #clockContainer {
-    background-image: url(../src/assets/images/Nav_icons/clock.svg);
+    background-image: url(../src/assets/images/Nav_icons/clock-small.svg);
     background-size: 80% 80%;
     background-position: center;
     background-repeat: no-repeat;
