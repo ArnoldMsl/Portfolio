@@ -521,3 +521,30 @@ button {
     display:none;
   }
 }
+
+/* Image carousel */
+
+.carousel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.carousel-images {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.carousel-images img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-images img.active {
+  display: block;
+}
+
