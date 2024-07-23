@@ -548,3 +548,44 @@ button {
   display: block;
 }
 
+/* Projets */
+
+.projectButtonsContainer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Ajustez cette valeur selon vos besoins */
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.projectContainer {
+  position: relative;
+}
+
+.projectCarousel {
+  flex-grow: 1;
+  position: relative;
+}
+
+button.prev:active + .Lever {
+  background-image: url('../src/assets/images/Project/lever-left.svg');
+  background-size: contain;
+}
+
+.Lever.next-active {
+  background-image: url('../src/assets/images/Project/lever-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Lever {
+  background-image: url('../src/assets/images/Project/lever-middle.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+

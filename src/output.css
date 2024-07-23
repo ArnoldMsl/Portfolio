@@ -582,6 +582,10 @@ video {
   margin-left: 0.25rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .ml-6 {
   margin-left: 1.5rem;
 }
@@ -624,10 +628,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .block {
@@ -681,6 +681,10 @@ video {
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
@@ -832,6 +836,14 @@ video {
 
 .border-4 {
   border-width: 4px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
 }
 
 .border-solid {
@@ -1548,6 +1560,48 @@ button {
   display: block;
 }
 
+/* Projets */
+
+.projectButtonsContainer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  /* Ajustez cette valeur selon vos besoins */
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.projectContainer {
+  position: relative;
+}
+
+.projectCarousel {
+  flex-grow: 1;
+  position: relative;
+}
+
+button.prev:active + .Lever {
+  background-image: url('../src/assets/images/Project/lever-left.svg');
+  background-size: contain;
+}
+
+.Lever.next-active {
+  background-image: url('../src/assets/images/Project/lever-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Lever {
+  background-image: url('../src/assets/images/Project/lever-middle.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: 640px) {
   .sm\:m-2 {
     margin: 0.5rem;
@@ -1783,6 +1837,22 @@ button {
 
   .lg\:justify-evenly {
     justify-content: space-evenly;
+  }
+
+  .lg\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .lg\:border-4 {
+    border-width: 4px;
+  }
+
+  .lg\:border-solid {
+    border-style: solid;
+  }
+
+  .lg\:border-secondaryMinor {
+    border-color: var(--secondary-color-minor);
   }
 
   .lg\:pl-14 {
