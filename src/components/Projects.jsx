@@ -76,7 +76,7 @@ const Projects = () => {
       <div className="lg:hidden flex-col w-screen mobileProjectContainer">
         {projects.map((project, index) => (
           <>
-            <button className="rounded-xl flex w-11/12 h-44 mr-auto ml-auto mb-5 mobileProjectCard" onClick={() => toggleVisibility(index)}>
+            <button className="rounded-xl flex w-11/12 h-auto mr-auto ml-auto mb-5 mobileProjectCard" onClick={() => toggleVisibility(index)}>
               <img
                 src={`src/assets/images/Project/${project.title}/mobile.png`}
                 alt={`Projet ${project.title}`}
