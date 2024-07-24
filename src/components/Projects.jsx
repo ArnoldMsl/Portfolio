@@ -32,7 +32,7 @@ const Projects = () => {
     },
     {
       title: "Origins Digital",
-      description: "Site de partage de vidéos avec système de gestion des profils utilisateurs et de paiement en ligne",
+      description: "Projet d'école réalisé à 4 en 6 semaines : Site de partage de vidéos avec système de gestion des profils utilisateurs et de paiement en ligne",
       technology: "#Symfony, #SQL, #JavaScript, #Stripe API",
       github: "https://github.com/WildCodeSchool-2023-09/php-paris-p3-originsdigital",
       images: ["image1.png", "image2.png", "image3.png"],
@@ -40,7 +40,7 @@ const Projects = () => {
     },
     {
       title: "Cyclaid",
-      description: "Appli web mobile de partage de pièces détachées de vélos entre particuliers",
+      description: "Projet d'école réalisé à 4 en 6 semaines : Appli web mobile de partage de pièces détachées de vélos entre particuliers",
       technology: "#MVC, #PHP, #SQL",
       github: "https://github.com/WildCodeSchool-2023-09/PHP-paris-p2-cyclaid",
       images: ["image1.png", "image2.png", "image3.png"],
