@@ -1,26 +1,53 @@
 import React, { useState } from 'react';
 import ImageCarousel from './ImageCarousel';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
+  const [visibleSections, setVisibleSections] = useState([false, false, false, false]);
+
+  const toggleVisibility = (index) => {
+    setVisibleSections((prevVisibleSections) =>
+      prevVisibleSections.map((visible, i) => (i === index ? !visible : visible))
+    );
+  };
+
   const [current, setCurrent] = useState(0);
   const projects = [
     {
       title: "Minis-printer",
       description: "Application dédiée au jeux de rôle qui permet à un utilisateur d'uploader ses images pour créer des présentoirs à imprimer sur des feuilles A4",
-      technology: ["#React", "#Tailwind"],
+      technology: "#React, #Tailwind",
       lien: "https://thehoard.github.io/",
       github: "",
       images: ["image1.png", "image2.png"],
+      link: "/Nav"
+    },
+    {
+      title: "GhostQuill",
+      description: "Projet personnel de site de partage de textes anonymes",
+      technology: "#Symfony, #SQL, #React, #TailWind",
+      github: "https://github.com/ArnoldMsl/GhostQuill",
+      images: ["image1.png", "image2.png"],
+      link: "/Nav"
     },
     {
       title: "Origins Digital",
-      description: "Site de partage de vidéos pour apprendre le développement Web avec système de gestion des profils utilisateurs et de paiement en ligne",
-      technology: ["#Symfony", "#SQL", "#JavaScript", "#Stripe API"],
+      description: "Site de partage de vidéos avec système de gestion des profils utilisateurs et de paiement en ligne",
+      technology: "#Symfony, #SQL, #JavaScript, #Stripe API",
       github: "https://github.com/WildCodeSchool-2023-09/php-paris-p3-originsdigital",
       images: ["image1.png", "image2.png", "image3.png"],
+      link: "/Nav"
+    },
+    {
+      title: "Cyclaid",
+      description: "Appli web mobile de partage de pièces détachées de vélos entre particuliers",
+      technology: "#MVC, #PHP, #SQL",
+      github: "https://github.com/WildCodeSchool-2023-09/PHP-paris-p2-cyclaid",
+      images: ["image1.png", "image2.png", "image3.png"],
+      link: "/Nav"
     },
 
-    { title: "Projet 3", description: "Description du projet 3" },
+
   ];
 
   const nextSlide = () => {
@@ -39,14 +66,61 @@ const Projects = () => {
   };
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center content-center projectContainer">
-      <h2 className="w-screen text-center 
-      text-xl mb-4">
-        Bienvenue à l'entrepôt ! Ici, vous pouvez consulter les projets que j'ai réalisés ou auxquels j'ai participé
+    <div className="w-screen lg:h-screen flex flex-col justify-center items-center content-center projectContainer">
+      <h2 className="w-11/12 text-center border-white rounded-lg border-4 border-solid
+      text-xl mb-4 mt-4">
+        Bienvenue à l'entrepôt ! <br />
+        Ici, vous pouvez consulter les projets que j'ai réalisés ou auxquels j'ai participé
       </h2>
 
-      <div className="w-screen projectCarousel">
-        <div className="hidden lg:block w-screen beamtimelineContainer"></div>
+      <div className="lg:hidden flex-col w-screen mobileProjectContainer">
+        {projects.map((project, index) => (
+          <>
+            <button className="rounded-xl flex w-11/12 h-44 mr-auto ml-auto mb-5 mobileProjectCard" onClick={() => toggleVisibility(index)}>
+              <img
+                src={`src/assets/images/Project/${project.title}/mobile.png`}
+                alt={`Projet ${project.title}`}
+                className="w-full h-full rounded-xl"
+              />
+            </button>
+            {visibleSections[index] && (
+              <div className="flex flex-col justify-start items-center content-center text-center
+                        p-1 mb-4 w-11/12 mr-auto ml-auto border-secondaryMinor rounded-xl border-solid border-2
+                        project">
+                <h3 className="text-2xl">{project.title}</h3>
+                <p className="text-sm">{project.description}</p>
+
+                {project.images && project.images.length > 0 && (
+                  <ImageCarousel images={project.images.map(img => `${project.title}/${img}`)} />
+                )}
+
+                {project.technology && (
+                  <div className="flex w-11/12 text-center justify-center flex-wrap">
+                    <p className="text-lg">Technologies : {project.technology}</p>
+                  </div>
+                )}
+
+                {project.lien && (
+                  <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl mt-2 cvButtons" href={project.lien} target="_blank" rel="noopener noreferrer">
+                    Visiter le site
+                    <img className="w-6 ml-2" src="src/assets/images/general_icons/link.svg"></img>
+                  </a>
+                )}
+                {project.github && (
+                  <p>
+                    <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl mt-2 cvButtons" href={project.github} target="_blank" rel="noopener noreferrer">
+                      Voir sur GitHub
+                    </a>
+                  </p>
+                )}
+              </div>
+            )}
+          </>
+        ))}
+      </div>
+
+      <div className="hidden lg:flex w-screen projectCarousel">
+        <div className="hidden lg:flex w-screen beamtimelineContainer"></div>
 
         {projects.map((project, index) => (
           <div key={index} className={index === current ? "slide active" : "slide"}>
@@ -69,13 +143,10 @@ const Projects = () => {
                   )}
 
                   {project.technology && (
-                    <ul className="flex w-screen flex-wrap justify-center items-center mr-auto ml-auto">
+                    <div className="flex w-screen flex-wrap justify-center items-center mr-auto ml-auto">
                       <img className="w-6 mr-2" src="src/assets/images/general_icons/cog.svg"></img>
-                      <p className="text-xl">Technologies : &nbsp;</p>
-                      {project.technology.map((tech, index) => (
-                        <li className="text-xl" key={index}>{tech} &nbsp;</li>
-                      ))}
-                    </ul>
+                      <p className="text-lg">Technologies : {project.technology}</p>
+                    </div>
                   )}
 
                   {project.lien && (
@@ -97,7 +168,7 @@ const Projects = () => {
           </div>
         ))}
 
-        <div className="h-1/6 inline-flex projectButtonsContainer mr-auto ml-auto">
+        <div className="hidden h-1/6 lg:inline-flex projectButtonsContainer mr-auto ml-auto">
           <button className="prev" onClick={prevSlide}>
             <img className="rotate-90" src="src/assets/images/general_icons/extend-button.png"></img>
           </button>

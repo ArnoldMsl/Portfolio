@@ -16,7 +16,7 @@ const ImageCarousel = ({ images }) => {
             <button onClick={prevSlide} className="w-1/12 p-0 carousel-button prev">
                 <img className="rotate-90" src="src\assets\images\general_icons\extend-button.png" alt="image précédente"></img>
             </button>
-            <div className="w-10/12 carousel-images">
+            <div className="w-10/12 rounded-lg carousel-images">
                 {images.map((img, index) => (
                     <img
                         key={index}

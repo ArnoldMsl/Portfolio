@@ -421,7 +421,7 @@
   overflow: hidden;
 }
 
-button {
+.textCVContainer > button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -550,13 +550,16 @@ button {
 
 /* Projets */
 
+.mobileProjectCard {
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+
 .projectButtonsContainer {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%; /* Ajustez cette valeur selon vos besoins */
-  display: flex;
+  width: 100%;
   justify-content: center;
   padding: 1rem;
 }
