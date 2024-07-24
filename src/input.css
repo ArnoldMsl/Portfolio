@@ -503,7 +503,6 @@
     background-image: url('../src/assets/images/Timeline/beam.svg');
     background-repeat: repeat-x;
     background-size: contain;
-    width: 100%;
     height: 6vh;
 }
 
@@ -533,15 +532,22 @@
 
 .carousel-images {
   display: flex;
-  width: 100%;
+  width: auto;
   overflow: hidden;
   justify-content: center;
+  align-items: center;
 }
 
 .carousel-images img {
   display: none;
-  width: 100%;
-  height: auto;
+  max-height: 320px;
+  width: auto;
+}
+
+@media(min-width: 1024px) {
+  .carousel-images img {
+    max-height: 400px;
+  }
 }
 
 .carousel-images img.active {
@@ -590,5 +596,25 @@ button.prev:active + .Lever {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width:1024px) {
+  .project {
+    display: grid;
+    column-gap: 10px;
+    grid-template-areas: 
+    'projectTitle projectTitle'
+    'projectCarousel projectDescription'
+    'projectCarousel projectTechnology'
+    'projectCarousel projectLinks';
+    justify-content: center;
+  }
+
+  #projectTitle { grid-area: projectTitle; }
+  #projectDescription { grid-area: projectDescription; }
+  #projectCarousel { grid-area: projectCarousel; }
+  #projectTechnology {grid-area: projectTechnology; }
+  #projectLinks {grid-area: projectLinks; }
+
 }
 

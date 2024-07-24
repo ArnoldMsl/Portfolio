@@ -678,12 +678,12 @@ video {
   height: 9rem;
 }
 
-.h-44 {
-  height: 11rem;
-}
-
 .h-8 {
   height: 2rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-fit {
@@ -697,18 +697,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.max-h-64 {
-  max-height: 16rem;
-}
-
-.max-h-96 {
-  max-height: 24rem;
 }
 
 .min-h-screen {
@@ -858,12 +846,12 @@ video {
   border-width: 1px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
 .border-2 {
   border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-b-2 {
@@ -896,6 +884,10 @@ video {
   padding: 0px;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -906,10 +898,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .pb-2 {
@@ -926,10 +914,6 @@ video {
 
 .text-justify {
   text-align: justify;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-2xl {
@@ -957,6 +941,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -965,11 +954,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-secondaryMinor {
@@ -1556,7 +1540,6 @@ video {
   background-image: url('../src/assets/images/Timeline/beam.svg');
   background-repeat: repeat-x;
   background-size: contain;
-  width: 100%;
   height: 6vh;
 }
 
@@ -1586,15 +1569,22 @@ video {
 
 .carousel-images {
   display: flex;
-  width: 100%;
+  width: auto;
   overflow: hidden;
   justify-content: center;
+  align-items: center;
 }
 
 .carousel-images img {
   display: none;
-  width: 100%;
-  height: auto;
+  max-height: 320px;
+  width: auto;
+}
+
+@media(min-width: 1024px) {
+  .carousel-images img {
+    max-height: 400px;
+  }
 }
 
 .carousel-images img.active {
@@ -1645,6 +1635,40 @@ button.prev:active + .Lever {
   background-position: center;
 }
 
+@media (min-width:1024px) {
+  .project {
+    display: grid;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    grid-template-areas: 
+    'projectTitle projectTitle'
+    'projectCarousel projectDescription'
+    'projectCarousel projectTechnology'
+    'projectCarousel projectLinks';
+    justify-content: center;
+  }
+
+  #projectTitle {
+    grid-area: projectTitle;
+  }
+
+  #projectDescription {
+    grid-area: projectDescription;
+  }
+
+  #projectCarousel {
+    grid-area: projectCarousel;
+  }
+
+  #projectTechnology {
+    grid-area: projectTechnology;
+  }
+
+  #projectLinks {
+    grid-area: projectLinks;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:m-2 {
     margin: 0.5rem;
@@ -1672,10 +1696,6 @@ button.prev:active + .Lever {
 
   .sm\:h-32 {
     height: 8rem;
-  }
-
-  .sm\:h-auto {
-    height: auto;
   }
 
   .sm\:text-3xl {
@@ -1854,6 +1874,10 @@ button.prev:active + .Lever {
     margin-top: 2.5rem;
   }
 
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1890,6 +1914,19 @@ button.prev:active + .Lever {
     width: 18rem;
   }
 
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .lg\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:justify-evenly {
     justify-content: space-evenly;
   }
@@ -1898,12 +1935,16 @@ button.prev:active + .Lever {
     border-radius: 0.5rem;
   }
 
-  .lg\:border-4 {
-    border-width: 4px;
+  .lg\:border-8 {
+    border-width: 8px;
   }
 
-  .lg\:border-solid {
-    border-style: solid;
+  .lg\:border-double {
+    border-style: double;
+  }
+
+  .lg\:p-2 {
+    padding: 0.5rem;
   }
 
   .lg\:pl-14 {
@@ -1912,6 +1953,11 @@ button.prev:active + .Lever {
 
   .lg\:pr-14 {
     padding-right: 3.5rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-4xl {

@@ -12,7 +12,7 @@ const ImageCarousel = ({ images }) => {
     };
 
     return (
-        <div className="flex mt-2 mb-2 carousel">
+        <div id="projectCarousel" className="flex justify-center mt-2 mb-2 carousel lg:max-w-lg">
             <button onClick={prevSlide} className="w-1/12 p-0 carousel-button prev">
                 <img className="rotate-90" src="src\assets\images\general_icons\extend-button.png" alt="image précédente"></img>
             </button>

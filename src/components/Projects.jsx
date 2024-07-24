@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import ImageCarousel from './ImageCarousel';
-import { Link } from 'react-router-dom';
 
 const Projects = () => {
-  const [visibleSections, setVisibleSections] = useState([false, false, false, false]);
+  const [visibleSections, setVisibleSections] = useState([false, false, false, false, false]);
 
   const toggleVisibility = (index) => {
     setVisibleSections((prevVisibleSections) =>
@@ -16,38 +15,36 @@ const Projects = () => {
     {
       title: "Minis-printer",
       description: "Application dédiée au jeux de rôle qui permet à un utilisateur d'uploader ses images pour créer des présentoirs à imprimer sur des feuilles A4",
+      descriptionDesktop: "Application réalisée dans le cadre d'un stage pour l'entreprise The hoard qui vend des accessoires pour le jeux de rôle papier Donjons & Dragons. \n L'application permet à l'utilisateur d'uploader ses propres images puis les customiser pour créer des présentoirs en papier à imprimer",
       technology: "#React, #Tailwind",
       lien: "https://thehoard.github.io/",
       github: "",
       images: ["image1.png", "image2.png"],
-      link: "/Nav"
     },
     {
       title: "GhostQuill",
       description: "Projet personnel de site de partage de textes anonymes",
+      descriptionDesktop: "",
       technology: "#Symfony, #SQL, #React, #TailWind",
       github: "https://github.com/ArnoldMsl/GhostQuill",
       images: ["image1.png", "image2.png"],
-      link: "/Nav"
     },
     {
       title: "Origins Digital",
       description: "Projet d'école réalisé à 4 en 6 semaines : Site de partage de vidéos avec système de gestion des profils utilisateurs et de paiement en ligne",
+      descriptionDesktop: "",
       technology: "#Symfony, #SQL, #JavaScript, #Stripe API",
       github: "https://github.com/WildCodeSchool-2023-09/php-paris-p3-originsdigital",
       images: ["image1.png", "image2.png", "image3.png"],
-      link: "/Nav"
     },
     {
       title: "Cyclaid",
       description: "Projet d'école réalisé à 4 en 6 semaines : Appli web mobile de partage de pièces détachées de vélos entre particuliers",
+      descriptionDesktop: "",
       technology: "#MVC, #PHP, #SQL",
       github: "https://github.com/WildCodeSchool-2023-09/PHP-paris-p2-cyclaid",
-      images: ["image1.png", "image2.png", "image3.png"],
-      link: "/Nav"
+      images: ["image1.png", "image2.png"],
     },
-
-
   ];
 
   const nextSlide = () => {
@@ -68,10 +65,12 @@ const Projects = () => {
   return (
     <div className="w-screen lg:h-screen flex flex-col justify-center items-center content-center projectContainer">
       <h2 className="w-11/12 text-center border-white rounded-lg border-4 border-solid
-      text-xl mb-4 mt-4">
+      text-xl mb-4 mt-4 p-1">
         Bienvenue à l'entrepôt ! <br />
         Ici, vous pouvez consulter les projets que j'ai réalisés ou auxquels j'ai participé
       </h2>
+
+      {/* MOBILE */}
 
       <div className="lg:hidden flex-col w-screen mobileProjectContainer">
         {projects.map((project, index) => (
@@ -119,8 +118,9 @@ const Projects = () => {
         ))}
       </div>
 
+      {/* DESKTOP */}
+      <div className="hidden w-screen lg:flex h-10 beamtimelineContainer"></div>
       <div className="hidden lg:flex w-screen projectCarousel">
-        <div className="hidden lg:flex w-screen beamtimelineContainer"></div>
 
         {projects.map((project, index) => (
           <div key={index} className={index === current ? "slide active" : "slide"}>
@@ -132,36 +132,40 @@ const Projects = () => {
                 </div>
 
                 <div className="flex flex-col justify-start items-center content-center text-center
-                pt-2 pb-2 border-t-2 border-b-2 border-secondaryMinor
-                lg:rounded-lg lg:border-4 lg:border-solid 
+                pt-2 pb-2 w-11/12 mr-auto ml-auto border-t-2 border-b-2 border-secondaryMinor
+                lg:rounded-lg lg:border-8 lg:border-double
+                lg:grid-cols-2 lg:p-2 
                 project">
-                  <h3 className="text-3xl">{project.title}</h3>
-                  <p className="text-lg">{project.description}</p>
+                  <h3 id="projectTitle" className="text-3xl lg:text-4xl">{project.title}</h3>
+                  <p id="projectDescription" className="text-lg lg:text-xl lg:mt-2">{project.descriptionDesktop}</p>
 
                   {project.images && project.images.length > 0 && (
                     <ImageCarousel images={project.images.map(img => `${project.title}/${img}`)} />
                   )}
 
                   {project.technology && (
-                    <div className="flex w-screen flex-wrap justify-center items-center mr-auto ml-auto">
+                    <div id="projectTechnology" className="flex flex-wrap justify-center items-center lg:mt-2 mr-auto ml-auto">
                       <img className="w-6 mr-2" src="src/assets/images/general_icons/cog.svg"></img>
-                      <p className="text-lg">Technologies : {project.technology}</p>
+                      <p className="text-lg lg:text-2xl">Technologies : {project.technology}</p>
                     </div>
                   )}
 
-                  {project.lien && (
-                    <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl mt-2 cvButtons" href={project.lien} target="_blank" rel="noopener noreferrer">
-                      Visiter le site
-                      <img className="w-6 ml-2" src="src/assets/images/general_icons/link.svg"></img>
-                    </a>
-                  )}
-                  {project.github && (
-                    <p>
-                      <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl mt-2 cvButtons" href={project.github} target="_blank" rel="noopener noreferrer">
-                        Voir sur GitHub
+                  <div id="projectLinks" className="flex justify-center">
+
+                    {project.lien && (
+                      <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl mt-2 lg:w-fit cvButtons" href={project.lien} target="_blank" rel="noopener noreferrer">
+                        Visiter le site
+                        <img className="w-6 ml-2" src="src/assets/images/general_icons/link.svg"></img>
                       </a>
-                    </p>
-                  )}
+                    )}
+                    {project.github && (
+                      <p>
+                        <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl lg:w-fit mt-2 cvButtons" href={project.github} target="_blank" rel="noopener noreferrer">
+                          Voir sur GitHub
+                        </a>
+                      </p>
+                    )}
+                  </div>
                 </div>
               </>
             )}
