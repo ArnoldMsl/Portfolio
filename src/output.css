@@ -2052,6 +2052,10 @@ video {
     width: 20rem;
   }
 
+  .xl\:max-w-xl {
+    max-width: 36rem;
+  }
+
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -2070,6 +2074,11 @@ video {
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -2110,6 +2119,10 @@ video {
     width: 2rem;
   }
 
+  .\32xl\:max-w-2xl {
+    max-width: 42rem;
+  }
+
   .\32xl\:p-2 {
     padding: 0.5rem;
   }
@@ -2147,5 +2160,10 @@ video {
   .\32xl\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .\32xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }

@@ -21,7 +21,7 @@ const Projects = () => {
       technology: "#React, #Tailwind",
       lien: "https://thehoard.github.io/",
       github: "",
-      images: ["image1.png", "image2.png"],
+      images: ["mobile.png", "image1.png", "image2.png"],
     },
     {
       title: "GhostQuill",
@@ -29,7 +29,7 @@ const Projects = () => {
       descriptionDesktop: "Projet personnel de site de partages de textes anonymes en cours de réalisation sur une architecture Symfony SQL et react",
       technology: "#Symfony, #SQL, #React, #TailWind",
       github: "https://github.com/ArnoldMsl/GhostQuill",
-      images: ["image1.png", "image2.png"],
+      images: ["mobile.png", "image1.png", "image2.png"],
     },
     {
       title: "Origins Digital",
@@ -37,7 +37,7 @@ const Projects = () => {
       descriptionDesktop: "Projet d'école réalisé à 4 en 6 semaines : Plateforme d'enseignement au développement Web via des vidéos. Le site comporte la gestion des comptes utilisateurs lesquels disposent d'un planning d'apprentissage généré automatiquement via un Quiz. En outre, le site propose une interface de paiement gérée par Stripe.",
       technology: "#Symfony, #SQL, #JavaScript, #Stripe API",
       github: "https://github.com/WildCodeSchool-2023-09/php-paris-p3-originsdigital",
-      images: ["image1.png", "image2.png", "image3.png"],
+      images: ["mobile.png", "image1.png", "image2.png", "image3.png"],
     },
     {
       title: "Cyclaid",
@@ -45,7 +45,7 @@ const Projects = () => {
       descriptionDesktop: "Projet d'école réalisé à 4 en 6 semaines via SQL et une architecture MVC : Appli web mobile de partage de pièces détachées de vélos entre particuliers. Le site dispose d'un système de gestion des utilisateurs",
       technology: "#MVC, #PHP, #SQL",
       github: "https://github.com/WildCodeSchool-2023-09/PHP-paris-p2-cyclaid",
-      images: ["image1.png", "image2.png"],
+      images: ["mobile.png", "image1.png", "image2.png"],
     },
   ]
 
@@ -84,7 +84,7 @@ const Projects = () => {
   return (
     <div className="w-screen lg:h-screen flex flex-col justify-center items-center content-center projectContainer">
       <h2 className="w-11/12 text-center border-white rounded-lg border-4 border-solid
-      text-xl mb-4 mt-4 p-1">
+      text-xl mb-4 mt-4 p-1 xl:text-2xl 2xl:text-3xl">
         Bienvenue à l'entrepôt ! <br />
         Ici, vous pouvez consulter les projets que j'ai réalisés ou auxquels j'ai participé
       </h2>
