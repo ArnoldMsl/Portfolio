@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
-import ImageCarousel from './ImageCarousel';
+import React, { useState } from 'react'
+import ImageCarousel from './ImageCarousel'
 
 const Projects = () => {
-  const [visibleSections, setVisibleSections] = useState([false, false, false, false, false]);
+  const [visibleSections, setVisibleSections] = useState([false, false, false, false, false])
+  const [current, setCurrent] = useState(0)
+  const [direction, setDirection] = useState('')
+  const [isTransitioning, setIsTransitioning] = useState(false)
 
   const toggleVisibility = (index) => {
     setVisibleSections((prevVisibleSections) =>
       prevVisibleSections.map((visible, i) => (i === index ? !visible : visible))
-    );
-  };
+    )
+  }
 
-  const [current, setCurrent] = useState(0);
   const projects = [
     {
       title: "Minis-printer",
@@ -20,6 +22,7 @@ const Projects = () => {
       lien: "https://thehoard.github.io/",
       github: "",
       images: ["image1.png", "image2.png"],
+      index: '1'
     },
     {
       title: "GhostQuill",
@@ -28,6 +31,7 @@ const Projects = () => {
       technology: "#Symfony, #SQL, #React, #TailWind",
       github: "https://github.com/ArnoldMsl/GhostQuill",
       images: ["image1.png", "image2.png"],
+      index: '2'
     },
     {
       title: "Origins Digital",
@@ -36,6 +40,7 @@ const Projects = () => {
       technology: "#Symfony, #SQL, #JavaScript, #Stripe API",
       github: "https://github.com/WildCodeSchool-2023-09/php-paris-p3-originsdigital",
       images: ["image1.png", "image2.png", "image3.png"],
+      index: '3'
     },
     {
       title: "Cyclaid",
@@ -44,23 +49,41 @@ const Projects = () => {
       technology: "#MVC, #PHP, #SQL",
       github: "https://github.com/WildCodeSchool-2023-09/PHP-paris-p2-cyclaid",
       images: ["image1.png", "image2.png"],
+      index: '4'
     },
-  ];
+  ]
 
   const nextSlide = () => {
-    const lever = document.querySelector('.Lever');
-    lever.classList.add('next-active');
+    const currentSlide = document.querySelector('.slide.present')
+    const lever = document.querySelector('.Lever')
+    lever.classList.add('lever-right')
+    setIsTransitioning(true)
+    setDirection('right')
+    currentSlide.classList.add('exit-left')
 
     setTimeout(() => {
-      lever.classList.remove('next-active');
-    }, 150);
-
-    setCurrent(current === projects.length - 1 ? 0 : current + 1);
-  };
+      currentSlide.classList.remove('exit-left')
+      lever.classList.remove('lever-right')
+      setIsTransitioning(false)
+      setCurrent(current === projects.length - 1 ? 0 : current + 1)
+    }, 250)
+  }
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? projects.length - 1 : current - 1);
-  };
+    setIsTransitioning(true)
+    setDirection('left')
+    const lever = document.querySelector('.Lever')
+    const currentSlide = document.querySelector('.slide.present')
+    currentSlide.classList.add('exit-right')
+    lever.classList.add('lever-left')
+
+    setTimeout(() => {
+      currentSlide.classList.remove('exit-right')
+      lever.classList.remove('lever-left')
+      setIsTransitioning(false)
+      setCurrent(current === 0 ? projects.length - 1 : current - 1)
+    }, 250)
+  }
 
   return (
     <div className="w-screen lg:h-screen flex flex-col justify-center items-center content-center projectContainer">
@@ -122,55 +145,65 @@ const Projects = () => {
       <div className="hidden w-screen lg:flex h-10 beamtimelineContainer"></div>
       <div className="hidden lg:flex w-screen projectCarousel">
 
-        {projects.map((project, index) => (
-          <div key={index} className={index === current ? "slide active" : "slide"}>
-            {index === current && (
-              <>
-                <div className="hidden lg:flex lg:justify-evenly w-screen h-10 chainProjectContainer">
-                  <img src="src/assets/images/Project/Chain.png" className="chainLeft" alt="chain left" />
-                  <img src="src/assets/images/Project/Chain.png" className="chainRight" alt="chain right" />
-                </div>
+        {projects.map((project, index) => {
+          let classNames = 'slide'
+          if (index === current) {
+            classNames += ' present'
+          } else if (index === (current - 1 + projects.length) % projects.length && direction === 'left') {
+            classNames += ' exit-left'
+          } else if (index === (current + 1) % projects.length && direction === 'right') {
+            classNames += ' exit-right'
+          }
 
-                <div className="flex flex-col justify-start items-center content-center text-center
-                pt-2 pb-2 w-11/12 mr-auto ml-auto border-t-2 border-b-2 border-secondaryMinor
-                lg:rounded-lg lg:border-8 lg:border-double
-                lg:grid-cols-2 lg:p-2 
-                project">
-                  <h3 id="projectTitle" className="text-3xl lg:text-4xl">{project.title}</h3>
-                  <p id="projectDescription" className="text-lg lg:text-xl lg:mt-2">{project.descriptionDesktop}</p>
-
-                  {project.images && project.images.length > 0 && (
-                    <ImageCarousel images={project.images.map(img => `${project.title}/${img}`)} />
-                  )}
-
-                  {project.technology && (
-                    <div id="projectTechnology" className="flex flex-wrap justify-center items-center lg:mt-2 mr-auto ml-auto">
-                      <img className="w-6 mr-2" src="src/assets/images/general_icons/cog.svg"></img>
-                      <p className="text-lg lg:text-2xl">Technologies : {project.technology}</p>
-                    </div>
-                  )}
-
-                  <div id="projectLinks" className="flex justify-center">
-
-                    {project.lien && (
-                      <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl mt-2 lg:w-fit cvButtons" href={project.lien} target="_blank" rel="noopener noreferrer">
-                        Visiter le site
-                        <img className="w-6 ml-2" src="src/assets/images/general_icons/link.svg"></img>
-                      </a>
-                    )}
-                    {project.github && (
-                      <p>
-                        <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl lg:w-fit mt-2 cvButtons" href={project.github} target="_blank" rel="noopener noreferrer">
-                          Voir sur GitHub
-                        </a>
-                      </p>
-                    )}
+          return (
+            <div key={index} className={classNames}>
+              {index === current && (
+                <>
+                  <div className="hidden lg:flex lg:justify-evenly w-screen h-10 chainProjectContainer">
+                    <img src="src/assets/images/Project/Chain.png" className="chainLeft" alt="chain left" />
+                    <img src="src/assets/images/Project/Chain.png" className="chainRight" alt="chain right" />
                   </div>
-                </div>
-              </>
-            )}
-          </div>
-        ))}
+
+                  <div className="flex flex-col justify-start items-center content-center text-center
+                    pt-2 pb-2 w-11/12 mr-auto ml-auto border-t-2 border-b-2 border-secondaryMinor
+                    lg:rounded-lg lg:border-8 lg:border-double
+                    lg:grid-cols-2 lg:p-2 
+                    project">
+                    <h3 id="projectTitle" className="text-3xl lg:text-4xl">{project.title}</h3>
+                    <p id="projectDescription" className="text-lg lg:text-xl lg:mt-2">{project.descriptionDesktop}</p>
+
+                    {project.images && project.images.length > 0 && (
+                      <ImageCarousel images={project.images.map(img => `${project.title}/${img}`)} />
+                    )}
+
+                    {project.technology && (
+                      <div id="projectTechnology" className="flex flex-wrap justify-center items-center lg:mt-2 mr-auto ml-auto">
+                        <img className="w-6 mr-2" src="src/assets/images/general_icons/cog.svg"></img>
+                        <p className="text-lg lg:text-2xl">Technologies : {project.technology}</p>
+                      </div>
+                    )}
+
+                    <div id="projectLinks" className="flex justify-center">
+                      {project.lien && (
+                        <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl mt-2 lg:w-fit cvButtons" href={project.lien} target="_blank" rel="noopener noreferrer">
+                          Visiter le site
+                          <img className="w-6 ml-2" src="src/assets/images/general_icons/link.svg"></img>
+                        </a>
+                      )}
+                      {project.github && (
+                        <p>
+                          <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl lg:w-fit mt-2 cvButtons" href={project.github} target="_blank" rel="noopener noreferrer">
+                            Voir sur GitHub
+                          </a>
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          )
+        })}
 
         <div className="hidden h-1/6 lg:inline-flex projectButtonsContainer mr-auto ml-auto">
           <button className="prev" onClick={prevSlide}>
@@ -183,7 +216,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -65,7 +65,7 @@ const Home = () => {
             2xl:w-28 2xl:h-28"
                 id="welcomeDownButton" src='../src/assets/images/general_icons/down-button.png' alt='bouton continuer'></Link>
         </div >
-    );
-};
+    )
+}
 
-export default Home;
+export default Home

@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 const Timeline = () => {
 
@@ -236,9 +236,9 @@ const Timeline = () => {
                         <h3 className="text-2xl vertical-timeline-element-title">La suite ?</h3>
                         <p>
                             À nous de l'écrire ensemble ! N'hésitez pas à retrouver les éléments plus détaillés
-                            dans les pages &nbsp;
-                            <Link to="/CV" className="text-xl text-secondaryMinor underline">CV</Link>,&nbsp;
-                            <Link to="/Skills" className="text-xl text-secondaryMinor underline">Compétences</Link> et &nbsp;
+                            dans les pages &nbsp
+                            <Link to="/CV" className="text-xl text-secondaryMinor underline">CV</Link>,&nbsp
+                            <Link to="/Skills" className="text-xl text-secondaryMinor underline">Compétences</Link> et &nbsp
                             <Link to="/Projects" className="text-xl text-secondaryMinor underline">Projets</Link>
                         </p>
                         <p>
@@ -252,7 +252,7 @@ const Timeline = () => {
             </div>
 
         </>
-    );
-};
+    )
+}
 
-export default Timeline;
+export default Timeline

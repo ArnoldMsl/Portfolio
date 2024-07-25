@@ -1,17 +1,17 @@
-import React from 'react';
-import { useState } from 'react';
+import React from 'react'
+import { useState } from 'react'
 
 
 
 const CV = () => {
 
-    const [visibleSections, setVisibleSections] = useState([false, false, false, false, false, false, false, false]);
+    const [visibleSections, setVisibleSections] = useState([false, false, false, false, false, false, false, false])
 
     const toggleVisibility = (index) => {
         setVisibleSections((prevVisibleSections) =>
             prevVisibleSections.map((visible, i) => (i === index ? !visible : visible))
-        );
-    };
+        )
+    }
 
     return (
         <div className="justify-center text-center h-screen w-screen
@@ -174,7 +174,7 @@ const CV = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default CV;
+export default CV

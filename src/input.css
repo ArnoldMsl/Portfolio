@@ -579,12 +579,14 @@
   position: relative;
 }
 
-button.prev:active + .Lever {
+.Lever.lever-left {
   background-image: url('../src/assets/images/Project/lever-left.svg');
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.Lever.next-active {
+.Lever.lever-right {
   background-image: url('../src/assets/images/Project/lever-right.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -618,3 +620,23 @@ button.prev:active + .Lever {
 
 }
 
+.slide {
+  position: relative;
+  transition: 0.5s;
+}
+
+/* CARD TRANSITIONS */
+.present{
+  left: 0;
+  opacity: 1;
+  visibility: visible; 
+}
+
+.exit-left {
+  transform: translateX(-200vw);
+  visibility: hidden;
+}
+.exit-right {
+  transform: translateX(200vw);
+  visibility: hidden;
+}
