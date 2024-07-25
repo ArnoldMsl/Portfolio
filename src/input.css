@@ -546,7 +546,7 @@
 
 @media(min-width: 1024px) {
   .carousel-images img {
-    max-height: 400px;
+    max-height: 45vh;
   }
 }
 
@@ -577,6 +577,10 @@
 .projectCarousel {
   flex-grow: 1;
   position: relative;
+}
+
+.projectCarouselButton {
+  animation: bounce 2.5s infinite;
 }
 
 .Lever.lever-left {
@@ -625,7 +629,7 @@
   transition: 0.5s;
 }
 
-/* CARD TRANSITIONS */
+/* animation des slides */
 .present{
   left: 0;
   opacity: 1;

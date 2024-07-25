@@ -678,6 +678,10 @@ video {
   height: 9rem;
 }
 
+.h-5\/6 {
+  height: 83.333333%;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -1583,7 +1587,7 @@ video {
 
 @media(min-width: 1024px) {
   .carousel-images img {
-    max-height: 400px;
+    max-height: 45vh;
   }
 }
 
@@ -1616,9 +1620,15 @@ video {
   position: relative;
 }
 
-button.prev:active + .Lever {
+.projectCarouselButton {
+  animation: bounce 2.5s infinite;
+}
+
+.Lever.lever-left {
   background-image: url('../src/assets/images/Project/lever-left.svg');
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .Lever.lever-right {
@@ -1674,7 +1684,7 @@ button.prev:active + .Lever {
   transition: 0.5s;
 }
 
-/* CARD TRANSITIONS */
+/* animation des slides */
 
 .present{
   left: 0;
@@ -1966,8 +1976,8 @@ button.prev:active + .Lever {
     border-style: double;
   }
 
-  .lg\:p-2 {
-    padding: 0.5rem;
+  .lg\:p-4 {
+    padding: 1rem;
   }
 
   .lg\:pl-14 {
@@ -2064,6 +2074,10 @@ button.prev:active + .Lever {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .\32xl\:h-28 {
     height: 7rem;
   }
@@ -2084,13 +2098,54 @@ button.prev:active + .Lever {
     width: 24rem;
   }
 
+  .\32xl\:w-10 {
+    width: 2.5rem;
+  }
+
+  .\32xl\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .\32xl\:w-8 {
+    width: 2rem;
+  }
+
+  .\32xl\:p-2 {
+    padding: 0.5rem;
+  }
+
   .\32xl\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 
   .\32xl\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .\32xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
