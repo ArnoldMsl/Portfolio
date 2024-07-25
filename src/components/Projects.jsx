@@ -15,37 +15,41 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 1,
       title: "Minis-printer",
       description: "Application dédiée au jeux de rôle qui permet à un utilisateur d'uploader ses images pour créer des présentoirs à imprimer sur des feuilles A4",
       descriptionDesktop: "Application réalisée dans le cadre d'un stage pour l'entreprise The hoard qui vend des accessoires pour le jeux de rôle papier Donjons & Dragons. \n L'application permet à l'utilisateur d'uploader ses propres images puis les customiser pour créer des présentoirs en papier à imprimer.",
       technology: "#React, #Tailwind",
       lien: "https://thehoard.github.io/",
       github: "",
-      images: ["mobile.png", "image1.png", "image2.png"],
+      images: ["image1.png", "image2.png"],
     },
     {
+      id: 2,
       title: "GhostQuill",
       description: "Projet personnel de site de partage de textes anonymes",
       descriptionDesktop: "Projet personnel de site de partages de textes anonymes en cours de réalisation sur une architecture Symfony SQL et react",
       technology: "#Symfony, #SQL, #React, #TailWind",
       github: "https://github.com/ArnoldMsl/GhostQuill",
-      images: ["mobile.png", "image1.png", "image2.png"],
+      images: ["image1.png", "image2.png"],
     },
     {
+      id: 3,
       title: "Origins Digital",
       description: "Projet d'école réalisé à 4 en 6 semaines : Site de partage de vidéos avec système de gestion des profils utilisateurs et de paiement en ligne",
       descriptionDesktop: "Projet d'école réalisé à 4 en 6 semaines : Plateforme d'enseignement au développement Web via des vidéos. Le site comporte la gestion des comptes utilisateurs lesquels disposent d'un planning d'apprentissage généré automatiquement via un Quiz. En outre, le site propose une interface de paiement gérée par Stripe.",
       technology: "#Symfony, #SQL, #JavaScript, #Stripe API",
       github: "https://github.com/WildCodeSchool-2023-09/php-paris-p3-originsdigital",
-      images: ["mobile.png", "image1.png", "image2.png", "image3.png"],
+      images: ["image1.png", "image2.png", "image3.png"],
     },
     {
+      id: 4,
       title: "Cyclaid",
       description: "Projet d'école réalisé à 4 en 6 semaines : Appli web mobile de partage de pièces détachées de vélos entre particuliers",
       descriptionDesktop: "Projet d'école réalisé à 4 en 6 semaines via SQL et une architecture MVC : Appli web mobile de partage de pièces détachées de vélos entre particuliers. Le site dispose d'un système de gestion des utilisateurs",
       technology: "#MVC, #PHP, #SQL",
       github: "https://github.com/WildCodeSchool-2023-09/PHP-paris-p2-cyclaid",
-      images: ["mobile.png", "image1.png", "image2.png"],
+      images: ["image1.png", "image2.png"],
     },
   ]
 
@@ -93,7 +97,7 @@ const Projects = () => {
 
       <div className="lg:hidden flex-col w-screen mobileProjectContainer">
         {projects.map((project, index) => (
-          <>
+          <div key={project.id}>
             <button className="rounded-xl flex w-11/12 h-auto mr-auto ml-auto mb-5 mobileProjectCard" onClick={() => toggleVisibility(index)}>
               <img
                 src={`src/assets/images/Project/${project.title}/mobile.png`}
@@ -133,7 +137,7 @@ const Projects = () => {
                 )}
               </div>
             )}
-          </>
+          </div>
         ))}
       </div>
 
@@ -152,7 +156,7 @@ const Projects = () => {
           }
 
           return (
-            <div key={index} className={classNames}>
+            <div key={project.id} className={classNames}>
               {index === current && (
                 <>
                   <div className="hidden lg:flex lg:justify-evenly w-screen h-10 chainProjectContainer">

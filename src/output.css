@@ -1040,7 +1040,7 @@ video {
 
 .homeContainer {
   background-image: url(../src/assets/images/background/background-triangle.png);
-  background-size: 93% 90%;
+  background-size: 98% 90%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1441,7 +1441,7 @@ video {
 
 .textCVContainer {
   display: flex;
-  width: 100%;
+  width: 95%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -2056,6 +2056,11 @@ video {
     max-width: 36rem;
   }
 
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -2074,11 +2079,6 @@ video {
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
@@ -2099,14 +2099,6 @@ video {
     height: 100vh;
   }
 
-  .\32xl\:w-28 {
-    width: 7rem;
-  }
-
-  .\32xl\:w-96 {
-    width: 24rem;
-  }
-
   .\32xl\:w-10 {
     width: 2.5rem;
   }
@@ -2115,8 +2107,12 @@ video {
     width: 83.333333%;
   }
 
-  .\32xl\:w-8 {
-    width: 2rem;
+  .\32xl\:w-28 {
+    width: 7rem;
+  }
+
+  .\32xl\:w-96 {
+    width: 24rem;
   }
 
   .\32xl\:max-w-2xl {
@@ -2127,18 +2123,23 @@ video {
     padding: 0.5rem;
   }
 
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .\32xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .\32xl\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .\32xl\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
-  .\32xl\:text-9xl {
-    font-size: 8rem;
     line-height: 1;
   }
 
@@ -2147,23 +2148,8 @@ video {
     line-height: 1;
   }
 
-  .\32xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .\32xl\:text-5xl {
-    font-size: 3rem;
+  .\32xl\:text-9xl {
+    font-size: 8rem;
     line-height: 1;
-  }
-
-  .\32xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .\32xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
