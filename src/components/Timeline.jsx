@@ -39,7 +39,7 @@ const Timeline = () => {
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="À 7 ans"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
-                        icon={<img src='src\assets\images\Timeline\toy.svg' alt='icône de jouet'
+                        icon={<img src='assets\images\Timeline\toy.svg' alt='icône de jouet'
                             style={{ width: '90%', height: '90%', marginRight: 'auto', marginLeft: 'auto', }}></img>}
                     >
                         <h3 className="vertical-timeline-element-title">Dès mon plus jeune âge, je démontais tous mes jouets pour en comprendre le fonctionnement.</h3>
@@ -57,7 +57,7 @@ const Timeline = () => {
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="À 10 ans"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
-                        icon={<img src='src\assets\images\Timeline\robot.svg' alt='icône de robot'
+                        icon={<img src='assets\images\Timeline\robot.svg' alt='icône de robot'
                             style={{ width: '90%', height: '90%', marginRight: 'auto', marginLeft: 'auto', }}></img>}
                     >
                         <h3 className="vertical-timeline-element-title">À 10 ans, je construisais robots et voitures téléguidées</h3>
@@ -75,7 +75,7 @@ const Timeline = () => {
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="À 13 ans"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
-                        icon={<img src='src\assets\images\Timeline\C++.svg' alt='icône C++'
+                        icon={<img src='assets\images\Timeline\C++.svg' alt='icône C++'
                             style={{ width: '75%', height: '75%', marginRight: 'auto', marginLeft: 'auto', marginTop: '12%' }}></img>}
                     >
                         <h3 className="text-2xl text-secondaryMinor vertical-timeline-element-title">Mes débuts en informatique</h3>
@@ -99,7 +99,7 @@ const Timeline = () => {
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="Scolarité"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
-                        icon={<img src='src\assets\images\Timeline\calculator.svg' alt='icône de calculette'
+                        icon={<img src='assets\images\Timeline\calculator.svg' alt='icône de calculette'
                             style={{ width: '90%', height: '90%', marginRight: 'auto', marginLeft: 'auto', marginTop: '5%' }}></img>}
                     >
                         <h3 className="vertical-timeline-element-title">Au collège, je programmais sur ma calculette TI-89 pour résoudre les problèmes de Math</h3>
@@ -117,7 +117,7 @@ const Timeline = () => {
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="Université"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
-                        icon={<img src='src\assets\images\Timeline\excel.svg' alt='icône excel'
+                        icon={<img src='assets\images\Timeline\excel.svg' alt='icône excel'
                             style={{ width: '80%', height: '80%', marginRight: 'auto', marginLeft: 'auto', marginTop: '10%' }}></img>}
                     >
                         <h3 className="vertical-timeline-element-title">À l'occcasion de mes cours de comptabilité, je développais des programmes et des petits jeux sur Excel (VBA)</h3>
@@ -135,7 +135,7 @@ const Timeline = () => {
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="Carrière"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
-                        icon={<img src='src\assets\images\Timeline\briefcase.svg' alt='icône de serviette à documents'
+                        icon={<img src='assets\images\Timeline\briefcase.svg' alt='icône de serviette à documents'
                             style={{ width: '85%', height: '85%', marginRight: 'auto', marginLeft: 'auto', marginTop: '5%' }}></img>}
                     >
                         <h3 className="text-2xl vertical-timeline-element-title">Carrière d'Acheteur</h3>
@@ -160,7 +160,7 @@ const Timeline = () => {
                         contentArrowStyle={{ borderRight: '7px solid  aqua' }}
                         date="Nouveau Cap"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)', display: "flex", justifyContent: "center" }}
-                        icon={<img src='src\assets\images\Timeline\compass.svg' alt='icône de boussole'
+                        icon={<img src='assets\images\Timeline\compass.svg' alt='icône de boussole'
                             style={{ width: '85%', height: '85%', marginRight: 'auto', marginLeft: '8.35%', marginTop: '9%' }}></img>}
                     >
                         <h3 className="text-2xl text-thirdColor vertical-timeline-element-title">Bootcamp Développeur Web</h3>
@@ -186,7 +186,7 @@ const Timeline = () => {
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="Premier stage : Février-Avril 24"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
-                        icon={<img src='src\assets\images\Timeline\bank.svg' alt='icône de Banque'
+                        icon={<img src='assets\images\Timeline\bank.svg' alt='icône de Banque'
                             style={{ width: '75%', height: '75%', marginRight: 'auto', marginLeft: 'auto', marginTop: '8%' }}></img>}
                     >
                         <h3 className="text-2xl vertical-timeline-element-title">Stage développeur JAVA SQL</h3>
@@ -208,7 +208,7 @@ const Timeline = () => {
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="Deuxième stage : Avril-Juillet 24"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
-                        icon={<img src='src\assets\images\Timeline\react.svg' alt='Logo react'
+                        icon={<img src='assets\images\Timeline\react.svg' alt='Logo react'
                             style={{ width: '75%', height: '75%', marginRight: 'auto', marginLeft: 'auto', marginTop: '10%' }}></img>}
                     >
                         <h3 className="text-2xl vertical-timeline-element-title">Stage développeur REACT</h3>
@@ -230,7 +230,7 @@ const Timeline = () => {
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="Et maintenant ?"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
-                        icon={<img src='src\assets\images\Timeline\eyes.svg' alt='Logo react'
+                        icon={<img src='assets\images\Timeline\eyes.svg' alt='Logo react'
                             style={{ width: '75%', height: '75%', marginRight: 'auto', marginLeft: 'auto', marginTop: '11%' }}></img>}
                     >
                         <h3 className="text-2xl vertical-timeline-element-title">La suite ?</h3>
