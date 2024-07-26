@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        primarycolor: 'var(--primary-color)',
         secondaryMinor: 'var(--secondary-color-minor)',
         thirdColor: 'var(--third-color)',
       },
