@@ -100,7 +100,7 @@ const Projects = () => {
           <div key={project.id}>
             <button className="rounded-xl flex w-11/12 h-auto mr-auto ml-auto mb-5 mobileProjectCard" onClick={() => toggleVisibility(index)}>
               <img
-                src={`src/assets/images/Project/${project.title}/mobile.png`}
+                src={`assets/images/Project/${project.title}/mobile.png`}
                 alt={`Projet ${project.title}`}
                 className="w-full h-full rounded-xl"
               />
@@ -125,7 +125,7 @@ const Projects = () => {
                 {project.lien && (
                   <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl mt-2 cvButtons" href={project.lien} target="_blank" rel="noopener noreferrer">
                     Visiter le site
-                    <img className="w-6 ml-2" src="src/assets/images/general_icons/link.svg"></img>
+                    <img className="w-6 ml-2" src="assets/images/general_icons/link.svg"></img>
                   </a>
                 )}
                 {project.github && (
@@ -160,8 +160,8 @@ const Projects = () => {
               {index === current && (
                 <>
                   <div className="hidden lg:flex lg:justify-evenly w-screen h-10 chainProjectContainer">
-                    <img src="src/assets/images/Project/Chain.png" className="chainLeft" alt="chain left" />
-                    <img src="src/assets/images/Project/Chain.png" className="chainRight" alt="chain right" />
+                    <img src="assets/images/Project/chain.png" className="chainLeft" alt="chain left" />
+                    <img src="assets/images/Project/chain.png" className="chainRight" alt="chain right" />
                   </div>
 
                   <div className="flex flex-col justify-start items-center content-center text-center
@@ -179,7 +179,7 @@ const Projects = () => {
 
                     {project.technology && (
                       <div id="projectTechnology" className="flex flex-wrap justify-center items-center lg:mt-2 mr-auto ml-auto">
-                        <img className="w-6 mr-2" src="src/assets/images/general_icons/cog.svg"></img>
+                        <img className="w-6 mr-2" src="assets/images/general_icons/cog.svg"></img>
                         <p className="text-lg lg:text-2xl">{project.technology}</p>
                       </div>
                     )}
@@ -188,7 +188,7 @@ const Projects = () => {
                       {project.lien && (
                         <a className="flex justify-evenly items-center p-2 rounded-lg text-3xl mt-2 lg:w-fit 2xl:text-4xl 2xl:mt-4 cvButtons" href={project.lien} target="_blank" rel="noopener noreferrer">
                           Visiter le site
-                          <img className="w-6 ml-2 2xl:w-10" src="src/assets/images/general_icons/link.svg"></img>
+                          <img className="w-6 ml-2 2xl:w-10" src="assets/images/general_icons/link.svg"></img>
                         </a>
                       )}
                       {project.github && (
@@ -208,11 +208,11 @@ const Projects = () => {
 
         <div className="hidden h-1/6 lg:inline-flex projectButtonsContainer mr-auto ml-auto">
           <button className="prev" onClick={prevSlide}>
-            <img className="h-5/6 projectCarouselButton" src="src/assets/images/general_icons/left-button.png"></img>
+            <img className="h-5/6 projectCarouselButton" src="assets/images/general_icons/left-button.png"></img>
           </button>
           <div className="h-full w-3/6 Lever"></div>
           <button className="next" onClick={nextSlide}>
-            <img className="h-5/6 projectCarouselButton" src="src/assets/images/general_icons/right-button.png"></img>
+            <img className="h-5/6 projectCarouselButton" src="assets/images/general_icons/right-button.png"></img>
           </button>
         </div>
       </div>

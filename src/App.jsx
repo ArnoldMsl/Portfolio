@@ -6,6 +6,7 @@ import CV from '../src/components/CV'
 import Skills from '../src/components/Skills'
 import Timeline from '../src/components/Timeline'
 import Projects from '../src/components/Projects'
+import Contact from '../src/components/Contact'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/CV" element={<CV />} />
             <Route path="/Timeline" element={<Timeline />} />
             <Route path="/Projects" element={<Projects />} />
+            <Route path="/Contact" element={<Contact />} />
           </Routes>
         </div>
       </Router>

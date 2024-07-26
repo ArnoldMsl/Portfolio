@@ -21,22 +21,22 @@ const Skills = () => {
               Il permet de stocker et traiter les données de vos utilisateurs</p>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">SQL</p>
-              <img className="w-14 bg-slate-300 rounded-lg" src='../src/assets/images/Skills_icons/logos/mysql.png' alt='logo mysql'></img>
+              <img className="w-14 bg-slate-300 rounded-lg" src='assets/images/Skills_icons/logos/mysql.png' alt='logo mysql'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">PHP</p>
-              <img className="w-14" src='../src/assets/images/Skills_icons/logos/PHP.png' alt='logo php'></img>
+              <img className="w-14" src='assets/images/Skills_icons/logos/PHP.png' alt='logo php'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">Java</p>
-              <img className="w-14 bg-slate-300 rounded-lg" src='../src/assets/images/Skills_icons/logos/java.svg' alt='logo java'></img>
+              <img className="w-14 bg-slate-300 rounded-lg" src='assets/images/Skills_icons/logos/java.svg' alt='logo java'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">Symfony</p>
-              <img className="w-14 bg-slate-300 rounded-full" src='../src/assets/images/Skills_icons/logos/symfony.svg' alt='logo symfony'></img>
+              <img className="w-14 bg-slate-300 rounded-full" src='assets/images/Skills_icons/logos/symfony.svg' alt='logo symfony'></img>
             </div>
           </div>
-          <img className="mr-auto ml-auto" id="engineIcon" src='../src/assets/images/Skills_icons/engine.svg' alt="image d'un moteur"></img>
+          <img className="mr-auto ml-auto" id="engineIcon" src='assets/images/Skills_icons/engine.svg' alt="image d'un moteur"></img>
         </div>
 
         {/* Front-End */}
@@ -49,27 +49,27 @@ const Skills = () => {
               ce que l'utilisateur va voir affiché sur son écran</p>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">HTML</p>
-              <img className="w-14" src='../src/assets/images/Skills_icons/logos/HTML.png' alt='logo html'></img>
+              <img className="w-14" src='assets/images/Skills_icons/logos/HTML.png' alt='logo html'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">CSS</p>
-              <img className="w-14" src='../src/assets/images/Skills_icons/logos/CSS.png' alt='logo CSS'></img>
+              <img className="w-14" src='assets/images/Skills_icons/logos/CSS.png' alt='logo CSS'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">JavaScript</p>
-              <img className="w-14" src='../src/assets/images/Skills_icons/logos/js.png' alt='logo Javascript'></img>
+              <img className="w-14" src='assets/images/Skills_icons/logos/js.png' alt='logo Javascript'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">React</p>
-              <img className="w-14" src='../src/assets/images/Skills_icons/logos/React.png' alt='logo React'></img>
+              <img className="w-14" src='assets/images/Skills_icons/logos/react.png' alt='logo React'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">Tailwind CSS</p>
-              <img className="w-14" src='../src/assets/images/Skills_icons/logos/Tailwind.svg' alt='logo Tailwind'></img>
+              <img className="w-14" src='assets/images/Skills_icons/logos/tailwind.svg' alt='logo Tailwind'></img>
             </div>
           </div>
 
-          <img className="mr-auto ml-auto mt-[-1%]" src='../src/assets/images/Skills_icons/tripod.svg' alt="image d'un trépied d'architecte"></img>
+          <img className="mr-auto ml-auto mt-[-1%]" src='assets/images/Skills_icons/tripod.svg' alt="image d'un trépied d'architecte"></img>
         </div>
 
         {/* Outils */}
@@ -83,23 +83,23 @@ const Skills = () => {
             </p>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">Méthode Agile</p>
-              <img className="w-14 rounded-full" src='../src/assets/images/Skills_icons/logos/agile.jpg' alt='logo méthodologie agile'></img>
+              <img className="w-14 rounded-full" src='assets/images/Skills_icons/logos/agile.jpg' alt='logo méthodologie agile'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">GitHub</p>
-              <img className="w-14" src='../src/assets/images/general_icons/github.svg' alt='logo github'></img>
+              <img className="w-14" src='assets/images/general_icons/github.svg' alt='logo github'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">Figma</p>
-              <img className="w-14" src='../src/assets/images/Skills_icons/logos/figma.png' alt='logo Figma'></img>
+              <img className="w-14" src='assets/images/Skills_icons/logos/figma.png' alt='logo Figma'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
               <p className="w-4/8 text-2xl lg:text-4xl">Open AI</p>
-              <img className="w-14 rounded-full" src='../src/assets/images/Skills_icons/logos/OpenAI.jpg' alt='logo Open AI'></img>
+              <img className="w-14 rounded-full" src='assets/images/Skills_icons/logos/openai.jpg' alt='logo Open AI'></img>
             </div>
           </div>
 
-          <img className="mr-auto ml-auto" src='../src/assets/images/Skills_icons/toolbox.svg' alt="image d'une boite à outils"></img>
+          <img className="mr-auto ml-auto" src='assets/images/Skills_icons/toolbox.svg' alt="image d'une boite à outils"></img>
         </div>
       </div>
 
