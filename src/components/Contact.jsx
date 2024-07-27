@@ -20,14 +20,15 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:5174/Contact', formData, {
+      const response = await axios.post('https://api.arnoldmasselin.fr/', formData, {
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
+        withCredentials: true
       });
-      alert('Message sent successfully');
+      console.log('Email sent:', response.data);
     } catch (error) {
-      alert('Failed to send message');
+      console.error('Error sending email:', error);
     }
   };
 
