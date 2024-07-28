@@ -47,7 +47,7 @@ const Contact = () => {
     <section>
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center">Au boulot ?</h2>
-        <p className="mb-8 lg:mb-16 font-light text-center sm:text-xl">Vous êtes convaincu et souhaitez que nous travaillions ensemble ? À vous de jouer !</p>
+        <p className="mb-8 lg:mb-16 font-light text-center sm:text-xl">Vous êtes convaincu et souhaiteriez que nous travaillions ensemble ? À vous de jouer !</p>
         <form onSubmit={handleSubmit} className="space-y-8">
           <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium">Votre E-mail</label>

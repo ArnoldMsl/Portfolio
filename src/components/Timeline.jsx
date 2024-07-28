@@ -83,7 +83,7 @@ const Timeline = () => {
                             Après avoir construit mon premier ordinateur à partir de PC trouvés dans la rue, je commence à apprendre le C++ sur le Site du Zéro
                         </p>
                         <p>
-                            Je me met également à créér des mods pour jeux vidéos et à réaliser des maps en 3D
+                            Je me mets également à créér des mods pour jeux vidéos et à réaliser des maps en 3D
                         </p>
                     </VerticalTimelineElement>
 
@@ -120,7 +120,7 @@ const Timeline = () => {
                         icon={<img src='assets\images\Timeline\excel.svg' alt='icône excel'
                             style={{ width: '80%', height: '80%', marginRight: 'auto', marginLeft: 'auto', marginTop: '10%' }}></img>}
                     >
-                        <h3 className="vertical-timeline-element-title">À l'occcasion de mes cours de comptabilité, je développais des programmes et des petits jeux sur Excel (VBA)</h3>
+                        <h3 className="vertical-timeline-element-title">À l'occasion de mes cours de comptabilité, je développais des programmes et des petits jeux sur Excel (VBA)</h3>
                     </VerticalTimelineElement>
 
                     <VerticalTimelineElement
@@ -140,7 +140,7 @@ const Timeline = () => {
                     >
                         <h3 className="text-2xl vertical-timeline-element-title">Carrière d'Acheteur</h3>
                         <p>
-                            Je débute ma carrière en devenant Acheteur dans une grande entreprise du secteur de l'énergie pendant 5 ans. J'étais En charge de projets stratégiques (achat de Gaz en temps de guerre, de produits COVID pendant la crise) mais aussi de catégories
+                            Je débute ma carrière en devenant Acheteur dans une grande entreprise du secteur de l'énergie pendant 5 ans. J'étais en charge de projets stratégiques (achat de Gaz en temps de guerre, de produits COVID pendant la crise) mais aussi de catégories
                             dédiées comme celles du Digital.
                         </p>
                         <p>
@@ -169,7 +169,7 @@ const Timeline = () => {
                             pour mettre l'informatique au service du Droit ou du Commerce.
                         </p>
                         <p>
-                            Je complète donc un bootcamp intensif en présentiel de 5 mois à la Wild Code School de Paris où j'apprend
+                            Je complète donc un bootcamp intensif en présentiel de 5 mois à la Wild Code School de Paris où j'apprends
                             le HTML, CSS, PHP, Javascript ainsi que le framework symfony et tous les outils nécessaires au travail d'équipe (gitHub, Slack etc...)
                         </p>
                     </VerticalTimelineElement>
@@ -191,7 +191,7 @@ const Timeline = () => {
                     >
                         <h3 className="text-2xl vertical-timeline-element-title">Stage développeur JAVA SQL</h3>
                         <p>
-                            Je me met le pied à l'étrier avec un premier stage où je participais à la mise à jour d'un logiciel
+                            Je me mets le pied à l'étrier avec un premier stage où je participais à la mise à jour d'un logiciel
                             de traitement de données bancaires en Java et SQL.
                         </p>
                     </VerticalTimelineElement>
@@ -206,7 +206,7 @@ const Timeline = () => {
                             borderBottom: 'none',
                         }}
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
-                        date="Deuxième stage : Avril-Juillet 24"
+                        date="Deuxième stage : Avril-Juillet 2024"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
                         icon={<img src='assets\images\Timeline\react.svg' alt='Logo react'
                             style={{ width: '75%', height: '75%', marginRight: 'auto', marginLeft: 'auto', marginTop: '10%' }}></img>}
