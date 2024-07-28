@@ -566,7 +566,6 @@
   transform: translateX(-50%);
   width: 100%;
   justify-content: center;
-  padding: 1rem;
 }
 
 .projectContainer {
@@ -636,10 +635,10 @@
 }
 
 .exit-left {
-  transform: translateX(-200vw);
+  transform: translateX(-100vw);
   visibility: hidden;
 }
 .exit-right {
-  transform: translateX(200vw);
+  transform: translateX(100vw);
   visibility: hidden;
 }

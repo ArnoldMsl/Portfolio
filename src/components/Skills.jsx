@@ -94,8 +94,8 @@ const Skills = () => {
               <img className="w-14" src='assets/images/Skills_icons/logos/figma.png' alt='logo Figma'></img>
             </div>
             <div className="inline-flex w-full justify-between items-center md:pl-8 md:pr-8 lg:pl-14 lg:pr-14 mb-2">
-              <p className="w-4/8 text-2xl lg:text-4xl">Open AI</p>
-              <img className="w-14 rounded-full" src='assets/images/Skills_icons/logos/openai.jpg' alt='logo Open AI'></img>
+              <p className="w-4/8 text-2xl lg:text-4xl">Postman</p>
+              <img className="w-14 rounded-full" src='assets/images/Skills_icons/logos/postman.svg' alt='logo Open AI'></img>
             </div>
           </div>
 

@@ -143,7 +143,7 @@ const Projects = () => {
 
       {/* DESKTOP */}
       <div className="hidden w-screen lg:flex h-10 beamtimelineContainer"></div>
-      <div className="hidden lg:flex w-screen projectCarousel">
+      <div className="hidden lg:flex w-screen projectCarousel overflow-hidden">
 
         {projects.map((project, index) => {
           let classNames = 'slide'
@@ -210,7 +210,7 @@ const Projects = () => {
           <button className="prev" onClick={prevSlide}>
             <img className="h-5/6 projectCarouselButton" src="assets/images/general_icons/left-button.png"></img>
           </button>
-          <div className="h-full w-3/6 Lever"></div>
+          <div className="h-full w-1/6 Lever"></div>
           <button className="next" onClick={nextSlide}>
             <img className="h-5/6 projectCarouselButton" src="assets/images/general_icons/right-button.png"></img>
           </button>
