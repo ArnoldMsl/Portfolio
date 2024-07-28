@@ -40,7 +40,7 @@ const Home = () => {
                     md:text-start md:text-4xl md:ml-20 md:mt-10 md:mb-10
                     lg:text-5xl lg:ml-28
                     xl:text-6xl
-                    ">Et en tant que <span>Développeur Web,</span> je créé des trucs sur Internet</p>
+                    ">Et en tant que <span className="font-bold">Développeur Web,</span> je créé des trucs sur Internet</p>
                 </div>
                 <img className="rounded-full
                 hidden
