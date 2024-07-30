@@ -97,7 +97,7 @@ const Projects = () => {
   return (
     <div className="w-screen lg:h-screen flex flex-col justify-center items-center content-center projectContainer">
       <h2 className="w-11/12 text-center border-white rounded-lg border-4 border-solid
-      text-xl mb-4 mt-4 p-1 xl:text-2xl 2xl:text-3xl">
+      text-xl mb-2 mt-2 p-1 xl:text-2xl">
         Bienvenue à l'entrepôt ! <br />
         Ici, vous pouvez consulter les projets que j'ai réalisés ou auxquels j'ai participé
       </h2>
