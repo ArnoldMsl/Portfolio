@@ -7,9 +7,17 @@ Vous pouvez visiter le site en ligne à l'adresse suivante : https://arnoldmasse
 
 # Sections
 Histoire : Une timeline retraçant mon rapport à l'informatique et mon parcours dans les grandes lignes.
+
+
 Projets : Une galerie de mes projets passés, avec des descriptions, des technologies utilisées et des liens vers les dépôts GitHub ou les démos en ligne.
+
+
 Compétences : Une liste de mes compétences techniques et créatives.
+
+
 CV : une présentation de mes expériences professionnelles et de mes formations
+
+
 Contact : Un formulaire de contact pour me joindre directement.
 
 # Technologies utilisées
