@@ -1,8 +1,21 @@
-# React + Vite
+# Mon Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le repository de mon portfolio personnel. Ce site présente mes projets, compétences, expériences professionnelles et éducatives, ainsi que mon histoire et une page de contact
 
-Currently, two official plugins are available:
+# Démo
+Vous pouvez visiter le site en ligne à l'adresse suivante : https://arnoldmasselin.fr
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Sections
+Histoire : Une timeline retraçant mon rapport à l'informatique et mon parcours dans les grandes lignes.
+Projets : Une galerie de mes projets passés, avec des descriptions, des technologies utilisées et des liens vers les dépôts GitHub ou les démos en ligne.
+Compétences : Une liste de mes compétences techniques et créatives.
+CV : une présentation de mes expériences professionnelles et de mes formations
+Contact : Un formulaire de contact pour me joindre directement.
+
+# Technologies utilisées
+Front-end : HTML, CSS, JavaScript, TailWind CSS
+Framework : React
+Back-end : Le formulaire de contact fonctionne grâce à un petit serveur SMTP développé en Node.js et Express
+Hébergement : O2switch
+
+?'hésitez pas à me faire vos retours via contact@arnoldmasselin.fr, bonne visite !
