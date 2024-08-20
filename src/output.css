@@ -1179,7 +1179,7 @@ video {
 }
 
 .homeContainer {
-  background-image: url(../src/assets/images/background/background-triangle.png);
+  background-image: url(../src/assets/images/background/background-triangle.webp);
   background-size: 98% 90%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1195,7 +1195,7 @@ video {
 }
 
 .homeContainer #welcomeDownButton {
-  background-image: url(../src/assets/images/general_icons/down-button.png);
+  background-image: url(../src/assets/images/general_icons/down-button.webp);
   background-position: center;
   background-size: 100% 100%;
   cursor: pointer;
@@ -2299,11 +2299,6 @@ video {
   .\32xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .\32xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .\32xl\:text-4xl {
