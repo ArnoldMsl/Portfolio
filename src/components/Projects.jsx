@@ -37,9 +37,8 @@ const Projects = () => {
       id: 3,
       title: "GhostQuill",
       description: "Projet personnel de site de partage de textes anonymes",
-      descriptionDesktop: "Projet personnel de site de partages de textes anonymes en cours de réalisation sur une architecture Symfony SQL et react.",
+      descriptionDesktop: "EN CONSTRUCTION : Projet personnel de site de partages de textes anonymes en cours de réalisation sur une architecture Symfony SQL et react.",
       technology: "#Symfony, #SQL, #React, #TailWind",
-      github: "https://github.com/ArnoldMsl/GhostQuill",
       images: ["image1.png", "image2.png"],
     },
     {
