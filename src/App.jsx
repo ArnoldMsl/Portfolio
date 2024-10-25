@@ -11,20 +11,19 @@ import Footer from '../src/components/Footer'
 
 function App() {
 
-
   return (
     <>
-        <Navbar />
-        <div className="flex flex-col items-center justify-center md:space-y-48 space-y-28">
-          <Home />
-          <Nav />
-          <Timeline />
-          <Projects />
-          <Skills />
-          <CV />
-          <Contact />
-          <Footer />
-        </div>
+      <Navbar />
+      <div className="flex flex-col items-center justify-center md:space-y-48 space-y-28">
+        <Home />
+        <Nav />
+        <Timeline />
+        <Projects />
+        <Skills />
+        <CV />
+        <Contact />
+        <Footer />
+      </div>
     </>
   )
 }

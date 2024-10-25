@@ -11,6 +11,7 @@ const Contact = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isFailModalOpen, setIsFailModalOpen] = useState(false)
+  const [isRGPDModalOpen, setIsRGPDModalOpen] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -36,6 +37,13 @@ const Contact = () => {
       setIsFailModalOpen(true)
       console.error('Error sending email:', error)
     }
+  }
+
+  const openRGPDModal = () => {
+    setIsRGPDModalOpen(true)
+  }
+  const closeRGPDModal = () => {
+    setIsRGPDModalOpen(false)
   }
 
   const closeModal = () => {
@@ -69,9 +77,41 @@ const Contact = () => {
               placeholder="Comment puis-je vous aider ?"
               value={formData.message} onChange={handleChange}></textarea>
           </div>
+          <div>
+            <input type="checkbox" id="consentement" name="consentement" required></input>
+            <label for="consentement">
+              &nbsp;J'accepte que mes données personnelles soient enregistrées et utilisées pour le traitement de ma demande selon les conditions visionnables&nbsp;
+              <span className="text-decoration-line: underline cursor-pointer" onClick={openRGPDModal}>ici</span>
+            </label>
+          </div>
           <button type="submit" className="py-3 px-5 text-lg font-medium text-center text-white border-4 rounded-xl bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">C'est parti !</button>
         </form>
       </div>
+
+      {isRGPDModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-primarycolor p-6 rounded-lg shadow-lg max-w-sm w-full">
+            <p>Les Informations recueillies par ce formulaire sont enregistrées sous la forme
+              d'un courriel envoyé à l'adresse contact@arnoldmasselin.fr et traitées dans le but de prendre connaissance et de répondre
+              à la demande formulée par l'utilisateur dans le formulaire.
+            </p>
+            <p>
+              La base légale est l'article 6.1.a du RGPD (consentement).
+              Les destinataires de ces données sont le responsable de traitement (Webmaster) ainsi que le sous-traitant opérant la gestion
+              du serveur web (O2Switch).
+            </p>
+            <p>La durée de traitement des données est limitée au temps nécessaire pour traiter votre demande,
+              vous pouvez à tout moment demander au responsable de traitement l'accès aux données à caractère personnel,
+              la rectification ou l'effacement de celles-ci, ou une limitation du traitement relatif à la personne concernée,
+              ou du droit de s'opposer au traitement et du droit à la portabilité des données.
+            </p>
+            <p>Vous pouvez faire valoir ces droits auprès du responsable de traitement via contact@arnoldmasselin.fr
+              ou en introduisant une réclamation auprès d'une autorité de contrôle
+            </p>
+            <button onClick={closeRGPDModal} className="flex py-2 px-4 border-white border-solid rounded-xl border-2 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 mr-auto ml-auto mt-1">Ok</button>
+          </div>
+        </div>
+      )}
 
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
