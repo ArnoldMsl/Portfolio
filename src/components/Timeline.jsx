@@ -6,18 +6,25 @@ const Timeline = () => {
 
     return (
         <>
-            <div className="w-screen flex flex-col" id="timeline">
+            <div className="w-screen flex flex-col mt-28 md:mt-48" id="timeline">
+                <div className="flex w-full h-36 justify-center">
+                    <h3 className="border-white text-5xl rounded-lg border-4 border-solid w-fit mt-auto p-3 mb-7">
+                        Timeline
+                    </h3>
+                </div>
 
                 <div className="flex flex-col justify-center items-center text-center  ml-auto mr-auto
                 p-3 mt-3 w-4/6
-                xl:w-1/2 md:border-white md:rounded-lg md:border-4 md:border-solid
+                xl:w-10/12 
                 text-xl timelineIntroductionContainer">
                     <p>Bienvenue sur ma Timeline qui retrace l'histoire de mon rapport à la technique et l'informatique ! <br />
                         Elle vous permettra de mieux comprendre mon attrait pour ces sujets. Si vous souhaitez avoir accès à plus de détails,
-                        je vous invite à visiter les pages </p>
-                    <a href="#cv" className="underline">CV</a>
-                    <a href="#skills" className="underline">Compétences</a>
-                    <a href="#projects" className="underline">Projets</a>
+                        je vous invite à visiter les pages&nbsp;
+                        <a href="#cv" className="underline">CV</a>&nbsp;
+                        <a href="#skills" className="underline">Compétences</a>&nbsp;
+                        <a href="#projects" className="underline">Projets</a>
+                    </p>
+
                 </div>
 
                 <div className="w-screen mt-3 beamtimelineContainer"></div>

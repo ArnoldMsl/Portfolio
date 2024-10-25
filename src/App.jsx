@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col items-center justify-center md:space-y-48 space-y-28">
+      <div className="flex flex-col items-center justify-center">
         <Home />
         <Nav />
         <Timeline />

@@ -559,14 +559,6 @@
   box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
 }
 
-.projectButtonsContainer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  justify-content: center;
-}
 
 .projectContainer {
   position: relative;
