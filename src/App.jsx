@@ -7,15 +7,15 @@ import Timeline from '../src/components/Timeline'
 import Projects from '../src/components/Projects'
 import Contact from '../src/components/Contact'
 import Navbar from '../src/components/Navbar'
+import Footer from '../src/components/Footer'
 
 function App() {
 
 
   return (
     <>
-      <div>
         <Navbar />
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center md:space-y-48 space-y-28">
           <Home />
           <Nav />
           <Timeline />
@@ -23,8 +23,8 @@ function App() {
           <Skills />
           <CV />
           <Contact />
+          <Footer />
         </div>
-      </div>
     </>
   )
 }
