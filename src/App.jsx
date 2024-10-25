@@ -7,6 +7,7 @@ import Skills from '../src/components/Skills'
 import Timeline from '../src/components/Timeline'
 import Projects from '../src/components/Projects'
 import Contact from '../src/components/Contact'
+import Navbar from '../src/components/Navbar'
 
 function App() {
 
@@ -14,9 +15,10 @@ function App() {
   return (
     <>
       <Router>
-        <div className="flex items-center justify-center min-h-screen min-w-screen">
+      <Navbar />
+        <div className="flex flex-col items-center justify-center">
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} /> */}
             <Route path="/Nav" element={<Nav />} />
             <Route path="/Skills" element={<Skills />} />
             <Route path="/CV" element={<CV />} />

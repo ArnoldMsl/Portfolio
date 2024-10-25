@@ -33,9 +33,9 @@
   :root {
     font-family: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: hidden;
   
     color: rgba(255, 255, 255, 1);
     background-color: var(--primary-color);
