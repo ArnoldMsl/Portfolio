@@ -94,7 +94,7 @@ const Projects = () => {
   }
 
   return (
-    <div className="w-screen lg:h-screen flex flex-col justify-center items-center content-center projectContainer">
+    <div className="w-screen lg:h-screen flex flex-col justify-center items-center content-center projectContainer" id="projects">
       <h2 className="w-11/12 text-center border-white rounded-lg border-4 border-solid
       text-xl mb-2 mt-2 p-1 xl:text-2xl">
         Bienvenue à l'entrepôt ! <br />

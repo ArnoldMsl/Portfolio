@@ -1,13 +1,12 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
-import { Link } from 'react-router-dom'
 
 const Timeline = () => {
 
     return (
         <>
-            <div className="w-screen flex flex-col">
+            <div className="w-screen flex flex-col" id="timeline">
 
                 <div className="flex flex-col justify-center items-center text-center  ml-auto mr-auto
                 p-3 mt-3 w-4/6
@@ -16,9 +15,9 @@ const Timeline = () => {
                     <p>Bienvenue sur ma Timeline qui retrace l'histoire de mon rapport à la technique et l'informatique ! <br />
                         Elle vous permettra de mieux comprendre mon attrait pour ces sujets. Si vous souhaitez avoir accès à plus de détails,
                         je vous invite à visiter les pages </p>
-                    <Link to="/CV" className="underline">CV</Link>
-                    <Link to="/Skills" className="underline">Compétences</Link>
-                    <Link to="/Projects" className="underline">Projets</Link>
+                    <a href="#cv" className="underline">CV</a>
+                    <a href="#skills" className="underline">Compétences</a>
+                    <a href="#projects" className="underline">Projets</a>
                 </div>
 
                 <div className="w-screen mt-3 beamtimelineContainer"></div>
@@ -237,12 +236,12 @@ const Timeline = () => {
                         <p>
                             À nous de l'écrire ensemble ! N'hésitez pas à retrouver les éléments plus détaillés
                             dans les pages &nbsp;
-                            <Link to="/CV" className="text-xl text-secondaryMinor underline">CV</Link>,&nbsp;
-                            <Link to="/Skills" className="text-xl text-secondaryMinor underline">Compétences</Link> et &nbsp;
-                            <Link to="/Projects" className="text-xl text-secondaryMinor underline">Projets</Link>
+                            <a href="#cv" className="text-xl text-secondaryMinor underline">CV</a>,&nbsp;
+                            <a href="#skills" className="text-xl text-secondaryMinor underline">Compétences</a> et &nbsp;
+                            <a href="#projects" className="text-xl text-secondaryMinor underline">Projets</a>
                         </p>
                         <p>
-                            Convaincu ? n'hésitez pas à <Link to="/Contact" className="text-xl text-secondaryMinor underline">me contacter</Link> !
+                            Convaincu ? n'hésitez pas à <a href="#contact" className="text-xl text-secondaryMinor underline">me contacter</a> !
                         </p>
 
                     </VerticalTimelineElement>

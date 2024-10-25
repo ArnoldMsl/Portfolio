@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
         <div className="
         homeContainer
         w-screen h-screen flex flex-col justify-center items-center
-        ">
+        " id="home">
             <h1 className="
             text-3xl mb-2
             sm:text-3xl sm:m-2
@@ -56,14 +55,14 @@ const Home = () => {
             lg:text-4xl
             xl:text-5xl"
                 id="invitationText">On construit ensemble ?</p>
-            <Link to="/Nav" className="
+            <a href="#navContainer" className="
             block rounded-full
             w-12 h-12
             md:w-16 md:h-16 
             lg:w-20 lg:h-20
             xl:w-24 xl:h-24
             2xl:w-28 2xl:h-28"
-                id="welcomeDownButton" src='assets/images/general_icons/down-button.png' alt='bouton continuer'></Link>
+                id="welcomeDownButton" src='assets/images/general_icons/down-button.png' alt='bouton continuer'></a>
         </div >
     )
 }

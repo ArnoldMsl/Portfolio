@@ -5,7 +5,7 @@ import React from 'react'
 const Skills = () => {
 
   return (
-    <div className="flex flex-col w-screen h-fit 2xl:h-screen justify-end items-center text-center">
+    <div className="flex flex-col w-screen h-fit 2xl:h-screen justify-end items-center text-center" id="skills">
       <h1 className="
             border-white text-4xl rounded-lg border-4 border-solid w-fit mt-auto p-3 mb-7">Compétences
       </h1>

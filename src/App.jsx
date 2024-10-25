@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './output.css'
 import Home from '../src/components/Home'
 import Nav from '../src/components/Nav'
@@ -14,20 +13,18 @@ function App() {
 
   return (
     <>
-      <Router>
-      <Navbar />
+      <div>
+        <Navbar />
         <div className="flex flex-col items-center justify-center">
-          <Routes>
-            {/* <Route path="/" element={<Home />} /> */}
-            <Route path="/Nav" element={<Nav />} />
-            <Route path="/Skills" element={<Skills />} />
-            <Route path="/CV" element={<CV />} />
-            <Route path="/Timeline" element={<Timeline />} />
-            <Route path="/Projects" element={<Projects />} />
-            <Route path="/Contact" element={<Contact />} />
-          </Routes>
+          <Home />
+          <Nav />
+          <Timeline />
+          <Projects />
+          <Skills />
+          <CV />
+          <Contact />
         </div>
-      </Router>
+      </div>
     </>
   )
 }

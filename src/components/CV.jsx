@@ -15,7 +15,7 @@ const CV = () => {
 
     return (
         <div className="justify-center text-center h-screen w-screen
-        cvContainer">
+        cvContainer" id="cv">
 
             <div className="w-11/12 inline-flex justify-evenly text-center mt-2 mr-auto ml-auto"
                 id="cvButtonsContainer">
