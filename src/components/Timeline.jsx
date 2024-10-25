@@ -14,7 +14,7 @@ const Timeline = () => {
                 </div>
 
                 <div className="flex flex-col justify-center items-center text-center  ml-auto mr-auto
-                p-3 mt-3 w-4/6
+                p-3 mt-3 md:w-4/6 w-full
                 xl:w-10/12 
                 text-xl timelineIntroductionContainer">
                     <p>Bienvenue sur ma Timeline qui retrace l'histoire de mon rapport à la technique et l'informatique ! <br />
@@ -234,6 +234,27 @@ const Timeline = () => {
                             borderBottom: 'none',
                         }}
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
+                        date="Depuis Octobre 2024"
+                        iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
+                        icon={<img src='assets\images\Timeline\dice.svg' alt='icône de dé à 20 faces'
+                            style={{ width: '90%', height: '90%', marginRight: 'auto', marginLeft: 'auto', marginTop: '5%' }}></img>}
+                    >
+                        <h3 className="text-2xl vertical-timeline-element-title">Volontariat : Développeur Front REACT</h3>
+                        <p>
+                            Depuis Octobre 2024, j'ai le plaisir d'avoir rejoins l'équipe de bénévoles de l'association du Guide du Rôliste Galactique (GROG) pour les aider à construire la V3 de leur site sur une architecture Next + React
+                        </p>
+                    </VerticalTimelineElement>
+
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element"
+                        contentStyle={{
+                            background: 'transparent',
+                            color: '#fff',
+                            border: '3px solid #fff',
+                            borderRadius: '15px',
+                            borderBottom: 'none',
+                        }}
+                        contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="Et maintenant ?"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
                         icon={<img src='assets\images\Timeline\eyes.svg' alt='Logo react'
@@ -250,6 +271,16 @@ const Timeline = () => {
                         <p>
                             Convaincu ? n'hésitez pas à <a href="#contact" className="text-xl text-secondaryMinor underline">me contacter</a> !
                         </p>
+
+                    </VerticalTimelineElement>
+
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element"
+                        date="Let's go !"
+                        iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
+                        icon={<img src='assets\images\Timeline\flag.svg' alt='Logo react'
+                            style={{ width: '65%', height: '65%', marginRight: 'auto', marginLeft: 'auto', marginTop: '15%' }}></img>}
+                    >
 
                     </VerticalTimelineElement>
 

@@ -407,7 +407,7 @@
 .textCVContainer {
   display: flex;
   width: 95%;
-  height: auto;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
   padding: 2px;
@@ -431,6 +431,10 @@
   text-align: center;
   cursor: pointer;
   padding: 2%;
+}
+
+.textCVContainer p {
+  height: fit-content; /* Ajustez la valeur selon vos besoins */
 }
 
 #extendButton {

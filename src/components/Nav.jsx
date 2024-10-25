@@ -3,7 +3,7 @@ import React from 'react'
 const Nav = () => {
     return (
         <div className="h-screen w-screen justify-center items-center self-center
-        "
+        mt-11"
             id="navContainer">
 
             <a href="#skills"
