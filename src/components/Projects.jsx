@@ -222,7 +222,7 @@ const Projects = () => {
           })}
         </div>
       </div>
-      <div className="hidden h-20 md:flex projectButtonsContainer w-full justify-center mt-10">
+      <div className="hidden h-20 md:flex projectButtonsContainer w-full justify-center mt-10 border-b-2 border-secondaryMinor">
         <button className="prev" onClick={prevSlide}>
           <img className="h-5/6 projectCarouselButton" src="assets/images/general_icons/left-button.png"></img>
         </button>
