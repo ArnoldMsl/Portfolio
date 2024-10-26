@@ -17,7 +17,7 @@ const Home = () => {
             h-36 mb-2
             sm:h-32 sm:m-2
             md:hidden"
-                id='photoProfil' src='assets/images/others/photo.jpg' alt='photo de profil'></img>
+                id='photoProfil' src='assets/images/others/photo.webp' alt='photo de profil'></img>
 
             <div className="welcomeContainer inline-flex items-center">
 
@@ -46,7 +46,7 @@ const Home = () => {
                 md:block md:h-44 md:mr-10
                 lg:h-56 lg:mr-10
                 xl:h-80 xl:mr-10"
-                    id='photoProfil' src='assets/images/others/photo.jpg' alt='photo de profil'></img>
+                    id='photoProfil' src='assets/images/others/photo.webp' alt='photo de profil'></img>
             </div>
             <p className="
             text-2xl mb-4
@@ -62,7 +62,9 @@ const Home = () => {
             lg:w-20 lg:h-20
             xl:w-24 xl:h-24
             2xl:w-28 2xl:h-28"
+
                 id="welcomeDownButton" src='assets/images/general_icons/down-button.png' alt='bouton continuer'></a>
+
         </div >
     )
 }
