@@ -658,3 +658,21 @@
     transform: rotate(360deg);
   }
 }
+
+/* Preload images */
+
+.preload-images {
+  background-image: url(../src/assets/images/Nav_icons/factory-open.svg);
+}
+
+#warehouse-preload {
+  background-image: url(../src/assets/images/Nav_icons/warehouse-open.svg);
+}
+
+#skills-preload {
+  background-image: url(../src/assets/images/Nav_icons/box-open.svg);
+}
+
+#CV-preload {
+  background-image: url(../src/assets/images/Nav_icons/cv-open.svg);
+}

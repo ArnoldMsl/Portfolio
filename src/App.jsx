@@ -18,6 +18,11 @@ function App() {
     <>
       <Navbar />
       <div className="flex flex-col items-center justify-center">
+        <div className="preload-images hidden">
+          <div id="warehouse-preload"></div>
+          <div id="skills-preload"></div>
+          <div id="CV-preload"></div>
+        </div>
         <Home />
         <Nav />
         <Timeline />

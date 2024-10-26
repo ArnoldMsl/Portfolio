@@ -957,12 +957,12 @@ video {
   border-bottom-width: 2px;
 }
 
-.border-t-2 {
-  border-top-width: 2px;
-}
-
 .border-b-4 {
   border-bottom-width: 4px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
 }
 
 .border-solid {
@@ -1915,6 +1915,24 @@ video {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Preload images */
+
+.preload-images {
+  background-image: url(../src/assets/images/Nav_icons/factory-open.svg);
+}
+
+#warehouse-preload {
+  background-image: url(../src/assets/images/Nav_icons/warehouse-open.svg);
+}
+
+#skills-preload {
+  background-image: url(../src/assets/images/Nav_icons/box-open.svg);
+}
+
+#CV-preload {
+  background-image: url(../src/assets/images/Nav_icons/cv-open.svg);
 }
 
 .hover\:border-gray-400:hover {
