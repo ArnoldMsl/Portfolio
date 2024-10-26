@@ -14,166 +14,172 @@ const CV = () => {
     }
 
     return (
-        <div className="justify-center text-center h-screen w-screen
-        cvContainer">
+        <>
+            <div className="flex w-full h-36 justify-center mt-28 md:mt-48">
+                <h3 className="border-white text-5xl rounded-lg border-4 border-solid w-fit mt-auto p-3 mb-12">
+                    Curriculum Vitae
+                </h3>
+            </div>
+            <div className="justify-center text-center h-screen w-screen cvContainer" id="cv">
 
-            <div className="w-11/12 inline-flex justify-evenly text-center mt-2 mr-auto ml-auto"
-                id="cvButtonsContainer">
+                <div className="w-full inline-flex justify-evenly text-center mt-2 mr-auto ml-auto"
+                    id="cvButtonsContainer">
 
-                <a href="https://www.linkedin.com/in/arnold-masselin-93b13912b" target="_blank" className="
+                    <a href="https://www.linkedin.com/in/arnold-masselin-93b13912b" target="_blank" className="
                 flex justify-center items-center text-center 
                 w-4/12 h-8 ml-1 rounded-md text-xs
                 md:w-3/12 md:text-xl
                 cvButtons">
-                    Linkedin
-                    <img src="assets/images/general_icons/linkedin.svg" alt="Linkedin" className="w-6 ml-1 buttonLogo" id="linkedinIcon" />
-                </a>
-                <a href="assets/downloads/CV_Masselin.pdf" download className="
+                        Linkedin
+                        <img src="assets/images/general_icons/linkedin.svg" alt="Linkedin" className="w-6 ml-1 buttonLogo" id="linkedinIcon" />
+                    </a>
+                    <a href="assets/downloads/CV_Masselin.pdf" download className="
                 flex justify-center items-center text-center 
                 w-3/12 h-8 ml-1 rounded-md text-xs
                 md:text-xl
                 cvButtons">
-                    CV
-                    <img src="assets/images/general_icons/download.svg" alt="télécharger CV" className="w-6 ml-1 buttonLogo" />
-                </a>
-                <a href="https://github.com/ArnoldMsl" target="_blank" className="
+                        CV
+                        <img src="assets/images/general_icons/download.svg" alt="télécharger CV" className="w-6 ml-1 buttonLogo" />
+                    </a>
+                    <a href="https://github.com/ArnoldMsl" target="_blank" className="
                 flex justify-center items-center text-center 
                 w-3/12 h-8 ml-1 rounded-md text-xs
                 md:text-xl
                 cvButtons">
-                    GitHub
-                    <img src="assets/images/general_icons/github.svg" alt="GitHub" className="w-6 ml-1 buttonLogo" />
-                </a>
-            </div>
+                        GitHub
+                        <img src="assets/images/general_icons/github.svg" alt="GitHub" className="w-6 ml-1 buttonLogo" />
+                    </a>
+                </div>
 
-            <div className="grid grid-cols-1 justify-evenly text-center h-fit
+                <div className="grid grid-cols-1 justify-evenly text-center h-fit
             cvLeftContainer">
 
-                <p className="
-            border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-3 md:mt-0"
-                    id="CVexperience">Expériences</p>
+                    <p className="
+            border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-6 mb-4 md:mt-0"
+                        id="CVexperience">Expériences</p>
 
-                <div className="lg:text-xl textCVContainer" id="hoard">
-                    <button onClick={() => toggleVisibility(0)}>
-                        Avr-Juil 24 : Développeur Front [REACT] - The Hoard
-                        <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[0] ? 'rotated' : ''}></img>
-                    </button>
-                    {visibleSections[0] && (
-                        <p>
-                            Réalisation pour une plateforme d'E-commerce, d'une application web mono-page de traitement d'images et d'impression en <span className="text-xl text-secondaryMinor" id="CvTextFocus">REACT</span>
-                        </p>
-                    )}
+                    <div className="lg:text-xl textCVContainer" id="hoard">
+                        <button onClick={() => toggleVisibility(0)}>
+                            Avr-Juil 24 : Développeur Front [REACT] - The Hoard
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[0] ? 'rotated' : ''}></img>
+                        </button>
+                        {visibleSections[0] && (
+                            <p>
+                                Réalisation pour une plateforme d'E-commerce, d'une application web mono-page de traitement d'images et d'impression en <span className="text-xl text-secondaryMinor" id="CvTextFocus">REACT</span>
+                            </p>
+                        )}
+                    </div>
+
+                    <div className="lg:text-xl textCVContainer" id="numerilis">
+                        <button onClick={() => toggleVisibility(4)}>
+                            Fev - Avr 24 : Développeur Back [JAVA + SQL] - Numerilis
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[4] ? 'rotated' : ''}></img>
+                        </button>
+                        {visibleSections[4] && (
+                            <p>
+                                Développement Back-End en <span className="text-xl text-secondaryMinor" id="CvTextFocus">Java et SQL</span> d'un logiciel de gestion de données bancaires pour s'adapter aux évolutions réglementaires
+                            </p>
+                        )}
+                    </div>
+
+                    <div className="lg:text-xl textCVContainer" id="grdf">
+                        <button onClick={() => toggleVisibility(1)}>
+                            2018 - 23 : Acheteur - GRDF
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[1] ? 'rotated' : ''}></img>
+                        </button>
+                        {visibleSections[1] && (
+                            <p>
+                                <span className="text-xl text-secondaryMinor" id="CvTextFocus">Formulation technique des besoins</span>, établissement des stratégies d’achat, mise en place et suivi des consultations, négociations commerciales et contractuelles,
+                                gestion des catégories d’achats dédiées. Projets notables : <br /><br />
+                                -Gestion de la <span className="text-xl text-secondaryMinor" id="CvTextFocus">catégorie d'achat Digitale</span> : Prestations intelectuelles, applications Saas <br /><br />
+                                -Achat de <span className="text-xl text-secondaryMinor" id="CvTextFocus">Gaz</span> : Refonte de la structure contractuelle et concurrentielle en période de crise d’approvisionnement<br /><br />
+                                -Achat de produits <span className="text-xl text-secondaryMinor" id="CvTextFocus">COVID</span> : Sourcing Fournisseur et suivi logistique en période de crise sanitaire.
+                            </p>
+                        )}
+                    </div>
+
+                    <div className="lg:text-xl textCVContainer" id="genci">
+                        <button onClick={() => toggleVisibility(5)}>
+                            Avr - Juin 14 : Stagiaire Projets Européens - GENCI
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[5] ? 'rotated' : ''}></img>
+                        </button>
+                        {visibleSections[5] && (
+                            <p>
+                                Pour une structure européenne de <span className="text-xl text-secondaryMinor" id="CvTextFocus">supercalculateurs</span> : <br /><br />
+                                -Reporting et Suivi d'une procédure de Pre Commercial Procurement <br /><br />
+                                -Rédaction de conventions, de conditions générales d'achat
+                            </p>
+                        )}
+                    </div>
+
+                    <div className="lg:text-xl textCVContainer" id="sushis">
+                        <button onClick={() => toggleVisibility(2)}>
+                            2013 - 15 : Reponsable Restaurant - Pop sushis
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[2] ? 'rotated' : ''}></img>
+                        </button>
+                        {visibleSections[2] && (
+                            <p>
+                                Job étudiant à temps partiel : <span className="text-xl text-secondaryMinor" id="CvTextFocus">Gestion de l'équipe</span>, commandes fournisseurs, comptabilité basique, accueil, caisse, livraisons ponctuelles
+                            </p>
+                        )}
+                    </div>
                 </div>
 
-                <div className="lg:text-xl textCVContainer" id="numerilis">
-                    <button onClick={() => toggleVisibility(4)}>
-                        Fev - Avr 24 : Développeur Back [JAVA + SQL] - Numerilis
-                        <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[4] ? 'rotated' : ''}></img>
-                    </button>
-                    {visibleSections[4] && (
-                        <p>
-                            Développement Back-End en <span className="text-xl text-secondaryMinor" id="CvTextFocus">Java et SQL</span> d'un logiciel de gestion de données bancaires pour s'adapter aux évolutions réglementaires
-                        </p>
-                    )}
-                </div>
+                {/* Image du casier */}
 
-                <div className="lg:text-xl textCVContainer" id="grdf">
-                    <button onClick={() => toggleVisibility(1)}>
-                        2018 - 23 : Acheteur - GRDF
-                        <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[1] ? 'rotated' : ''}></img>
-                    </button>
-                    {visibleSections[1] && (
-                        <p>
-                            <span className="text-xl text-secondaryMinor" id="CvTextFocus">Formulation technique des besoins</span>, établissement des stratégies d’achat, mise en place et suivi des consultations, négociations commerciales et contractuelles,
-                            gestion des catégories d’achats dédiées. Projets notables : <br /><br />
-                            -Gestion de la <span className="text-xl text-secondaryMinor" id="CvTextFocus">catégorie d'achat Digitale</span> : Prestations intelectuelles, applications Saas <br /><br />
-                            -Achat de <span className="text-xl text-secondaryMinor" id="CvTextFocus">Gaz</span> : Refonte de la structure contractuelle et concurrentielle en période de crise d’approvisionnement<br /><br />
-                            -Achat de produits <span className="text-xl text-secondaryMinor" id="CvTextFocus">COVID</span> : Sourcing Fournisseur et suivi logistique en période de crise sanitaire.
-                        </p>
-                    )}
-                </div>
+                <img className="hidden md:block md:mr-auto md:ml-auto w-3/4"
+                    id="locker" src='assets/images/background/locker.png' alt="image d'un casier de vestiaire"></img>
 
-                <div className="lg:text-xl textCVContainer" id="genci">
-                    <button onClick={() => toggleVisibility(5)}>
-                        Avr - Juin 14 : Stagiaire Projets Européens - GENCI
-                        <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[5] ? 'rotated' : ''}></img>
-                    </button>
-                    {visibleSections[5] && (
-                        <p>
-                            Pour une structure européenne de <span className="text-xl text-secondaryMinor" id="CvTextFocus">supercalculateurs</span> : <br /><br />
-                            -Reporting et Suivi d'une procédure de Pre Commercial Procurement <br /><br />
-                            -Rédaction de conventions, de conditions générales d'achat
-                        </p>
-                    )}
-                </div>
+                {/* Grid de droite : formations */}
 
-                <div className="lg:text-xl textCVContainer" id="sushis">
-                    <button onClick={() => toggleVisibility(2)}>
-                        2013 - 15 : Reponsable Restaurant - Pop sushis
-                        <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[2] ? 'rotated' : ''}></img>
-                    </button>
-                    {visibleSections[2] && (
-                        <p>
-                            Job étudiant à temps partiel : <span className="text-xl text-secondaryMinor" id="CvTextFocus">Gestion de l'équipe</span>, commandes fournisseurs, comptabilité basique, accueil, caisse, livraisons ponctuelles
-                        </p>
-                    )}
-                </div>
-            </div>
-
-            {/* Image du casier */}
-
-            <img className="hidden md:block md:mr-auto md:ml-auto w-3/4"
-                id="locker" src='assets/images/background/locker.png' alt="image d'un casier de vestiaire"></img>
-
-            {/* Grid de droite : formations */}
-
-            <div className="grid grid-cols-1 justify-evenly text-center h-fit
+                <div className="grid grid-cols-1 justify-evenly text-center h-fit
             cvRightContainer">
 
-                <p className="
+                    <p className="
             border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-3 md:mt-0"
-                    id="CVformations">Formations</p>
+                        id="CVformations">Formations</p>
 
-                <div className="lg:text-xl textCVContainer" id="wild">
-                    <button onClick={() => toggleVisibility(3)}>
-                        Sept - Fev 24 Formation développeur Web PHP - Wild Code School
-                        <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[3] ? 'rotated' : ''}></img>
-                    </button>
-                    {visibleSections[3] && (
-                        <p>
-                            Bootcamp intensif présentiel de 5 mois apprenant le métier de développeur web avec une dominante <span className="text-xl text-secondaryMinor" id="CvTextFocus">PHP + SQL</span> et décernant le <span className="text-xl text-secondaryMinor" id="CvTextFocus">titre RNCP développeur Web :</span><br /><br />
-                            -HTML, CSS, PHP, SQL, Javascript, API<br />
-                            -Programmation orientée objet<br />
-                            -Travail en équipe et en méthodologie Agile via GitHub
-                        </p>
-                    )}
-                </div>
+                    <div className="lg:text-xl textCVContainer" id="wild">
+                        <button onClick={() => toggleVisibility(3)}>
+                            Sept - Fev 24 Formation développeur Web PHP - Wild Code School
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[3] ? 'rotated' : ''}></img>
+                        </button>
+                        {visibleSections[3] && (
+                            <p>
+                                Bootcamp intensif présentiel de 5 mois apprenant le métier de développeur web avec une dominante <span className="text-xl text-secondaryMinor" id="CvTextFocus">PHP + SQL</span> et décernant le <span className="text-xl text-secondaryMinor" id="CvTextFocus">titre RNCP développeur Web :</span><br /><br />
+                                -HTML, CSS, PHP, SQL, Javascript, API<br />
+                                -Programmation orientée objet<br />
+                                -Travail en équipe et en méthodologie Agile via GitHub
+                            </p>
+                        )}
+                    </div>
 
-                <div className="lg:text-xl textCVContainer" id="kedge">
-                    <button onClick={() => toggleVisibility(6)}>
-                        2018-19 Master 2 Management des achats - Kedge
-                        <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[6] ? 'rotated' : ''}></img>
-                    </button>
-                    {visibleSections[6] && (
-                        <p>
-                            Master II réalisé en <span className="text-xl text-secondaryMinor" id="CvTextFocus">Alternance</span> au sein de GRDF couvrant les connaissances nécessaires au métier d'acheteur : Négociation, <span className="text-xl text-secondaryMinor" id="CvTextFocus">gestion de projet</span>, analyse, communication
-                        </p>
-                    )}
-                </div>
-                <div className="lg:text-xl textCVContainer" id="nanterre">
-                    <button onClick={() => toggleVisibility(7)}>
-                        2011-17 Master II Droit de l'Économie - Nanterre
-                        <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[7] ? 'rotated' : ''}></img>
-                    </button>
-                    {visibleSections[7] && (
-                        <p>
-                            Master II pluridisciplinaire de Droit Public augmenté d'une analyse économique du Droit. Parcours spécialisé
-                            en Droit et Économie des contrats publics et Droit des affaires
-                        </p>
-                    )}
+                    <div className="lg:text-xl textCVContainer" id="kedge">
+                        <button onClick={() => toggleVisibility(6)}>
+                            2018-19 Master 2 Management des achats - Kedge
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[6] ? 'rotated' : ''}></img>
+                        </button>
+                        {visibleSections[6] && (
+                            <p>
+                                Master II réalisé en <span className="text-xl text-secondaryMinor" id="CvTextFocus">Alternance</span> au sein de GRDF couvrant les connaissances nécessaires au métier d'acheteur : Négociation, <span className="text-xl text-secondaryMinor" id="CvTextFocus">gestion de projet</span>, analyse, communication
+                            </p>
+                        )}
+                    </div>
+                    <div className="lg:text-xl textCVContainer" id="nanterre">
+                        <button onClick={() => toggleVisibility(7)}>
+                            2011-17 Master II Droit de l'Économie - Nanterre
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[7] ? 'rotated' : ''}></img>
+                        </button>
+                        {visibleSections[7] && (
+                            <p>
+                                Master II pluridisciplinaire de Droit Public augmenté d'une analyse économique du Droit. Parcours spécialisé
+                                en Droit et Économie des contrats publics et Droit des affaires
+                            </p>
+                        )}
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

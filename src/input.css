@@ -33,9 +33,9 @@
   :root {
     font-family: League-Spartan, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: hidden;
   
     color: rgba(255, 255, 255, 1);
     background-color: var(--primary-color);
@@ -407,7 +407,7 @@
 .textCVContainer {
   display: flex;
   width: 95%;
-  height: auto;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
   padding: 2px;
@@ -431,6 +431,10 @@
   text-align: center;
   cursor: pointer;
   padding: 2%;
+}
+
+.textCVContainer p {
+  height: fit-content; /* Ajustez la valeur selon vos besoins */
 }
 
 #extendButton {
@@ -559,14 +563,6 @@
   box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
 }
 
-.projectButtonsContainer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  justify-content: center;
-}
 
 .projectContainer {
   position: relative;
@@ -641,4 +637,24 @@
 .exit-right {
   transform: translateX(100vw);
   visibility: hidden;
+}
+
+/* Loader */
+
+.loader {
+  border: 4px solid rgb(255, 255, 255);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: var(--secondary-color); /* Couleur personnalisable */
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

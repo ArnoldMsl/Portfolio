@@ -1,24 +1,30 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
-import { Link } from 'react-router-dom'
 
 const Timeline = () => {
 
     return (
         <>
-            <div className="w-screen flex flex-col">
+            <div className="w-screen flex flex-col mt-28 md:mt-48" id="timeline">
+                <div className="flex w-full h-36 justify-center">
+                    <h3 className="border-white text-5xl rounded-lg border-4 border-solid w-fit mt-auto p-3 mb-7">
+                        Timeline
+                    </h3>
+                </div>
 
                 <div className="flex flex-col justify-center items-center text-center  ml-auto mr-auto
-                p-3 mt-3 w-4/6
-                xl:w-1/2 md:border-white md:rounded-lg md:border-4 md:border-solid
+                p-3 mt-3 md:w-4/6 w-full
+                xl:w-10/12 
                 text-xl timelineIntroductionContainer">
                     <p>Bienvenue sur ma Timeline qui retrace l'histoire de mon rapport à la technique et l'informatique ! <br />
                         Elle vous permettra de mieux comprendre mon attrait pour ces sujets. Si vous souhaitez avoir accès à plus de détails,
-                        je vous invite à visiter les pages </p>
-                    <Link to="/CV" className="underline">CV</Link>
-                    <Link to="/Skills" className="underline">Compétences</Link>
-                    <Link to="/Projects" className="underline">Projets</Link>
+                        je vous invite à visiter les pages&nbsp;
+                        <a href="#cv" className="underline">CV</a>&nbsp;
+                        <a href="#skills" className="underline">Compétences</a>&nbsp;
+                        <a href="#projects" className="underline">Projets</a>
+                    </p>
+
                 </div>
 
                 <div className="w-screen mt-3 beamtimelineContainer"></div>
@@ -228,6 +234,27 @@ const Timeline = () => {
                             borderBottom: 'none',
                         }}
                         contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
+                        date="Depuis Octobre 2024"
+                        iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
+                        icon={<img src='assets\images\Timeline\dice.svg' alt='icône de dé à 20 faces'
+                            style={{ width: '90%', height: '90%', marginRight: 'auto', marginLeft: 'auto', marginTop: '5%' }}></img>}
+                    >
+                        <h3 className="text-2xl vertical-timeline-element-title">Volontariat : Développeur Front REACT</h3>
+                        <p>
+                            Depuis Octobre 2024, j'ai le plaisir d'avoir rejoins l'équipe de bénévoles de l'association du Guide du Rôliste Galactique (GROG) pour les aider à construire la V3 de leur site sur une architecture Next + React
+                        </p>
+                    </VerticalTimelineElement>
+
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element"
+                        contentStyle={{
+                            background: 'transparent',
+                            color: '#fff',
+                            border: '3px solid #fff',
+                            borderRadius: '15px',
+                            borderBottom: 'none',
+                        }}
+                        contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
                         date="Et maintenant ?"
                         iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
                         icon={<img src='assets\images\Timeline\eyes.svg' alt='Logo react'
@@ -237,13 +264,23 @@ const Timeline = () => {
                         <p>
                             À nous de l'écrire ensemble ! N'hésitez pas à retrouver les éléments plus détaillés
                             dans les pages &nbsp;
-                            <Link to="/CV" className="text-xl text-secondaryMinor underline">CV</Link>,&nbsp;
-                            <Link to="/Skills" className="text-xl text-secondaryMinor underline">Compétences</Link> et &nbsp;
-                            <Link to="/Projects" className="text-xl text-secondaryMinor underline">Projets</Link>
+                            <a href="#cv" className="text-xl text-secondaryMinor underline">CV</a>,&nbsp;
+                            <a href="#skills" className="text-xl text-secondaryMinor underline">Compétences</a> et &nbsp;
+                            <a href="#projects" className="text-xl text-secondaryMinor underline">Projets</a>
                         </p>
                         <p>
-                            Convaincu ? n'hésitez pas à <Link to="/Contact" className="text-xl text-secondaryMinor underline">me contacter</Link> !
+                            Convaincu ? n'hésitez pas à <a href="#contact" className="text-xl text-secondaryMinor underline">me contacter</a> !
                         </p>
+
+                    </VerticalTimelineElement>
+
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element"
+                        date="Let's go !"
+                        iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
+                        icon={<img src='assets\images\Timeline\flag.svg' alt='Logo react'
+                            style={{ width: '65%', height: '65%', marginRight: 'auto', marginLeft: 'auto', marginTop: '15%' }}></img>}
+                    >
 
                     </VerticalTimelineElement>
 

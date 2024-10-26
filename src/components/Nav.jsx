@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const Nav = () => {
     return (
         <div className="h-screen w-screen justify-center items-center self-center
-        "
+        mt-11"
             id="navContainer">
 
-            <Link to="/Skills"
+            <a href="#skills"
                 className="
                 flex items-center justify-center
                 w-full h-20 mt-1 mb-1 mr-auto ml-auto
@@ -25,9 +24,9 @@ const Nav = () => {
                     md:hidden">
                         Compétences</label>
                 </div>
-            </Link>
+            </a>
 
-            <Link to="/CV"
+            <a href="#cv"
                 className="
                     flex items-center justify-center
                     w-full h-20 mt-1 mb-1 mr-auto ml-auto
@@ -45,7 +44,7 @@ const Nav = () => {
                         md:hidden">
                         CV</label>
                 </div>
-            </Link>
+            </a>
 
             <div id="clockNavContainer">
                 <p className="flex flex-col justify-center items-center text-justify
@@ -58,7 +57,7 @@ const Nav = () => {
                         id="navCatchPhrase">On commence où ?</span>
                 </p>
 
-                <Link to="/Timeline"
+                <a href="#timeline"
                     className="
                     flex items-center justify-center
                     w-full h-20 mt-1 mb-1 mr-auto ml-auto
@@ -76,10 +75,10 @@ const Nav = () => {
                     md:hidden">
                             Mon histoire</label>
                     </div>
-                </Link>
+                </a>
             </div>
 
-            <Link to="/Contact"
+            <a href="#contact"
                 className="
                     flex items-center justify-center
                     w-full h-20 mt-1 mb-1 mr-auto ml-auto
@@ -97,9 +96,9 @@ const Nav = () => {
                         md:hidden">
                         Contact</label>
                 </div>
-            </Link>
+            </a>
 
-            <Link to="/Projects"
+            <a href="#projects"
                 className="
                     flex items-center justify-center
                     w-full h-20 mt-1 mb-1 mr-auto ml-auto
@@ -117,7 +116,7 @@ const Nav = () => {
                     md:hidden">
                         Projets</label>
                 </div>
-            </Link>
+            </a>
         </div >
     )
 }

@@ -1,31 +1,34 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './output.css'
+import React, { Suspense } from 'react';
 import Home from '../src/components/Home'
 import Nav from '../src/components/Nav'
 import CV from '../src/components/CV'
 import Skills from '../src/components/Skills'
 import Timeline from '../src/components/Timeline'
-import Projects from '../src/components/Projects'
 import Contact from '../src/components/Contact'
+import Navbar from '../src/components/Navbar'
+import Footer from '../src/components/Footer'
+import Loader from '../src/components/Loader'
+
+const Projects = React.lazy(() => import('../src/components/Projects'))
 
 function App() {
 
-
   return (
     <>
-      <Router>
-        <div className="flex items-center justify-center min-h-screen min-w-screen">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Nav" element={<Nav />} />
-            <Route path="/Skills" element={<Skills />} />
-            <Route path="/CV" element={<CV />} />
-            <Route path="/Timeline" element={<Timeline />} />
-            <Route path="/Projects" element={<Projects />} />
-            <Route path="/Contact" element={<Contact />} />
-          </Routes>
-        </div>
-      </Router>
+      <Navbar />
+      <div className="flex flex-col items-center justify-center">
+        <Home />
+        <Nav />
+        <Timeline />
+        <Suspense fallback={<Loader />}>
+          <Projects />
+        </Suspense>
+        <Skills />
+        <CV />
+        <Contact />
+        <Footer />
+      </div>
     </>
   )
 }
