@@ -961,6 +961,10 @@ video {
   border-top-width: 2px;
 }
 
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1889,6 +1893,28 @@ video {
 .exit-right {
   transform: translateX(100vw);
   visibility: hidden;
+}
+
+/* Loader */
+
+.loader {
+  border: 4px solid rgb(255, 255, 255);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: var(--secondary-color);
+  /* Couleur personnalisable */
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .hover\:border-gray-400:hover {

@@ -174,8 +174,8 @@ const Projects = () => {
                 {index === current && (
                   <>
                     <div className="hidden lg:flex lg:justify-evenly w-screen h-10 chainProjectContainer">
-                      <img src="assets/images/Project/chain.png" className="chainLeft" alt="chain left" />
-                      <img src="assets/images/Project/chain.png" className="chainRight" alt="chain right" />
+                      <img src="assets/images/Project/chain.webp" className="chainLeft" alt="chain left" />
+                      <img src="assets/images/Project/chain.webp" className="chainRight" alt="chain right" />
                     </div>
                     <div className="flex h-[500px] xl:h-[450px] 2xl:h-[550px] max-w-[1700px] mx-auto">
                       <div className="flex flex-col justify-start items-center content-center text-center
@@ -222,7 +222,7 @@ const Projects = () => {
           })}
         </div>
       </div>
-      <div className="hidden h-20 md:flex projectButtonsContainer w-full justify-center mt-10 border-b-2 border-secondaryMinor">
+      <div className="hidden h-20 md:flex projectButtonsContainer w-full justify-center mt-10 border-b-4 border-secondaryMinor">
         <button className="prev" onClick={prevSlide}>
           <img className="h-5/6 projectCarouselButton" src="assets/images/general_icons/left-button.png"></img>
         </button>
