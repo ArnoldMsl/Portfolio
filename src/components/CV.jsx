@@ -16,7 +16,7 @@ const CV = () => {
     return (
         <>
             <div className="flex w-full h-36 justify-center mt-28 md:mt-48">
-                <h3 className="border-white text-5xl rounded-lg border-4 border-solid w-fit mt-auto p-3 mb-12">
+                <h3 className="text-5xl w-fit mt-auto p-3 mb-12">
                     Curriculum Vitae
                 </h3>
             </div>
@@ -33,7 +33,7 @@ const CV = () => {
                         Linkedin
                         <img src="assets/images/general_icons/linkedin.svg" alt="Linkedin" className="w-6 ml-1 buttonLogo" id="linkedinIcon" />
                     </a>
-                    <a href="assets/downloads/CV_Masselin.pdf" download className="
+                    <a href="assets/downloads/CV A.Masselin_FR.pdf" download className="
                 flex justify-center items-center text-center 
                 w-3/12 h-8 ml-1 rounded-md text-xs
                 md:text-xl

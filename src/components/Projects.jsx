@@ -97,15 +97,10 @@ const Projects = () => {
     <>
       <div className="w-screen flex flex-col justify-center items-center content-center projectContainer mt-28 md:mt-48" id="projects">
         <div className="flex w-full h-36 justify-center">
-          <h3 className="border-white text-5xl rounded-lg border-4 border-solid w-fit mt-auto p-3 mb-4">
+          <h3 className="text-5xl w-fit mt-auto p-3 mb-4">
             Projets
           </h3>
         </div>
-
-        <p className="w-11/12 text-center
-      text-xl mb-2 p-1 xl:text-2xl">
-          Bienvenue à l'entrepôt ! Ici, vous pouvez consulter les projets que j'ai réalisés ou auxquels j'ai participé
-        </p>
 
         {/* MOBILE */}
 
@@ -222,7 +217,7 @@ const Projects = () => {
           })}
         </div>
       </div>
-      <div className="hidden h-20 md:flex projectButtonsContainer w-full justify-center mt-10 border-b-4 border-secondaryMinor">
+      <div className="hidden h-20 md:flex projectButtonsContainer w-full justify-center mt-10">
         <button className="prev" onClick={prevSlide}>
           <img className="h-5/6 projectCarouselButton" src="assets/images/general_icons/left-button.png"></img>
         </button>

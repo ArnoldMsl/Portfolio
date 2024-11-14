@@ -8,7 +8,7 @@ const Timeline = () => {
         <>
             <div className="w-screen flex flex-col mt-28 md:mt-48" id="timeline">
                 <div className="flex w-full h-36 justify-center">
-                    <h3 className="border-white text-5xl rounded-lg border-4 border-solid w-fit mt-auto p-3 mb-7">
+                    <h3 className="text-5xl w-fit mt-auto p-3 mb-7">
                         Timeline
                     </h3>
                 </div>
