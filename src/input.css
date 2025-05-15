@@ -63,7 +63,7 @@
     background-repeat: no-repeat;
   }
 
-  #photoProfil {
+  .photoProfil {
     border: 5px solid var(--primary-color);
   }
 
@@ -94,6 +94,10 @@
 
   .welcomeContainer h2 {
     font-family: var(--secondary-font);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  #hometextshadow{
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
 
@@ -352,6 +356,7 @@
   grid-template-rows: auto;
   grid-template-areas: 
   'CVexperience'
+  'labelium'
   'hoard'
   'numerilis'
   'grdf'
@@ -364,6 +369,7 @@
   grid-template-rows: auto;
   grid-template-areas: 
   'CVformations'
+  'bridge'
   'wild'
   'kedge'
   'nanterre';
@@ -373,12 +379,14 @@
 #locker {grid-area: locker; }
 #cvButtonsContainer { grid-area: cvButtonsContainer; }
 #CVexperience { grid-area: CVexperience; }
+#labelium { grid-area: labelium; }
 #hoard { grid-area: hoard; }
 #numerilis { grid-area: numerilis; }
 #grdf { grid-area: grdf; }
 #genci { grid-area: genci; }
 #sushis { grid-area: sushis; }
 #CVformations { grid-area: CVformations; }
+#bridge { grid-area: bridge; border-color: aqua; }
 #wild { grid-area: wild; border-color: aqua; }
 #kedge { grid-area: kedge; border-color: aqua; }
 #nanterre { grid-area: nanterre; border-color: aqua; }
@@ -434,7 +442,7 @@
 }
 
 .textCVContainer p {
-  height: fit-content; /* Ajustez la valeur selon vos besoins */
+  height: fit-content;
 }
 
 #extendButton {
@@ -657,4 +665,22 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Preload images */
+
+.preload-images {
+  background-image: url(../src/assets/images/Nav_icons/factory-open.svg);
+}
+
+#warehouse-preload {
+  background-image: url(../src/assets/images/Nav_icons/warehouse-open.svg);
+}
+
+#skills-preload {
+  background-image: url(../src/assets/images/Nav_icons/box-open.svg);
+}
+
+#CV-preload {
+  background-image: url(../src/assets/images/Nav_icons/cv-open.svg);
 }

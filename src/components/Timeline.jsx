@@ -8,7 +8,7 @@ const Timeline = () => {
         <>
             <div className="w-screen flex flex-col mt-28 md:mt-48" id="timeline">
                 <div className="flex w-full h-36 justify-center">
-                    <h3 className="border-white text-5xl rounded-lg border-4 border-solid w-fit mt-auto p-3 mb-7">
+                    <h3 className="text-5xl w-fit mt-auto p-3 mb-7">
                         Timeline
                     </h3>
                 </div>
@@ -171,8 +171,7 @@ const Timeline = () => {
                     >
                         <h3 className="text-2xl text-thirdColor vertical-timeline-element-title">Bootcamp Développeur Web</h3>
                         <p>
-                            Je décide d'enfin me dévouer à cette passion en me forgeant les compétences nécessaires
-                            pour mettre l'informatique au service du Droit ou du Commerce.
+                            Je décide d'enfin me dévouer à cette passion en faisant le grand saut de la reconversion !
                         </p>
                         <p>
                             Je complète donc un bootcamp intensif en présentiel de 5 mois à la Wild Code School de Paris où j'apprends
@@ -241,7 +240,51 @@ const Timeline = () => {
                     >
                         <h3 className="text-2xl vertical-timeline-element-title">Volontariat : Développeur Front REACT</h3>
                         <p>
-                            Depuis Octobre 2024, j'ai le plaisir d'avoir rejoins l'équipe de bénévoles de l'association du Guide du Rôliste Galactique (GROG) pour les aider à construire la V3 de leur site sur une architecture Next + React
+                            Depuis Octobre 2024, j'ai le plaisir d'avoir rejoins l'équipe de bénévoles de l'association du Guide du Rôliste Galactique (GROG) pour les aider à construire la V3 de leur site sur une architecture Next.Js
+                        </p>
+                    </VerticalTimelineElement>
+
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element"
+                        contentStyle={{
+                            background: 'transparent',
+                            color: '#fff',
+                            border: '3px solid #fff',
+                            borderRadius: '15px',
+                            borderBottom: 'none',
+                        }}
+                        contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
+                        date="Octoble-décembre 2024"
+                        iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
+                        icon={<img src='assets\images\Timeline\chart.svg' alt='graphique croissant'
+                            style={{ width: '60%', height: '60%', marginRight: 'auto', marginLeft: 'auto', marginTop: '19%' }}></img>}
+                    >
+                        <h3 className="text-2xl vertical-timeline-element-title">Bootcamp Traffic Management : The Bridge</h3>
+                        <p>
+                            Pendant 3 mois j'ai rejoins l'école The Bridge pour approfondir mes compétences en UX/UI Design, SEO, SEA et j'ai appris à mettre en place le tracking d'un site via Analytics.
+                        </p>
+                    </VerticalTimelineElement>
+
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element"
+                        contentStyle={{
+                            background: 'transparent',
+                            color: '#fff',
+                            border: '3px solid #fff',
+                            borderRadius: '15px',
+                            borderBottom: 'none',
+                        }}
+                        contentArrowStyle={{ borderRight: '7px solid  #FFF' }}
+                        date="Depuis janvier 2025"
+                        iconStyle={{ background: '#0C2D57', color: 'rgba(255, 255, 255, 1)' }}
+                        icon={<img src='assets\images\Timeline\database.svg' alt='graphique croissant'
+                            style={{ width: '60%', height: '60%', marginRight: 'auto', marginLeft: 'auto', marginTop: '19%' }}></img>}
+                    >
+                        <h3 className="text-2xl vertical-timeline-element-title">Data Analyst & automatisation - Labelium</h3>
+                        <p>
+                            Je suis aujourd'hui Data Analyst au sein de l'équipe de Labelium, une agence de marketing digital.
+                            Je mets en place les Datastreams pour récupérer les données, je les aggrège, les nettoie et les transforme via SQL sur l'environnement Goocle Cloud platform et les affiche via Gsheet ou Looker Studio.
+                            J'automatise également les tâches des équipes via App scripts ou Python !
                         </p>
                     </VerticalTimelineElement>
 
@@ -260,9 +303,9 @@ const Timeline = () => {
                         icon={<img src='assets\images\Timeline\eyes.svg' alt='Logo react'
                             style={{ width: '75%', height: '75%', marginRight: 'auto', marginLeft: 'auto', marginTop: '11%' }}></img>}
                     >
-                        <h3 className="text-2xl vertical-timeline-element-title">La suite ?</h3>
+                        <h3 className="text-2xl vertical-timeline-element-title">On bosse ensemble ?</h3>
                         <p>
-                            À nous de l'écrire ensemble ! N'hésitez pas à retrouver les éléments plus détaillés
+                            N'hésitez pas à retrouver les éléments plus détaillés
                             dans les pages &nbsp;
                             <a href="#cv" className="text-xl text-secondaryMinor underline">CV</a>,&nbsp;
                             <a href="#skills" className="text-xl text-secondaryMinor underline">Compétences</a> et &nbsp;
