@@ -16,6 +16,22 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "GhostQuill",
+      description: "Projet personnel de site de partage de textes anonymes",
+      descriptionDesktop: "EN CONSTRUCTION : Projet personnel de site de partages de textes anonymes en cours de réalisation sur une architecture Symfony + SQL. Il dispose des fonctionnalités suivantes : Profils utilisateurs, traduction des textes par IA et interface de paiement pour accéder aux fonctionnalités premium.",
+      technology: "#Symfony, #SQL, #IA",
+      images: ["image1.png", "image2.png"],
+    },
+    {
+      id: 2,
+      title: "Repo-Helper",
+      description: "Projet en équipe de logiciel de gestion de repos distants",
+      descriptionDesktop: "EN CONSTRUCTION : Projet en équipe de logiciel de gestion de repos distants codé en Python utilisant les APIs des plateformes Git",
+      technology: "#Python, #API REST",
+      images: ["image1.png"],
+    },
+    {
+      id: 3,
       title: "Minis-printer",
       description: "Application dédiée au jeux de rôle qui permet à un utilisateur d'uploader ses images pour créer des présentoirs à imprimer sur des feuilles A4",
       descriptionDesktop: "Application réalisée dans le cadre d'un stage pour l'entreprise The hoard qui vend des accessoires pour le jeux de rôle papier Donjons & Dragons. \n L'application permet à l'utilisateur d'uploader ses propres images puis les customiser pour créer des présentoirs en papier à imprimer.",
@@ -25,7 +41,7 @@ const Projects = () => {
       images: ["image1.png", "image2.png"],
     },
     {
-      id: 2,
+      id: 4,
       title: "Portfolio",
       description: "Ce portfolio est programmé avec React + Tailwind pour le Front et Node + Express pour le serveur SMTP qui traite l'envoi des messages. Les images ont été réalisées via Figma",
       descriptionDesktop: "Le portfolio que vous visitez est programmé avec React et Tailwind pour le Front mais aussi Node et Express pour le serveur SMTP qui traite l'envoi des messages. En outre, j'ai réalisé toutes les images et icônes avec Figma",
@@ -34,15 +50,7 @@ const Projects = () => {
       images: ["mobile.svg"],
     },
     {
-      id: 3,
-      title: "GhostQuill",
-      description: "Projet personnel de site de partage de textes anonymes",
-      descriptionDesktop: "EN CONSTRUCTION : Projet personnel de site de partages de textes anonymes en cours de réalisation sur une architecture Symfony SQL et react.",
-      technology: "#Symfony, #SQL, #React, #TailWind",
-      images: ["image1.png", "image2.png"],
-    },
-    {
-      id: 4,
+      id: 5,
       title: "Origins Digital",
       description: "Projet d'école réalisé à 4 en 6 semaines : Site de partage de vidéos avec système de gestion des profils utilisateurs et de paiement en ligne",
       descriptionDesktop: "Projet d'école réalisé à 4 en 6 semaines : Plateforme d'enseignement au développement Web via des vidéos. Le site comporte la gestion des comptes utilisateurs lesquels disposent d'un planning d'apprentissage généré automatiquement via un Quiz. En outre, le site propose une interface de paiement gérée par Stripe.",
@@ -51,7 +59,7 @@ const Projects = () => {
       images: ["image1.png", "image2.png", "image3.png"],
     },
     {
-      id: 5,
+      id: 6,
       title: "Cyclaid",
       description: "Projet d'école réalisé à 4 en 6 semaines : Appli web mobile de partage de pièces détachées de vélos entre particuliers",
       descriptionDesktop: "Projet d'école réalisé à 4 en 6 semaines via SQL et une architecture MVC : Appli web mobile de partage de pièces détachées de vélos entre particuliers. Le site dispose d'un système de gestion des utilisateurs.",

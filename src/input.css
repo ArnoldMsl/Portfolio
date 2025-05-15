@@ -97,6 +97,10 @@
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
 
+  #hometextshadow{
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
   .welcomeContainer #invitationText {
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   }
@@ -352,6 +356,7 @@
   grid-template-rows: auto;
   grid-template-areas: 
   'CVexperience'
+  'labelium'
   'hoard'
   'numerilis'
   'grdf'
@@ -364,6 +369,7 @@
   grid-template-rows: auto;
   grid-template-areas: 
   'CVformations'
+  'bridge'
   'wild'
   'kedge'
   'nanterre';
@@ -373,12 +379,14 @@
 #locker {grid-area: locker; }
 #cvButtonsContainer { grid-area: cvButtonsContainer; }
 #CVexperience { grid-area: CVexperience; }
+#labelium { grid-area: labelium; }
 #hoard { grid-area: hoard; }
 #numerilis { grid-area: numerilis; }
 #grdf { grid-area: grdf; }
 #genci { grid-area: genci; }
 #sushis { grid-area: sushis; }
 #CVformations { grid-area: CVformations; }
+#bridge { grid-area: bridge; border-color: aqua; }
 #wild { grid-area: wild; border-color: aqua; }
 #kedge { grid-area: kedge; border-color: aqua; }
 #nanterre { grid-area: nanterre; border-color: aqua; }
@@ -434,7 +442,7 @@
 }
 
 .textCVContainer p {
-  height: fit-content; /* Ajustez la valeur selon vos besoins */
+  height: fit-content;
 }
 
 #extendButton {

@@ -23,7 +23,8 @@ const Home = () => {
 
                 <div className="welcomeText flex flex-col 
                 justify-center items-center
-                md:items-start">
+                md:items-start
+                ">
                     <h2 className="
                     text-5xl
                     sm:text-6xl
@@ -38,14 +39,14 @@ const Home = () => {
                     sm:text-3xl sm:mt-4 sm:mb-2 sm:mr-8 sm:ml-8
                     md:text-start md:text-4xl md:ml-20 md:mt-10 md:mb-10
                     lg:text-5xl lg:ml-28
-                    xl:text-6xl
-                    ">Et en tant que <span className="font-bold">Développeur Web,</span> je créé des trucs sur Internet</p>
+                    xl:text-6xl/snug
+                    ">Et en tant que <br /><span className="font-bold" id="hometextshadow">Développeur & Data analyst</span><br /> je créé des trucs sur Internet</p>
                 </div>
                 <img className="rounded-full
                 hidden
                 md:block md:h-44 md:mr-10
                 lg:h-56 lg:mr-10
-                xl:h-80 xl:mr-10"
+                xl:h-96 xl:mr-10 xl:ml-32"
                     id='photoProfil' src='assets/images/others/photo.webp' alt='photo de profil'></img>
             </div>
             <p className="

@@ -962,10 +962,6 @@ video {
   border-bottom-width: 2px;
 }
 
-.border-b-4 {
-  border-bottom-width: 4px;
-}
-
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -1289,6 +1285,10 @@ video {
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+#hometextshadow{
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 .welcomeContainer #invitationText {
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -1555,6 +1555,7 @@ video {
   grid-template-rows: auto;
   grid-template-areas: 
   'CVexperience'
+  'labelium'
   'hoard'
   'numerilis'
   'grdf'
@@ -1567,6 +1568,7 @@ video {
   grid-template-rows: auto;
   grid-template-areas: 
   'CVformations'
+  'bridge'
   'wild'
   'kedge'
   'nanterre';
@@ -1583,6 +1585,10 @@ video {
 
 #CVexperience {
   grid-area: CVexperience;
+}
+
+#labelium {
+  grid-area: labelium;
 }
 
 #hoard {
@@ -1607,6 +1613,11 @@ video {
 
 #CVformations {
   grid-area: CVformations;
+}
+
+#bridge {
+  grid-area: bridge;
+  border-color: aqua;
 }
 
 #wild {
@@ -1683,7 +1694,6 @@ video {
 .textCVContainer p {
   height: -moz-fit-content;
   height: fit-content;
-  /* Ajustez la valeur selon vos besoins */
 }
 
 #extendButton {
@@ -2353,6 +2363,10 @@ video {
     margin-bottom: 0px;
   }
 
+  .xl\:ml-32 {
+    margin-left: 8rem;
+  }
+
   .xl\:mr-10 {
     margin-right: 2.5rem;
   }
@@ -2367,6 +2381,10 @@ video {
 
   .xl\:h-80 {
     height: 20rem;
+  }
+
+  .xl\:h-96 {
+    height: 24rem;
   }
 
   .xl\:h-\[450px\] {
@@ -2389,9 +2407,10 @@ video {
     max-width: 36rem;
   }
 
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .xl\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
   }
 
   .xl\:text-5xl {
@@ -2412,6 +2431,41 @@ video {
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-6xl\/3 {
+    font-size: 3.75rem;
+    line-height: .75rem;
+  }
+
+  .xl\:text-6xl\/9 {
+    font-size: 3.75rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-6xl\/10 {
+    font-size: 3.75rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-6xl\/relaxed {
+    font-size: 3.75rem;
+    line-height: 1.625;
+  }
+
+  .xl\:text-6xl\/loose {
+    font-size: 3.75rem;
+    line-height: 2;
+  }
+
+  .xl\:text-6xl\/normal {
+    font-size: 3.75rem;
+    line-height: 1.5;
+  }
+
+  .xl\:text-6xl\/snug {
+    font-size: 3.75rem;
+    line-height: 1.375;
   }
 }
 

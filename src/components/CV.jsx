@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const CV = () => {
 
-    const [visibleSections, setVisibleSections] = useState([false, false, false, false, false, false, false, false])
+    const [visibleSections, setVisibleSections] = useState([false, false, false, false, false, false, false, false, false])
 
     const toggleVisibility = (index) => {
         setVisibleSections((prevVisibleSections) =>
@@ -33,7 +33,7 @@ const CV = () => {
                         Linkedin
                         <img src="assets/images/general_icons/linkedin.svg" alt="Linkedin" className="w-6 ml-1 buttonLogo" id="linkedinIcon" />
                     </a>
-                    <a href="assets/downloads/CV A.Masselin_FR.pdf" download className="
+                    <a href="assets/downloads/CV A.Masselin_ENG.pdf" download className="
                 flex justify-center items-center text-center 
                 w-3/12 h-8 ml-1 rounded-md text-xs
                 md:text-xl
@@ -52,18 +52,31 @@ const CV = () => {
                 </div>
 
                 <div className="grid grid-cols-1 justify-evenly text-center h-fit
-            cvLeftContainer">
+                                cvLeftContainer">
 
                     <p className="
-            border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-6 mb-4 md:mt-0"
+                                border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-6 mb-4 md:mt-0"
                         id="CVexperience">Expériences</p>
 
-                    <div className="lg:text-xl textCVContainer" id="hoard">
+                    <div className="lg:text-xl textCVContainer" id="labelium">
                         <button onClick={() => toggleVisibility(0)}>
-                            Avr-Juil 24 : Développeur Front [REACT] - The Hoard
+                            Poste Actuel : Data Analyst & Automatisation - Labelium
                             <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[0] ? 'rotated' : ''}></img>
                         </button>
                         {visibleSections[0] && (
+                            <p>
+                                Mise en place de Datastreams, aggrégation, traitement des données sur un environnement <span className="text-xl text-secondaryMinor" id="CvTextFocus">Google cloud Platform</span> via <span className="text-xl text-secondaryMinor" id="CvTextFocus">SQL</span> Affichage via Gsheet ou Looker Studio<br />
+                                Automatisation de la création de rapports via <span className="text-xl text-secondaryMinor" id="CvTextFocus">Google Apps Script</span> et <span className="text-xl text-secondaryMinor" id="CvTextFocus">Python</span><br /><br />
+                            </p>
+                        )}
+                    </div>
+
+                    <div className="lg:text-xl textCVContainer" id="hoard">
+                        <button onClick={() => toggleVisibility(1)}>
+                            Avr-Juil 24 : Développeur Front [REACT] - The Hoard
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[1] ? 'rotated' : ''}></img>
+                        </button>
+                        {visibleSections[1] && (
                             <p>
                                 Réalisation pour une plateforme d'E-commerce, d'une application web mono-page de traitement d'images et d'impression en <span className="text-xl text-secondaryMinor" id="CvTextFocus">REACT</span>
                             </p>
@@ -71,11 +84,11 @@ const CV = () => {
                     </div>
 
                     <div className="lg:text-xl textCVContainer" id="numerilis">
-                        <button onClick={() => toggleVisibility(4)}>
+                        <button onClick={() => toggleVisibility(2)}>
                             Fev - Avr 24 : Développeur Back [JAVA + SQL] - Numerilis
-                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[4] ? 'rotated' : ''}></img>
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[2] ? 'rotated' : ''}></img>
                         </button>
-                        {visibleSections[4] && (
+                        {visibleSections[2] && (
                             <p>
                                 Développement Back-End en <span className="text-xl text-secondaryMinor" id="CvTextFocus">Java et SQL</span> d'un logiciel de gestion de données bancaires pour s'adapter aux évolutions réglementaires
                             </p>
@@ -83,11 +96,11 @@ const CV = () => {
                     </div>
 
                     <div className="lg:text-xl textCVContainer" id="grdf">
-                        <button onClick={() => toggleVisibility(1)}>
+                        <button onClick={() => toggleVisibility(3)}>
                             2018 - 23 : Acheteur - GRDF
-                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[1] ? 'rotated' : ''}></img>
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[3] ? 'rotated' : ''}></img>
                         </button>
-                        {visibleSections[1] && (
+                        {visibleSections[3] && (
                             <p>
                                 <span className="text-xl text-secondaryMinor" id="CvTextFocus">Formulation technique des besoins</span>, établissement des stratégies d’achat, mise en place et suivi des consultations, négociations commerciales et contractuelles,
                                 gestion des catégories d’achats dédiées. Projets notables : <br /><br />
@@ -98,7 +111,7 @@ const CV = () => {
                         )}
                     </div>
 
-                    <div className="lg:text-xl textCVContainer" id="genci">
+                    {/* <div className="lg:text-xl textCVContainer" id="genci">
                         <button onClick={() => toggleVisibility(5)}>
                             Avr - Juin 14 : Stagiaire Projets Européens - GENCI
                             <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[5] ? 'rotated' : ''}></img>
@@ -122,7 +135,7 @@ const CV = () => {
                                 Job étudiant à temps partiel : <span className="text-xl text-secondaryMinor" id="CvTextFocus">Gestion de l'équipe</span>, commandes fournisseurs, comptabilité basique, accueil, caisse, livraisons ponctuelles
                             </p>
                         )}
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Image du casier */}
@@ -136,15 +149,31 @@ const CV = () => {
             cvRightContainer">
 
                     <p className="
-            border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-3 md:mt-0"
+            border-white text-2xl rounded-lg border-4 border-solid w-1/2 ml-auto mr-auto mt-6 mb-4 md:mt-0"
                         id="CVformations">Formations</p>
 
-                    <div className="lg:text-xl textCVContainer" id="wild">
-                        <button onClick={() => toggleVisibility(3)}>
-                            Sept - Fev 24 Formation développeur Web PHP - Wild Code School
-                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[3] ? 'rotated' : ''}></img>
+                    <div className="lg:text-xl textCVContainer" id="bridge">
+                        <button onClick={() => toggleVisibility(4)}>
+                            Oct - Dec 24 Formation Traffic management - The Bridge
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[4] ? 'rotated' : ''}></img>
                         </button>
-                        {visibleSections[3] && (
+                        {visibleSections[4] && (
+                            <p>
+                                Bootcamp présentiel de 3 mois spécialisé dans le <span className="text-xl text-secondaryMinor" id="CvTextFocus">Traffic management</span><br /><br />
+                                -UX/UI Design<br />
+                                -SEO<br />
+                                -SEA<br />
+                                -Tracking des sites via Analytics
+                            </p>
+                        )}
+                    </div>
+
+                    <div className="lg:text-xl textCVContainer" id="wild">
+                        <button onClick={() => toggleVisibility(5)}>
+                            Sept - Fev 24 Formation développeur Web PHP - Wild Code School
+                            <img id="extendButton" src='assets/images/general_icons/extend-button.png' alt="étendre le texte" className={visibleSections[5] ? 'rotated' : ''}></img>
+                        </button>
+                        {visibleSections[5] && (
                             <p>
                                 Bootcamp intensif présentiel de 5 mois apprenant le métier de développeur web avec une dominante <span className="text-xl text-secondaryMinor" id="CvTextFocus">PHP + SQL</span> et décernant le <span className="text-xl text-secondaryMinor" id="CvTextFocus">titre RNCP développeur Web :</span><br /><br />
                                 -HTML, CSS, PHP, SQL, Javascript, API<br />
