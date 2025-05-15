@@ -13,11 +13,11 @@ const Home = () => {
             lg:text-5xl lg:mb-10
             xl:text-7xl
             ">Salut, je m'appelle</h1>
-            <img className="block rounded-full
+            <img className=" photoProfil block rounded-full
             h-36 mb-2
             sm:h-32 sm:m-2
             md:hidden"
-                id='photoProfil' src='assets/images/others/photo.webp' alt='photo de profil'></img>
+                src='assets/images/others/photo.webp' alt='photo de profil'></img>
 
             <div className="welcomeContainer inline-flex items-center">
 
@@ -42,12 +42,12 @@ const Home = () => {
                     xl:text-6xl/snug
                     ">Et en tant que <br /><span className="font-bold" id="hometextshadow">Développeur & Data analyst</span><br /> je créé des trucs sur Internet</p>
                 </div>
-                <img className="rounded-full
+                <img className="photoProfil rounded-full
                 hidden
                 md:block md:h-44 md:mr-10
                 lg:h-56 lg:mr-10
                 xl:h-96 xl:mr-10 xl:ml-32"
-                    id='photoProfil' src='assets/images/others/photo.webp' alt='photo de profil'></img>
+                    src='assets/images/others/photo.webp' alt='photo de profil'></img>
             </div>
             <p className="
             text-2xl mb-4

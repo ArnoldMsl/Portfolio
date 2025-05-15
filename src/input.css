@@ -63,7 +63,7 @@
     background-repeat: no-repeat;
   }
 
-  #photoProfil {
+  .photoProfil {
     border: 5px solid var(--primary-color);
   }
 
