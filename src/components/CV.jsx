@@ -25,7 +25,7 @@ const CV = () => {
                 <div className="w-full inline-flex justify-evenly text-center mt-2 mr-auto ml-auto"
                     id="cvButtonsContainer">
 
-                    <a href="https://www.linkedin.com/in/arnold-masselin-93b13912b" target="_blank" className="
+                    <a href="https://www.linkedin.com/in/arnold-masselin-93b13912b" target="_blank" id="cvButtonLinkedin" className="
                 flex justify-center items-center text-center 
                 w-4/12 h-8 ml-1 rounded-md text-xs
                 md:w-3/12 md:text-xl
@@ -33,7 +33,7 @@ const CV = () => {
                         Linkedin
                         <img src="assets/images/general_icons/linkedin.svg" alt="Linkedin" className="w-6 ml-1 buttonLogo" id="linkedinIcon" />
                     </a>
-                    <a href="assets/downloads/CV A.Masselin_ENG.pdf" download className="
+                    <a href="assets/downloads/CV A.Masselin_ENG.pdf" id="cvButtonDonwload" download className="
                 flex justify-center items-center text-center 
                 w-3/12 h-8 ml-1 rounded-md text-xs
                 md:text-xl
@@ -41,7 +41,7 @@ const CV = () => {
                         CV
                         <img src="assets/images/general_icons/download.svg" alt="télécharger CV" className="w-6 ml-1 buttonLogo" />
                     </a>
-                    <a href="https://github.com/ArnoldMsl" target="_blank" className="
+                    <a href="https://github.com/ArnoldMsl" id="cvButtonGithub" target="_blank" className="
                 flex justify-center items-center text-center 
                 w-3/12 h-8 ml-1 rounded-md text-xs
                 md:text-xl
